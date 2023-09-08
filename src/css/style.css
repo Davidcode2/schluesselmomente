@@ -1,38 +1,52 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+.icon-1, .icon-2, .icon-3 {
+    position: absolute;
+    width: 32px;
+    height: 3px;
+    background-color: black;
+    transition: all 400ms cubic-bezier(.84,.06,.52,1.8);
 }
 
-.site-wrapper {
-  padding-left: 100px;
-  padding-right: 100px;
+.icon-1 {
+  transform: translateY(-8px);
+  animation-delay: 100ms;
 }
 
-.nav {
-  padding: 10px;
-}
-.nav > ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
+.icon-3 {
+  transform: translateY(8px);
+  animation-delay: 250ms;
 }
 
-.nav > ul > li {
-  padding: 10px;
-  margin-bottom: 2px;
+.hamburger-icon {
+  z-index: 1000;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
 }
 
-.nav > ul > li:hover {
-  border-bottom: 2px solid gold;
-  margin-bottom: 0px;
+.icon-1.a {
+  transform: rotate(40deg);
+}
+.icon-3.b {
+  transform: rotate(-40deg);
+}
+.icon-2.c {
+  opacity: 0;
 }
 
-main > section {
-  background-image: url(../assets/wallhaven-4586m5.jpg);
+.clear {
+  clear: both;
 }
 
-.header-text-1 {
-  color: white;
-  font-size: 80px;
+@keyframes slideIn {
+  0% {
+    width: 0%;
+    // transform: scale(.3);
+    opacity: 0;
+  }
+  
+  100% {
+    width: 50%;
+    // transform:scale(1);
+    opacity: 1;
+  }
 }
