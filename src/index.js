@@ -1,6 +1,5 @@
 let backToTopButton = document.querySelector("#back-to-top-btn");
 
-
 window.addEventListener("scroll", (event) => {
   console.log(this.scrollY);
   if (this.scrollY > 400) {
@@ -45,3 +44,5 @@ function screenTest(e) {
 }
 
 mql.addEventListener("change", screenTest);
+
+screenTest(mql);
