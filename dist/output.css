@@ -606,6 +606,10 @@ video {
   height: 5rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -751,6 +755,11 @@ video {
   background-color: rgb(5 150 105 / var(--tw-bg-opacity));
 }
 
+.bg-yellow-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\.\/assets\/pexels-steve-johnson-16385942\.jpg\'\)\] {
   background-image: url('./assets/pexels-steve-johnson-16385942.jpg');
 }
@@ -809,6 +818,18 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-yellow-400 {
+  --tw-gradient-from: #facc15 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(250 204 21 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-\[\#18705c\] {
+  --tw-gradient-from: #18705c var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(24 112 92 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .to-emerald-900 {
   --tw-gradient-to: #064e3b var(--tw-gradient-to-position);
 }
@@ -845,6 +866,10 @@ video {
   --tw-gradient-to: #e7e5e4 var(--tw-gradient-to-position);
 }
 
+.to-yellow-500 {
+  --tw-gradient-to: #eab308 var(--tw-gradient-to-position);
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -860,6 +885,16 @@ video {
 
 .bg-bottom {
   background-position: bottom;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 
 .p-10 {
