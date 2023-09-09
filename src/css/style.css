@@ -2,7 +2,7 @@
     position: absolute;
     width: 32px;
     height: 3px;
-    background-color: black;
+    background-color: white;
     transition: all 400ms cubic-bezier(.84,.06,.52,1.8);
 }
 
