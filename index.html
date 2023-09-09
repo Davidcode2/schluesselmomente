@@ -44,15 +44,12 @@
       <h1 class="font-extrabold bg-clip-text text-5xl drop-shadow-lg text-emerald-50 lg:text-8xl">
         Systemische Beratung Freiburg</h1>
     </section>
-    <p class="p-8 lg:p-40">Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
-      labore culpa
-      sint ad nisi Lorem
-      pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud
-      ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut
-      officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris
-      cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
-      eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat
-      ullamco ut ea consectetur et est culpa et culpa duis.</p>
+    <div class="p-8 lg:p-40">
+      <p class="text-3xl py-10 font-bold">
+      Herzlich Willkommen!
+      </p>
+      <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+    </div>
     <div class="bg-gradient-to-b from-emerald-800 to-emerald-900">
       <div class="p-8 lg:p-40">
         <section id="arbeitsgrundlagen" class="">
@@ -121,21 +118,21 @@
           </h2>
           <h3 class="text-xl pt-10 pb-4">Berufsausbildung / Beratungsausbildung:</h3>
           <div class="pb-40">
-            <p>Systemische Beraterin (3-Jährige Weiterbildung bei Wispo Tandem), Sozialarbeiterin B.A.</p>
+            <p class="pl-8">Systemische Beraterin (3-Jährige Weiterbildung bei Wispo Tandem), Sozialarbeiterin B.A.</p>
             <h3 class="text-xl py-4">Fortbildungen</h3>
-            <ul class="list-[square]">
+            <ul class="list-[square] pl-8">
               <li>Konflikte systemisch verstehen und bearbeiten (Eva Gehring)</li>
               <li>Verzeihen und Versöhnen in der Paarbeziehung (Friederike von Tiedemann)</li>
             </ul>
             <h3 class="text-xl py-4">Berufstätigkeit</h3>
-            <ul class="list-[square]">
+            <ul class="list-[square] pl-8">
               <li>Co-Leitung Freiwilligen Seminare Diakonie Baden</li>
               <li>stationäre Kinder- und Jugendhilfe im SOS-Kinderdorf</li>
               <li>Co-Leitung Kinderbereich und Fundraising bei Stadtpiraten Freiburg e.V.</li>
               <li>derzeit in Elternzeit, selbstständige Beraterin seit August 2023</li>
             </ul>
             <h3 class="text-xl py-4">Persönliches</h3>
-            <p>verheiratet, eine Tochter</p>
+            <p class="pl-8">verheiratet, eine Tochter</p>
             </p>
           </div>
         </section>
@@ -200,11 +197,15 @@
           <h2
             class="pb-10 text-2xl lg:text-5xl font-bold bg-gradient-to-r from-emerald-100 to-stone-200 bg-clip-text text-transparent">
             Kontakt</h2>
-          <form class="grid gap-5">
-            <input type=text placeholder="Name" class="w-full p-2 rounded-lg border-2 border-stone-200 text-neutral-600">
-            <input type=text placeholder="E-Mail" class="w-full p-2 rounded-lg border-2 border-stone-200 text-neutral-600">
-            <input type=text placeholder="Telefon" class="w-full p-2 rounded-lg border-2 border-stone-200 text-neutral-600">
-            <textarea placeholder="Nachricht" class="w-full p-2 rounded-lg border-2 border-stone-200 text-neutral-600 h-20"></textarea>
+          <form class="grid gap-5" action="sendMessage.php">
+            <input type=text placeholder="Name"
+              class="w-full p-2 rounded-lg border-2 border-stone-200 text-neutral-600">
+            <input type=text placeholder="E-Mail"
+              class="w-full p-2 rounded-lg border-2 border-stone-200 text-neutral-600">
+            <input type=text placeholder="Telefon"
+              class="w-full p-2 rounded-lg border-2 border-stone-200 text-neutral-600">
+            <textarea placeholder="Nachricht"
+              class="w-full p-2 rounded-lg border-2 border-stone-200 text-neutral-600 h-20"></textarea>
             <button class="bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-lg p-2 text-white">Senden</button>
           </form>
         </section>
