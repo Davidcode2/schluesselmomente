@@ -1,9 +1,11 @@
-.icon-1, .icon-2, .icon-3 {
-    position: absolute;
-    width: 32px;
-    height: 3px;
-    background-color: white;
-    transition: all 400ms cubic-bezier(.84,.06,.52,1.8);
+.icon-1,
+.icon-2,
+.icon-3 {
+  position: absolute;
+  width: 32px;
+  height: 3px;
+  background-color: white;
+  transition: all 400ms cubic-bezier(0.84, 0.06, 0.52, 1.8);
 }
 
 .icon-1 {
@@ -43,10 +45,31 @@
     // transform: scale(.3);
     opacity: 0;
   }
-  
+
   100% {
     width: 50%;
     // transform:scale(1);
     opacity: 1;
   }
+}
+
+.pattern {
+  background: repeating-radial-gradient(
+      circle,
+      transparent,
+      transparent 9.1px,
+      #cce6cc 9.1px,
+      #cce6cc 11.7px
+    ),
+    repeating-radial-gradient(
+      circle,
+      transparent,
+      transparent 9.1px,
+      #cce6cc 9.1px,
+      #cce6cc 11.7px
+    ),
+    #ffffff;
+  background-size: 52px 52px;
+  background-position: 0 0, 26px 26px, 52px 26px;
+  background-color: #ffffff;
 }
