@@ -599,6 +599,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .inline {
   display: inline;
 }
@@ -627,6 +631,14 @@ video {
   height: 14rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .max-h-10 {
   max-height: 2.5rem;
 }
@@ -639,12 +651,32 @@ video {
   max-height: 14rem;
 }
 
+.max-h-6 {
+  max-height: 1.5rem;
+}
+
+.max-h-16 {
+  max-height: 4rem;
+}
+
 .w-60 {
   width: 15rem;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.shrink {
+  flex-shrink: 1;
 }
 
 .rotate-180 {
@@ -666,6 +698,10 @@ video {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-\[40px_1fr_40px\] {
+  grid-template-columns: 40px 1fr 40px;
 }
 
 .flex-col {
@@ -708,8 +744,16 @@ video {
   gap: 1.25rem;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .justify-self-end {
   justify-self: end;
+}
+
+.justify-self-center {
+  justify-self: center;
 }
 
 .scroll-smooth {
@@ -900,6 +944,10 @@ video {
   padding: 5rem;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
@@ -928,6 +976,11 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pb-10 {
@@ -986,6 +1039,14 @@ video {
   padding-top: 10rem;
 }
 
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1039,6 +1100,10 @@ video {
 
 .font-thin {
   font-weight: 100;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .tracking-widest {
@@ -1224,6 +1289,10 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-\[100px_1fr_100px\] {
+    grid-template-columns: 100px 1fr 100px;
+  }
+
   .lg\:p-16 {
     padding: 4rem;
   }
@@ -1234,6 +1303,10 @@ video {
 
   .lg\:p-40 {
     padding: 10rem;
+  }
+
+  .lg\:p-10 {
+    padding: 2.5rem;
   }
 
   .lg\:px-32 {
@@ -1256,6 +1329,10 @@ video {
 
   .lg\:pt-0 {
     padding-top: 0px;
+  }
+
+  .lg\:pt-16 {
+    padding-top: 4rem;
   }
 
   .lg\:text-2xl {

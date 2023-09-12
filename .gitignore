@@ -27,3 +27,4 @@ isolate*.log
 
 text.md
 *.docx
+*.xcf
