@@ -676,8 +676,29 @@ video {
   width: 5rem;
 }
 
+.rotate-90 {
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .list-\[square\] {
   list-style-type: square;
+}
+
+.list-image-\[url\(\'assets\/icons8-checkmark-48\.png\'\)\] {
+  list-style-image: url('assets/icons8-checkmark-48.png');
+}
+
+.list-image-\[url\(\'\.\/assets\/icons8-checkmark-48\.png\'\)\] {
+  list-style-image: url('./assets/icons8-checkmark-48.png');
+}
+
+.list-image-none {
+  list-style-image: none;
+}
+
+.list-image-\[url\(\'\.\/assets\/output\.png\'\)\] {
+  list-style-image: url('./assets/output.png');
 }
 
 .grid-cols-2 {
@@ -857,6 +878,20 @@ video {
   background-color: rgb(24 112 92 / 0.75);
 }
 
+.bg-stone-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 229 228 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#18705c\]\/50 {
+  background-color: rgb(24 112 92 / 0.5);
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
@@ -1001,6 +1036,10 @@ video {
   padding: 2rem;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
@@ -1061,6 +1100,16 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1107,6 +1156,18 @@ video {
 
 .pt-16 {
   padding-top: 4rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
+.pl-16 {
+  padding-left: 4rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .text-center {
@@ -1246,6 +1307,11 @@ video {
   color: rgb(68 64 60 / var(--tw-text-opacity));
 }
 
+.text-stone-100 {
+  --tw-text-opacity: 1;
+  color: rgb(245 245 244 / var(--tw-text-opacity));
+}
+
 .bg-blend-normal {
   background-blend-mode: normal;
 }
@@ -1374,6 +1440,16 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.grayscale {
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.sepia {
+  --tw-sepia: sepia(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .backdrop-blur-sm {
   --tw-backdrop-blur: blur(4px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -1397,6 +1473,20 @@ video {
 }
 
 @media (hover: hover) and (pointer: fine) {
+  .hover\:top-1:hover {
+    top: 0.25rem;
+  }
+
+  .hover\:scale-105:hover {
+    --tw-scale-x: 1.05;
+    --tw-scale-y: 1.05;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .hover\:list-image-\[url\(\'\.\/assets\/icons8-checkmark-48\.png\'\)\]:hover {
+    list-style-image: url('./assets/icons8-checkmark-48.png');
+  }
+
   .hover\:border-b-2:hover {
     border-bottom-width: 2px;
   }
@@ -1526,13 +1616,30 @@ video {
     padding: 5rem;
   }
 
+  .lg\:p-32 {
+    padding: 8rem;
+  }
+
   .lg\:px-40 {
     padding-left: 10rem;
     padding-right: 10rem;
   }
 
+  .lg\:py-40 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
   .lg\:pl-16 {
     padding-left: 4rem;
+  }
+
+  .lg\:pb-40 {
+    padding-bottom: 10rem;
+  }
+
+  .lg\:pb-32 {
+    padding-bottom: 8rem;
   }
 
   .lg\:text-2xl {
