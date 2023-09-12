@@ -26,3 +26,4 @@ isolate*.log
 /tests/evaluate-tailwind-functions.test.html
 
 text.md
+*.docx
