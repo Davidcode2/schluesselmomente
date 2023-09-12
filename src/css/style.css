@@ -73,3 +73,23 @@
   background-position: 0 0, 26px 26px, 52px 26px;
   background-color: #ffffff;
 }
+
+.reference-display-disc-inactive {
+  color: grey;
+  width: 10px;
+  height: 10px;
+  background-color: grey;
+  border-radius: 100%;
+  padding: 2px;
+  margin: 10px;
+}
+
+.reference-display-disc-active {
+  color: #18705c;
+  width: 10px;
+  height: 10px;
+  background-color: #18705c;;
+  border-radius: 100%;
+  padding: 2px;
+  margin: 10px;
+}

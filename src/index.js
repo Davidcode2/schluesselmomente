@@ -45,3 +45,55 @@ function screenTest(e) {
 mql.addEventListener("change", screenTest);
 
 screenTest(mql);
+
+let reference1 = document.getElementById('reference1');
+let reference2 = document.getElementById('reference2');
+let reference3 = document.getElementById('reference3');
+
+let references = [reference1, reference2, reference3];
+let indexCurrentReference = 0;
+
+
+let referenceDisplayDiscList = document.getElementById('reference-display-discs');
+let activeReferenceDisplayDisc = null;
+let referenceDisplayDiscs = []
+
+for (let i = 0; i < references.length; i++) {
+  let disc = document.createElement('li');
+  disc.classList.add('reference-display-disc-inactive');
+  if (i == 0) {
+    disc.classList.add('reference-display-disc-active');
+    activeReferenceDisplayDisc = disc;
+  }
+  referenceDisplayDiscList.appendChild(disc);
+  referenceDisplayDiscs.push(disc);
+}
+
+let nextReferenceButton = document.getElementById('next-reference-btn');
+let previousReferenceButton = document.getElementById('previous-reference-btn');
+
+nextReferenceButton.addEventListener('click', function() {
+  references[indexCurrentReference].classList.add('hidden');
+
+  activeReferenceDisplayDisc.classList.remove('reference-display-disc-active');
+  activeReferenceDisplayDisc.classList.add('reference-display-disc-inactive');
+
+  indexCurrentReference = (indexCurrentReference + 1) % references.length;
+  activeReferenceDisplayDisc = referenceDisplayDiscs[indexCurrentReference];
+
+  references[indexCurrentReference].classList.remove('hidden');
+  activeReferenceDisplayDisc.classList.add('reference-display-disc-active');
+});
+
+previousReferenceButton.addEventListener('click', function() {
+  references[indexCurrentReference].classList.add('hidden');
+
+  activeReferenceDisplayDisc.classList.remove('reference-display-disc-active');
+  activeReferenceDisplayDisc.classList.add('reference-display-disc-inactive');
+
+  indexCurrentReference = (indexCurrentReference - 1 + references.length) % references.length;
+  activeReferenceDisplayDisc = referenceDisplayDiscs[indexCurrentReference];
+
+  references[indexCurrentReference].classList.remove('hidden');
+  activeReferenceDisplayDisc.classList.add('reference-display-disc-active');
+});
