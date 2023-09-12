@@ -28,5 +28,4 @@ isolate*.log
 text.md
 *.docx
 *.xcf
-/dist/assets
-/assets
+ignored_assets
