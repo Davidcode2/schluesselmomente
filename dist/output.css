@@ -1121,6 +1121,10 @@ video {
   padding-top: 1.5rem;
 }
 
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1342,6 +1346,10 @@ video {
     grid-column-start: 3;
   }
 
+  .md\:-mb-28 {
+    margin-bottom: -7rem;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1418,6 +1426,18 @@ video {
 
   .lg\:p-40 {
     padding: 10rem;
+  }
+
+  .lg\:p-28 {
+    padding: 7rem;
+  }
+
+  .lg\:p-20 {
+    padding: 5rem;
+  }
+
+  .lg\:p-24 {
+    padding: 6rem;
   }
 
   .lg\:px-32 {
