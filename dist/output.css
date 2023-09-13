@@ -590,13 +590,30 @@ video {
   grid-column-start: 1;
 }
 
+.col-end-2 {
+  grid-column-end: 2;
+}
+
+.col-end-3 {
+  grid-column-end: 3;
+}
+
 .row-span-4 {
   grid-row: span 4 / span 4;
+}
+
+.row-start-1 {
+  grid-row-start: 1;
 }
 
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .-mb-28 {
@@ -695,6 +712,10 @@ video {
 
 .grid-cols-\[40px_1fr_40px\] {
   grid-template-columns: 40px 1fr 40px;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1051,6 +1072,10 @@ video {
   background-image: url('./assets/beraterin_small.png');
 }
 
+.bg-\[url\(\'\.\/assets\/beraterin_phone\.png\'\)\] {
+  background-image: url('./assets/beraterin_phone.png');
+}
+
 .from-\[\#18705c\] {
   --tw-gradient-from: #18705c var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(24 112 92 / 0) var(--tw-gradient-to-position);
@@ -1356,6 +1381,16 @@ video {
   color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
+.text-stone-200 {
+  --tw-text-opacity: 1;
+  color: rgb(231 229 228 / var(--tw-text-opacity));
+}
+
+.text-stone-900 {
+  --tw-text-opacity: 1;
+  color: rgb(28 25 23 / var(--tw-text-opacity));
+}
+
 .shadow-hard {
   --tw-shadow: 30px 30px rgba(0, 0, 0, 1);
   --tw-shadow-colored: 30px 30px var(--tw-shadow-color);
@@ -1443,6 +1478,28 @@ video {
   }
 }
 
+@media (min-width: 640px) {
+  .sm\:bg-\[url\(\'\.\/assets\/beraterin_phone\.png\'\)\] {
+    background-image: url('./assets/beraterin_phone.png');
+  }
+
+  .sm\:bg-top {
+    background-position: top;
+  }
+
+  .sm\:bg-right {
+    background-position: right;
+  }
+
+  .sm\:bg-center {
+    background-position: center;
+  }
+
+  .sm\:bg-bottom {
+    background-position: bottom;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:col-start-1 {
     grid-column-start: 1;
@@ -1463,6 +1520,58 @@ video {
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  .md\:bg-\[url\(\'\.\/assets\/beraterin_small\.png\'\)\] {
+    background-image: url('./assets/beraterin_small.png');
+  }
+
+  .md\:bg-\[url\(\'\.\/assets\/beraterin_phone\.png\'\)\] {
+    background-image: url('./assets/beraterin_phone.png');
+  }
+
+  .md\:bg-left {
+    background-position: left;
+  }
+
+  .md\:bg-bottom {
+    background-position: bottom;
+  }
+
+  .md\:bg-top {
+    background-position: top;
+  }
+
+  .md\:bg-left-top {
+    background-position: left top;
+  }
+
+  .md\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .md\:pb-32 {
+    padding-bottom: 8rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-stone-800 {
+    --tw-text-opacity: 1;
+    color: rgb(41 37 36 / var(--tw-text-opacity));
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1476,6 +1585,11 @@ video {
 
   .lg\:top-40 {
     top: 10rem;
+  }
+
+  .lg\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .lg\:-mb-48 {
@@ -1504,6 +1618,10 @@ video {
 
   .lg\:grid-cols-\[200px_1fr\] {
     grid-template-columns: 200px 1fr;
+  }
+
+  .lg\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .lg\:bg-\[url\(\'\.\/assets\/beraterin_large_elongated\.png\'\)\] {
@@ -1536,6 +1654,10 @@ video {
 
   .lg\:p-40 {
     padding: 10rem;
+  }
+
+  .lg\:p-0 {
+    padding: 0px;
   }
 
   .lg\:px-32 {
@@ -1586,6 +1708,11 @@ video {
 
   .lg\:font-thin {
     font-weight: 100;
+  }
+
+  .lg\:text-stone-800 {
+    --tw-text-opacity: 1;
+    color: rgb(41 37 36 / var(--tw-text-opacity));
   }
 }
 
