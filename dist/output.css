@@ -787,6 +787,11 @@ video {
   border-bottom-left-radius: 0.75rem;
 }
 
+.rounded-b-xl {
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -1479,6 +1484,11 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:rounded-b-xl {
+    border-bottom-right-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+  }
+
   .sm\:bg-\[url\(\'\.\/assets\/beraterin_phone\.png\'\)\] {
     background-image: url('./assets/beraterin_phone.png');
   }
@@ -1519,6 +1529,11 @@ video {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:rounded-b-xl {
+    border-bottom-right-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
   }
 
   .md\:bg-\[url\(\'\.\/assets\/beraterin_small\.png\'\)\] {
@@ -1622,6 +1637,18 @@ video {
 
   .lg\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .lg\:rounded-none {
+    border-radius: 0px;
+  }
+
+  .lg\:rounded-br-xl {
+    border-bottom-right-radius: 0.75rem;
+  }
+
+  .lg\:rounded-bl-none {
+    border-bottom-left-radius: 0px;
   }
 
   .lg\:bg-\[url\(\'\.\/assets\/beraterin_large_elongated\.png\'\)\] {
