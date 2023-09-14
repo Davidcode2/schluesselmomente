@@ -590,30 +590,12 @@ video {
   grid-column-start: 1;
 }
 
-.col-end-2 {
-  grid-column-end: 2;
-}
-
 .col-end-3 {
   grid-column-end: 3;
 }
 
 .row-span-4 {
   grid-row: span 4 / span 4;
-}
-
-.row-start-1 {
-  grid-row-start: 1;
-}
-
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 .-mb-28 {
@@ -656,16 +638,12 @@ video {
   height: 15rem;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-64 {
-  height: 16rem;
-}
-
 .h-96 {
   height: 24rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .max-h-10 {
@@ -706,16 +684,16 @@ video {
   list-style-type: disc;
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-cols-\[40px_1fr_40px\] {
   grid-template-columns: 40px 1fr 40px;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -782,13 +760,13 @@ video {
   border-radius: 0.75rem;
 }
 
-.rounded-l-xl {
-  border-top-left-radius: 0.75rem;
+.rounded-b-xl {
+  border-bottom-right-radius: 0.75rem;
   border-bottom-left-radius: 0.75rem;
 }
 
-.rounded-b-xl {
-  border-bottom-right-radius: 0.75rem;
+.rounded-l-xl {
+  border-top-left-radius: 0.75rem;
   border-bottom-left-radius: 0.75rem;
 }
 
@@ -823,11 +801,6 @@ video {
   border-color: rgb(168 162 158 / var(--tw-border-opacity));
 }
 
-.bg-\[\#127138\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(18 113 56 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#18705c\] {
   --tw-bg-opacity: 1;
   background-color: rgb(24 112 92 / var(--tw-bg-opacity));
@@ -841,14 +814,24 @@ video {
   background-color: rgb(24 112 92 / 0.75);
 }
 
-.bg-\[\#188072\] {
+.bg-\[\#245E5B\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(24 128 114 / var(--tw-bg-opacity));
+  background-color: rgb(36 94 91 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#1A8777\] {
+.bg-\[\#2E7874\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(26 135 119 / var(--tw-bg-opacity));
+  background-color: rgb(46 120 116 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#328580\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(50 133 128 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#399692\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(57 150 146 / var(--tw-bg-opacity));
 }
 
 .bg-emerald-300 {
@@ -890,171 +873,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#1A8756\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 135 86 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#1A8788\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 135 136 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#A27138\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(162 113 56 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#1A8770\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 135 112 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#227143\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 113 67 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#227148\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 113 72 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#227161\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 113 97 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#2E7874\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(46 120 116 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#399692\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(57 150 146 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#43B0AA\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(67 176 170 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#12B0AA\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(18 176 170 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#12B8AA\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(18 184 170 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#1AA8AA\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 168 170 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#1AC8AA\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 200 170 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#1AB89A\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 184 154 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#1AB8BA\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 184 186 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#1AB8CA\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 184 202 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#1AB8DA\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 184 218 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#1AB8B1\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 184 177 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#1AB8B8\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 184 184 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#1AB8B0\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 184 176 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#1AB8A0\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 184 160 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#1AB8A9\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 184 169 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#1AB8AF\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 184 175 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#1BB8A0\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(27 184 160 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#43A4AA\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(67 164 170 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#3E999E\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(62 153 158 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#3EA19E\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(62 161 158 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#48BDB7\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(72 189 183 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#328580\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(50 133 128 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#245E5B\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(36 94 91 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#\] {
-  background-color: #;
-}
-
 .bg-\[url\(\'\.\/assets\/beraterin_full_body\.jpg\'\)\] {
   background-image: url('./assets/beraterin_full_body.jpg');
 }
 
-.bg-\[url\(\'\.\/assets\/beraterin_very_elongated_fade_white\.png\'\)\] {
-  background-image: url('./assets/beraterin_very_elongated_fade_white.png');
+.bg-\[url\(\'\.\/assets\/beraterin_phone\.png\'\)\] {
+  background-image: url('./assets/beraterin_phone.png');
 }
 
 .bg-gradient-to-b {
@@ -1063,22 +887,6 @@ video {
 
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\.\/assets\/beraterin_large_elongated\.png\'\)\] {
-  background-image: url('./assets/beraterin_large_elongated.png');
-}
-
-.bg-\[url\(\'\.\/assets\/2020-05-14Stadtpiraten-MA-34\.jpg\'\)\] {
-  background-image: url('./assets/2020-05-14Stadtpiraten-MA-34.jpg');
-}
-
-.bg-\[url\(\'\.\/assets\/beraterin_small\.png\'\)\] {
-  background-image: url('./assets/beraterin_small.png');
-}
-
-.bg-\[url\(\'\.\/assets\/beraterin_phone\.png\'\)\] {
-  background-image: url('./assets/beraterin_phone.png');
 }
 
 .from-\[\#18705c\] {
@@ -1115,20 +923,8 @@ video {
   background-size: cover;
 }
 
-.bg-bottom {
-  background-position: bottom;
-}
-
 .bg-center {
   background-position: center;
-}
-
-.bg-left {
-  background-position: left;
-}
-
-.bg-right {
-  background-position: right;
 }
 
 .bg-no-repeat {
@@ -1212,10 +1008,6 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.pb-32 {
-  padding-bottom: 8rem;
-}
-
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -1240,10 +1032,6 @@ video {
   padding-top: 2.5rem;
 }
 
-.pt-16 {
-  padding-top: 4rem;
-}
-
 .pt-20 {
   padding-top: 5rem;
 }
@@ -1258,10 +1046,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pb-0 {
-  padding-bottom: 0px;
 }
 
 .text-center {
@@ -1376,6 +1160,11 @@ video {
   color: rgb(41 37 36 / var(--tw-text-opacity));
 }
 
+.text-stone-900 {
+  --tw-text-opacity: 1;
+  color: rgb(28 25 23 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1384,16 +1173,6 @@ video {
 .text-yellow-400 {
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity));
-}
-
-.text-stone-200 {
-  --tw-text-opacity: 1;
-  color: rgb(231 229 228 / var(--tw-text-opacity));
-}
-
-.text-stone-900 {
-  --tw-text-opacity: 1;
-  color: rgb(28 25 23 / var(--tw-text-opacity));
 }
 
 .shadow-hard {
@@ -1405,12 +1184,6 @@ video {
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-md {
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1484,29 +1257,12 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:rounded-b-xl {
-    border-bottom-right-radius: 0.75rem;
-    border-bottom-left-radius: 0.75rem;
-  }
-
-  .sm\:bg-\[url\(\'\.\/assets\/beraterin_phone\.png\'\)\] {
-    background-image: url('./assets/beraterin_phone.png');
-  }
-
-  .sm\:bg-top {
-    background-position: top;
-  }
-
-  .sm\:bg-right {
-    background-position: right;
+  .sm\:bg-\[url\(\'\.\/assets\/beraterin_small\.png\'\)\] {
+    background-image: url('./assets/beraterin_small.png');
   }
 
   .sm\:bg-center {
     background-position: center;
-  }
-
-  .sm\:bg-bottom {
-    background-position: bottom;
   }
 }
 
@@ -1531,56 +1287,25 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .md\:rounded-b-xl {
-    border-bottom-right-radius: 0.75rem;
-    border-bottom-left-radius: 0.75rem;
-  }
-
   .md\:bg-\[url\(\'\.\/assets\/beraterin_small\.png\'\)\] {
     background-image: url('./assets/beraterin_small.png');
-  }
-
-  .md\:bg-\[url\(\'\.\/assets\/beraterin_phone\.png\'\)\] {
-    background-image: url('./assets/beraterin_phone.png');
-  }
-
-  .md\:bg-left {
-    background-position: left;
-  }
-
-  .md\:bg-bottom {
-    background-position: bottom;
-  }
-
-  .md\:bg-top {
-    background-position: top;
   }
 
   .md\:bg-left-top {
     background-position: left top;
   }
 
-  .md\:pt-16 {
-    padding-top: 4rem;
-  }
-
   .md\:pb-32 {
     padding-bottom: 8rem;
   }
 
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .md\:pt-16 {
+    padding-top: 4rem;
   }
 
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 
   .md\:text-stone-800 {
@@ -1619,6 +1344,10 @@ video {
     max-height: 8rem;
   }
 
+  .lg\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1635,10 +1364,6 @@ video {
     grid-template-columns: 200px 1fr;
   }
 
-  .lg\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-
   .lg\:rounded-none {
     border-radius: 0px;
   }
@@ -1647,20 +1372,16 @@ video {
     border-bottom-right-radius: 0.75rem;
   }
 
-  .lg\:rounded-bl-none {
-    border-bottom-left-radius: 0px;
-  }
-
-  .lg\:bg-\[url\(\'\.\/assets\/beraterin_large_elongated\.png\'\)\] {
-    background-image: url('./assets/beraterin_large_elongated.png');
-  }
-
   .lg\:bg-\[url\(\'\.\/assets\/beraterin_very_elongated_fade_white\.png\'\)\] {
     background-image: url('./assets/beraterin_very_elongated_fade_white.png');
   }
 
   .lg\:bg-bottom {
     background-position: bottom;
+  }
+
+  .lg\:p-0 {
+    padding: 0px;
   }
 
   .lg\:p-10 {
@@ -1683,10 +1404,6 @@ video {
     padding: 10rem;
   }
 
-  .lg\:p-0 {
-    padding: 0px;
-  }
-
   .lg\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
@@ -1695,11 +1412,6 @@ video {
   .lg\:px-40 {
     padding-left: 10rem;
     padding-right: 10rem;
-  }
-
-  .lg\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .lg\:pb-32 {
@@ -1735,17 +1447,6 @@ video {
 
   .lg\:font-thin {
     font-weight: 100;
-  }
-
-  .lg\:text-stone-800 {
-    --tw-text-opacity: 1;
-    color: rgb(41 37 36 / var(--tw-text-opacity));
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:bg-\[url\(\'\.\/assets\/beraterin_large_elongated\.png\'\)\] {
-    background-image: url('./assets/beraterin_large_elongated.png');
   }
 }
 
