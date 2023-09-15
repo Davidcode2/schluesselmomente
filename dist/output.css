@@ -873,8 +873,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\/assets\/beraterin_full_body\.jpg\'\)\] {
-  background-image: url('./assets/beraterin_full_body.jpg');
+.bg-\[url\(\'\.\/assets\/beraterin_full_body_smooth\.jpg\'\)\] {
+  background-image: url('./assets/beraterin_full_body_smooth.jpg');
 }
 
 .bg-\[url\(\'\.\/assets\/beraterin_phone\.png\'\)\] {
@@ -887,10 +887,6 @@ video {
 
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\.\/assets\/beraterin_full_body_smooth\.jpg\'\)\] {
-  background-image: url('./assets/beraterin_full_body_smooth.jpg');
 }
 
 .from-\[\#18705c\] {
