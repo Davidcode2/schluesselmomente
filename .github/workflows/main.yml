@@ -1,0 +1,12 @@
+name: deploy_on_push
+on: [push]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: install node dependencies
+        run: ls
+
+  
