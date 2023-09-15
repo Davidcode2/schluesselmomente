@@ -25,13 +25,13 @@ jobs:
           # Source directory, path relative to `$GITHUB_WORKSPACE` root, eg: `dist/`
           #SOURCE: # optional, default is 
           # Target directory
-          #TARGET: # optional, default is 
+          TARGET: domains/schluesselmomente-freiburg.de/public_html
           # Arguments to pass to rsync
           #ARGS: # optional, default is -rlgoDzvc -i
           # An array of ssh arguments, they must be prefixed with -o and separated by a comma, for example: -o SomeArgument=no, -o SomeOtherArgument=5 
           #SSH_CMD_ARGS: # optional, default is -o StrictHostKeyChecking=no
           # paths to exclude separated by `,`, ie: `/dist/, /node_modules/`
-          #EXCLUDE: # optional, default is 
+          EXCLUDE: /.git/, .gitignore, .github
           # Script to run on host machine before rsync
           #SCRIPT_BEFORE: # optional, default is 
           # Script to run on host machine after rsync
