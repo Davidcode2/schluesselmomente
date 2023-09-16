@@ -97,3 +97,15 @@ previousReferenceButton.addEventListener('click', function() {
   references[indexCurrentReference].classList.remove('hidden');
   activeReferenceDisplayDisc.classList.add('reference-display-disc-active');
 });
+
+let form = document.getElementById('kontakt-form')
+form.addEventListener('submit', function(e) {
+  let url = "sendMessage.php";
+  let request = new XMLHttpRequest();
+  request.open("POST", url, true);
+  request.onload = function() {
+    console.log(request.responseText);
+  }
+  request.send(new FormData(e.target));
+  e.preventDefault();
+});

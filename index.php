@@ -335,7 +335,7 @@
           <section id="kontakt" class="p-8 lg:px-32 lg:pb-32">
             <h2 class="text-center text-3xl lg:text-7xl pb-10 font-thin text-stone-100">
               Kontakt</h2>
-            <form class="grid gap-5" method="post" action="sendMessage.php">
+            <form id="kontakt-form" class="grid gap-5" method="post">
               <input type="text" placeholder="Name" name="name" maxlength="50"
                 class="w-full p-2  border-2 border-stone-200 text-neutral-600 rounded-lg">
               <input type="email" placeholder="E-Mail" name="email" maxlength="70" required
