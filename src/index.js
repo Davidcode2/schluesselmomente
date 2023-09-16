@@ -112,7 +112,6 @@ form.addEventListener('submit', function (e) {
   };
   formData = new FormData(e.target);
   request.send(formData);
-  console.log(formData);
   e.preventDefault();
 });
 
