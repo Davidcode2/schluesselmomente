@@ -336,13 +336,13 @@
             <h2 class="text-center text-3xl lg:text-7xl pb-10 font-thin text-stone-100">
               Kontakt</h2>
             <form class="grid gap-5" action="sendMessage.php">
-              <input type=text placeholder="Name" name="name"
+              <input type="text" placeholder="Name" name="name" maxlength="50"
                 class="w-full p-2  border-2 border-stone-200 text-neutral-600 rounded-lg">
-              <input type=text placeholder="E-Mail" name="email"
+              <input type="email" placeholder="E-Mail" name="email" maxlength="70" required
                 class="w-full p-2  border-2 border-stone-200 text-neutral-600 rounded-lg">
-              <input type=text placeholder="Telefon" name="phone"
+              <input type="phone" placeholder="Telefon" name="phone" 
                 class="w-full p-2  border-2 border-stone-200 text-neutral-600 rounded-lg">
-              <textarea placeholder="Nachricht" name="message"
+              <textarea placeholder="Nachricht" name="message" required maxlength="1000"
                 class="w-full p-2  border-2 border-stone-200 text-neutral-600 h-20 rounded-lg"></textarea>
               <div class="bg-white flex justify-center rounded-lg">
                 <button
@@ -350,7 +350,6 @@
               </div>
             </form>
           </section>
-
 
           <section id="karte" class="p-8 lg:px-32 lg:pb-32">
             <iframe class="w-full h-96 rounded-lg" frameborder="0" style="border:0"
