@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,10 +10,12 @@
     <link href="./src/css/style.css" rel="stylesheet">
   </head>
   <body>
-    Hello there,
-
+    <div> Hello there,<br><br>
     this is a test message inside a php file.
+    <div>
 
-    Best regards
+    <?php echo "<p>Hello World</p>"; ?>
+
+    <p>Best regards</p>
   </body>
 </html>
