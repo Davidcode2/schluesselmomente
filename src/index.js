@@ -1,31 +1,30 @@
-let backToTopButton = document.querySelector("#back-to-top-btn");
+let backToTopButton = document.querySelector('#back-to-top-btn');
 
-window.addEventListener("scroll", (event) => {
+window.addEventListener('scroll', (event) => {
   if (this.scrollY > 400) {
-    backToTopButton.classList.remove("hidden");
-  }
-  else {
-    backToTopButton.classList.add("hidden");
+    backToTopButton.classList.remove('hidden');
+  } else {
+    backToTopButton.classList.add('hidden');
   }
 });
 
-var icon = document.getElementById("icon");
-var icon1 = document.getElementById("a");
-var icon2 = document.getElementById("b");
-var icon3 = document.getElementById("c");
+var icon = document.getElementById('icon');
+var icon1 = document.getElementById('a');
+var icon2 = document.getElementById('b');
+var icon3 = document.getElementById('c');
 var nav = document.getElementById('nav');
 
 let navFlex = document.getElementById('nav-flex');
 
-icon.addEventListener('click', function() {
+icon.addEventListener('click', function () {
   icon1.classList.toggle('a');
   icon2.classList.toggle('c');
   icon3.classList.toggle('b');
   nav.classList.toggle('hidden');
 });
 
-const para = document.querySelector("p");
-const mql = window.matchMedia("(max-width: 600px)");
+const para = document.querySelector('p');
+const mql = window.matchMedia('(max-width: 600px)');
 
 function screenTest(e) {
   if (e.matches) {
@@ -42,7 +41,7 @@ function screenTest(e) {
   }
 }
 
-mql.addEventListener("change", screenTest);
+mql.addEventListener('change', screenTest);
 
 screenTest(mql);
 
@@ -53,10 +52,11 @@ let reference3 = document.getElementById('reference3');
 let references = [reference1, reference2, reference3];
 let indexCurrentReference = 0;
 
-
-let referenceDisplayDiscList = document.getElementById('reference-display-discs');
+let referenceDisplayDiscList = document.getElementById(
+  'reference-display-discs'
+);
 let activeReferenceDisplayDisc = null;
-let referenceDisplayDiscs = []
+let referenceDisplayDiscs = [];
 
 for (let i = 0; i < references.length; i++) {
   let disc = document.createElement('li');
@@ -72,7 +72,7 @@ for (let i = 0; i < references.length; i++) {
 let nextReferenceButton = document.getElementById('next-reference-btn');
 let previousReferenceButton = document.getElementById('previous-reference-btn');
 
-nextReferenceButton.addEventListener('click', function() {
+nextReferenceButton.addEventListener('click', function () {
   references[indexCurrentReference].classList.add('hidden');
 
   activeReferenceDisplayDisc.classList.remove('reference-display-disc-active');
@@ -85,27 +85,33 @@ nextReferenceButton.addEventListener('click', function() {
   activeReferenceDisplayDisc.classList.add('reference-display-disc-active');
 });
 
-previousReferenceButton.addEventListener('click', function() {
+previousReferenceButton.addEventListener('click', function () {
   references[indexCurrentReference].classList.add('hidden');
 
   activeReferenceDisplayDisc.classList.remove('reference-display-disc-active');
   activeReferenceDisplayDisc.classList.add('reference-display-disc-inactive');
 
-  indexCurrentReference = (indexCurrentReference - 1 + references.length) % references.length;
+  indexCurrentReference =
+    (indexCurrentReference - 1 + references.length) % references.length;
   activeReferenceDisplayDisc = referenceDisplayDiscs[indexCurrentReference];
 
   references[indexCurrentReference].classList.remove('hidden');
   activeReferenceDisplayDisc.classList.add('reference-display-disc-active');
 });
 
-let form = document.getElementById('kontakt-form')
-form.addEventListener('submit', function(e) {
-  let url = "sendMessage.php";
+let form = document.getElementById('kontakt-form');
+form.addEventListener('submit', function (e) {
+  let url = 'sendMessage.php';
   let request = new XMLHttpRequest();
-  request.open("POST", url, true);
-  request.onload = function() {
+  request.open('POST', url, true);
+  request.onload = function () {
     console.log(request.responseText);
-  }
-  request.send(new FormData(e.target));
+  };
+  request.onerror = function () {
+    console.log('request failed ', request, e);
+  };
+  formData = new FormData(e.target);
+  request.send(formData);
+  console.log(formData);
   e.preventDefault();
 });
