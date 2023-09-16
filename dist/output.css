@@ -534,6 +534,18 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .absolute {
   position: absolute;
 }
@@ -598,6 +610,16 @@ video {
   grid-row: span 4 / span 4;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .-mb-28 {
   margin-bottom: -7rem;
 }
@@ -644,6 +666,14 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.h-64 {
+  height: 16rem;
 }
 
 .max-h-10 {
@@ -1108,6 +1138,10 @@ video {
   font-weight: 100;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .italic {
   font-style: italic;
 }
@@ -1328,6 +1362,11 @@ video {
     margin-bottom: 1rem;
   }
 
+  .lg\:mx-32 {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+
   .lg\:-mb-48 {
     margin-bottom: -12rem;
   }
@@ -1410,6 +1449,11 @@ video {
     padding-right: 10rem;
   }
 
+  .lg\:px-96 {
+    padding-left: 24rem;
+    padding-right: 24rem;
+  }
+
   .lg\:pb-32 {
     padding-bottom: 8rem;
   }
@@ -1443,6 +1487,13 @@ video {
 
   .lg\:font-thin {
     font-weight: 100;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:px-96 {
+    padding-left: 24rem;
+    padding-right: 24rem;
   }
 }
 

@@ -105,7 +105,7 @@ form.addEventListener('submit', function (e) {
   let request = new XMLHttpRequest();
   request.open('POST', url, true);
   request.onload = function () {
-    console.log(request.responseText);
+    displaySuccessMessage();
   };
   request.onerror = function () {
     console.log('request failed ', request, e);
@@ -115,3 +115,8 @@ form.addEventListener('submit', function (e) {
   console.log(formData);
   e.preventDefault();
 });
+
+function displaySuccessMessage() {
+  let message = document.getElementById('message-success-message');
+  message.classList.remove('hidden');
+}
