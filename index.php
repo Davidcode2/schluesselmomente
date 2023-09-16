@@ -75,8 +75,6 @@
           </div>
         </div>
       </div>
-      <!--<img src="./assets/pexels-steve-johnson-16385942.jpg" alt="Abstrakte Kunst von Steve Johnson von Pexels"
-        class="relative shadow-hard shadow-emerald-800 lg:top-40 right-5 top-32 lg:left-20 z-0 object-cover object-center mb-32 lg:h-96 w-full">-->
     </section>
 
     <section id="arbeitsweise" class="grid lg:grid-cols-2 gap-10 p-8 lg:p-32 bg-white">
@@ -383,6 +381,8 @@
           <li>
             Fotos von Miri Nussbächer Fotografie
           </li>
+          <li>
+            Icons von <a target="_blank" href="https://icons8.com">Icons8</a> </li>
           <li>
             Homepage von Jakob Lingel
           </li>
