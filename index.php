@@ -25,7 +25,7 @@
     </div>
 
     <nav id="nav">
-      <ul id="nav-flex" class="flex justify-between items-center gap-5 p-8 lg:px-40">
+      <ul id="nav-flex" class="flex justify-center sm:justify-between items-center gap-5 p-8 lg:px-40">
         <img src="assets/Logo_Keyhole_transparent.png" alt="Beiges Schlüsselloch" class="max-h-10">
         <li class="pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
             href="#arbeitsweise">Arbeitsweise</a></li>

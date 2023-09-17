@@ -1,121 +1,142 @@
-let backToTopButton = document.querySelector('#back-to-top-btn');
+backToTop();
+mobileMenu();
+referenceView();
+contactForm();
 
-window.addEventListener('scroll', (event) => {
-  if (this.scrollY > 400) {
-    backToTopButton.classList.remove('hidden');
-  } else {
-    backToTopButton.classList.add('hidden');
-  }
-});
+function backToTop() {
+  let backToTopButton = document.querySelector('#back-to-top-btn');
 
-var icon = document.getElementById('icon');
-var icon1 = document.getElementById('a');
-var icon2 = document.getElementById('b');
-var icon3 = document.getElementById('c');
-var nav = document.getElementById('nav');
-
-let navFlex = document.getElementById('nav-flex');
-
-icon.addEventListener('click', function () {
-  icon1.classList.toggle('a');
-  icon2.classList.toggle('c');
-  icon3.classList.toggle('b');
-  nav.classList.toggle('hidden');
-});
-
-const para = document.querySelector('p');
-const mql = window.matchMedia('(max-width: 600px)');
-
-function screenTest(e) {
-  if (e.matches) {
-    icon.classList.remove('hidden');
-    nav.classList.add('hidden');
-    navFlex.classList.add('flex-col');
-  } else {
-    icon.classList.add('hidden');
-    nav.classList.remove('hidden');
-    navFlex.classList.remove('flex-col');
-    icon1.classList.remove('a');
-    icon2.classList.remove('c');
-    icon3.classList.remove('b');
-  }
+  window.addEventListener('scroll', (event) => {
+    if (this.scrollY > 400) {
+      backToTopButton.classList.remove('hidden');
+    } else {
+      backToTopButton.classList.add('hidden');
+    }
+  });
 }
 
-mql.addEventListener('change', screenTest);
+function mobileMenu() {
+  var icon = document.getElementById('icon');
+  var icon1 = document.getElementById('a');
+  var icon2 = document.getElementById('b');
+  var icon3 = document.getElementById('c');
+  var nav = document.getElementById('nav');
 
-screenTest(mql);
+  let navFlex = document.getElementById('nav-flex');
 
-let reference1 = document.getElementById('reference1');
-let reference2 = document.getElementById('reference2');
-let reference3 = document.getElementById('reference3');
+  icon.addEventListener('click', function() {
+    icon1.classList.toggle('a');
+    icon2.classList.toggle('c');
+    icon3.classList.toggle('b');
+    nav.classList.toggle('hidden');
+    navFlex.classList.toggle('h-screen');
+  });
 
-let references = [reference1, reference2, reference3];
-let indexCurrentReference = 0;
+  const para = document.querySelector('p');
+  const mql = window.matchMedia('(max-width: 600px)');
 
-let referenceDisplayDiscList = document.getElementById(
-  'reference-display-discs'
-);
-let activeReferenceDisplayDisc = null;
-let referenceDisplayDiscs = [];
-
-for (let i = 0; i < references.length; i++) {
-  let disc = document.createElement('li');
-  disc.classList.add('reference-display-disc-inactive');
-  if (i == 0) {
-    disc.classList.add('reference-display-disc-active');
-    activeReferenceDisplayDisc = disc;
+  function screenTest(e) {
+    if (e.matches) {
+      icon.classList.remove('hidden');
+      nav.classList.add('hidden');
+      navFlex.classList.add('flex-col');
+    } else {
+      icon.classList.add('hidden');
+      nav.classList.remove('hidden');
+      navFlex.classList.remove('flex-col');
+      navFlex.classList.remove('h-screen');
+      icon1.classList.remove('a');
+      icon2.classList.remove('c');
+      icon3.classList.remove('b');
+    }
   }
-  referenceDisplayDiscList.appendChild(disc);
-  referenceDisplayDiscs.push(disc);
+
+  mql.addEventListener('change', screenTest);
+
+  screenTest(mql);
 }
 
-let nextReferenceButton = document.getElementById('next-reference-btn');
-let previousReferenceButton = document.getElementById('previous-reference-btn');
+function referenceView() {
+  let reference1 = document.getElementById('reference1');
+  let reference2 = document.getElementById('reference2');
+  let reference3 = document.getElementById('reference3');
 
-nextReferenceButton.addEventListener('click', function () {
-  references[indexCurrentReference].classList.add('hidden');
+  let references = [reference1, reference2, reference3];
+  let indexCurrentReference = 0;
 
-  activeReferenceDisplayDisc.classList.remove('reference-display-disc-active');
-  activeReferenceDisplayDisc.classList.add('reference-display-disc-inactive');
+  let referenceDisplayDiscList = document.getElementById(
+    'reference-display-discs'
+  );
+  let activeReferenceDisplayDisc = null;
+  let referenceDisplayDiscs = [];
 
-  indexCurrentReference = (indexCurrentReference + 1) % references.length;
-  activeReferenceDisplayDisc = referenceDisplayDiscs[indexCurrentReference];
+  for (let i = 0; i < references.length; i++) {
+    let disc = document.createElement('li');
+    disc.classList.add('reference-display-disc-inactive');
+    if (i == 0) {
+      disc.classList.add('reference-display-disc-active');
+      activeReferenceDisplayDisc = disc;
+    }
+    referenceDisplayDiscList.appendChild(disc);
+    referenceDisplayDiscs.push(disc);
+  }
 
-  references[indexCurrentReference].classList.remove('hidden');
-  activeReferenceDisplayDisc.classList.add('reference-display-disc-active');
-});
+  let nextReferenceButton = document.getElementById('next-reference-btn');
+  let previousReferenceButton = document.getElementById(
+    'previous-reference-btn'
+  );
 
-previousReferenceButton.addEventListener('click', function () {
-  references[indexCurrentReference].classList.add('hidden');
+  nextReferenceButton.addEventListener('click', function() {
+    references[indexCurrentReference].classList.add('hidden');
 
-  activeReferenceDisplayDisc.classList.remove('reference-display-disc-active');
-  activeReferenceDisplayDisc.classList.add('reference-display-disc-inactive');
+    activeReferenceDisplayDisc.classList.remove(
+      'reference-display-disc-active'
+    );
+    activeReferenceDisplayDisc.classList.add('reference-display-disc-inactive');
 
-  indexCurrentReference =
-    (indexCurrentReference - 1 + references.length) % references.length;
-  activeReferenceDisplayDisc = referenceDisplayDiscs[indexCurrentReference];
+    indexCurrentReference = (indexCurrentReference + 1) % references.length;
+    activeReferenceDisplayDisc = referenceDisplayDiscs[indexCurrentReference];
 
-  references[indexCurrentReference].classList.remove('hidden');
-  activeReferenceDisplayDisc.classList.add('reference-display-disc-active');
-});
+    references[indexCurrentReference].classList.remove('hidden');
+    activeReferenceDisplayDisc.classList.add('reference-display-disc-active');
+  });
 
-let form = document.getElementById('kontakt-form');
-form.addEventListener('submit', function (e) {
-  let url = 'sendMessage.php';
-  let request = new XMLHttpRequest();
-  request.open('POST', url, true);
-  request.onload = function () {
-    displaySuccessMessage();
-  };
-  request.onerror = function () {
-    console.log('request failed ', request, e);
-  };
-  formData = new FormData(e.target);
-  request.send(formData);
-  e.preventDefault();
-});
+  previousReferenceButton.addEventListener('click', function() {
+    references[indexCurrentReference].classList.add('hidden');
 
-function displaySuccessMessage() {
-  let message = document.getElementById('message-success-message');
-  message.classList.remove('hidden');
+    activeReferenceDisplayDisc.classList.remove(
+      'reference-display-disc-active'
+    );
+    activeReferenceDisplayDisc.classList.add('reference-display-disc-inactive');
+
+    indexCurrentReference =
+      (indexCurrentReference - 1 + references.length) % references.length;
+    activeReferenceDisplayDisc = referenceDisplayDiscs[indexCurrentReference];
+
+    references[indexCurrentReference].classList.remove('hidden');
+    activeReferenceDisplayDisc.classList.add('reference-display-disc-active');
+  });
+}
+
+function contactForm() {
+  let form = document.getElementById('kontakt-form');
+  form.addEventListener('submit', function(e) {
+    let url = 'sendMessage.php';
+    let request = new XMLHttpRequest();
+    request.open('POST', url, true);
+    request.onload = function() {
+      displaySuccessMessage();
+    };
+    request.onerror = function() {
+      console.log('request failed ', request, e);
+    };
+    formData = new FormData(e.target);
+    request.send(formData);
+    e.preventDefault();
+  });
+
+  function displaySuccessMessage() {
+    let message = document.getElementById('message-success-message');
+    message.classList.remove('hidden');
+  }
 }
