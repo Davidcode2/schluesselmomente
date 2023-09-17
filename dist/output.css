@@ -595,10 +595,6 @@ video {
   margin-bottom: -7rem;
 }
 
-.ml-32 {
-  margin-left: 8rem;
-}
-
 .ml-auto {
   margin-left: auto;
 }
@@ -1031,14 +1027,6 @@ video {
   padding-top: 2rem;
 }
 
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pt-14 {
-  padding-top: 3.5rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1240,24 +1228,9 @@ video {
   }
 }
 
-@media (min-width: 320px) {
-  .min-\[320px\]\:pt-20 {
-    padding-top: 5rem;
-  }
-}
-
 @media (min-width: 340px) {
-  .min-\[340px\]\:bg-\[url\(\'\.\/assets\/beraterin_small\.png\'\)\] {
-    background-image: url('./assets/beraterin_small.png');
-  }
-
   .min-\[340px\]\:pt-20 {
     padding-top: 5rem;
-  }
-
-  .min-\[340px\]\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .min-\[340px\]\:text-3xl {
@@ -1266,32 +1239,9 @@ video {
   }
 }
 
-@media (min-width: 425px) {
-  .min-\[425px\]\:bg-\[url\(\'\.\/assets\/beraterin_small\.png\'\)\] {
-    background-image: url('./assets/beraterin_small.png');
-  }
-}
-
 @media (min-width: 430px) {
-  .min-\[430px\]\:bg-\[url\(\'\.\/assets\/beraterin_small\.png\'\)\] {
-    background-image: url('./assets/beraterin_small.png');
-  }
-
-  .min-\[430px\]\:bg-center {
-    background-position: center;
-  }
-
-  .min-\[430px\]\:bg-right {
-    background-position: right;
-  }
-
   .min-\[430px\]\:bg-left {
     background-position: left;
-  }
-
-  .min-\[430px\]\:text-stone-800 {
-    --tw-text-opacity: 1;
-    color: rgb(41 37 36 / var(--tw-text-opacity));
   }
 }
 
@@ -1303,22 +1253,6 @@ video {
   .min-\[470px\]\:text-stone-800 {
     --tw-text-opacity: 1;
     color: rgb(41 37 36 / var(--tw-text-opacity));
-  }
-}
-
-@media (min-width: 530px) {
-  .min-\[530px\]\:bg-\[url\(\'\.\/assets\/beraterin_small\.png\'\)\] {
-    background-image: url('./assets/beraterin_small.png');
-  }
-}
-
-@media (min-width: 640px) {
-  .sm\:bg-\[url\(\'\.\/assets\/beraterin_small\.png\'\)\] {
-    background-image: url('./assets/beraterin_small.png');
-  }
-
-  .sm\:bg-center {
-    background-position: center;
   }
 }
 
