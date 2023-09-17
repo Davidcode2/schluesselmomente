@@ -29,7 +29,6 @@ function mobileMenu() {
     icon2.classList.toggle('c');
     icon3.classList.toggle('b');
     nav.classList.toggle('hidden');
-    navFlex.classList.toggle('h-screen');
   });
 
   const para = document.querySelector('p');
@@ -44,7 +43,6 @@ function mobileMenu() {
       icon.classList.add('hidden');
       nav.classList.remove('hidden');
       navFlex.classList.remove('flex-col');
-      navFlex.classList.remove('h-screen');
       icon1.classList.remove('a');
       icon2.classList.remove('c');
       icon3.classList.remove('b');
