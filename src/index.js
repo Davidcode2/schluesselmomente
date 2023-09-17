@@ -32,7 +32,7 @@ function mobileMenu() {
   });
 
   const para = document.querySelector('p');
-  const mql = window.matchMedia('(max-width: 600px)');
+  const mql = window.matchMedia('(max-width: 720px)');
 
   function screenTest(e) {
     if (e.matches) {

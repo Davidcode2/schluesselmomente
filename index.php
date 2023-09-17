@@ -48,21 +48,20 @@
   <main class="">
 
     <section
-      class="p-8 lg:pl-16 md:pb-32 pt-8 md:pt-16 bg-[url('./assets/beraterin_phone.png')] sm:bg-[url('./assets/beraterin_small.png')] sm:bg-center md:bg-left-top lg:bg-[url('./assets/beraterin_very_elongated_fade_white.png')] lg:bg-bottom 2xl:bg-[url('./assets/beraterin_large_elongated.png')] bg-no-repeat">
+      class="p-8 lg:pl-16 md:pb-32 pt-8 md:pt-16 bg-[url('./assets/beraterin_phone.png')] min-[470px]:bg-[url('./assets/beraterin_small.png')] min-[430px]:bg-left md:bg-left-top lg:bg-[url('./assets/beraterin_very_elongated_fade_white.png')] lg:bg-bottom 2xl:bg-[url('./assets/beraterin_large_elongated.png')] bg-no-repeat">
       <div class="grid lg:grid-cols-2 gap-4">
         <div class="col-start-1 flex flex-col rounded-lg">
           <div class="flex items-end gap-4">
             <!--<div class="absolute top-8 left-12 pattern w-60 h-60 rounded-full"></div>-->
-            <img src="assets/Logo_Keyhole_transparent.png" alt="Beiges Schlüsselloch" class="max-h-24 lg:max-h-32">
+            <img src="assets/Logo_transparent.png" alt="Beiges Schlüsselloch" class="max-h-24 lg:max-h-32">
             <div class="flex flex-col">
-              <h1 class="text-stone-800 text-2xl md:text-5xl drop-shadow-lg lg:text-7xl lg:font-thin z-10">Schlüsselmomente</h1>
-              <h2 class="text-stone-800 text-lg drop-shadow-lg lg:text-2xl z-10">Systemische Paar- und
+              <h1 class="hidden text-stone-800 text-2xl md:text-5xl drop-shadow-lg lg:text-7xl lg:font-thin z-10">Schlüsselmomente</h1>
+              <h2 class="hidden text-stone-800 text-lg drop-shadow-lg lg:text-2xl z-10">Systemische Paar- und
                 Einzelberatung Freiburg</h2>
             </div>
           </div>
           <div class="grid grid-cols-2 lg:grid-cols-1 text-stone-900 md:text-stone-800 rounded-lg mt-8">
-            <p class="text-3xl pt-20 pb-8 col-start-1">
-              Herzlich Willkommen!
+            <p class="text-2xl min-[340px]:text-3xl min-[340px]:pt-20 pb-8 col-start-1"> Herzlich Willkommen!
             </p>
             <p class="col-start-1 lg:p-0">
               Schön, dass du dich für Beratung interessierst. Schau dich gerne auf dieser Seite um und kontaktiere mich
@@ -70,7 +69,7 @@
               ein unverbindliches Erstgespräch.
             </p>
             <a class="col-start-1 col-end-3" href="#kontakt"><button
-                class="lg:my-4 mt-8 p-2 border-2 border-stone-200 transition-all hover:border-stone-300 hover:bg-stone-100 rounded-lg md:text-stone-800 text-stone-100 tracking-widest">Vereinbare
+                class="lg:my-4 mt-8 p-2 border-2 border-stone-200 transition-all hover:border-stone-300 hover:bg-stone-100 rounded-lg min-[470px]:text-stone-800 text-stone-100 tracking-widest">Vereinbare
                 dein Erstgespräch</button></a>
           </div>
         </div>
