@@ -193,7 +193,7 @@
 
         </section>
 
-        <section id="ueber_mich" class="px-8 py-16 lg:p-32 bg-stone-100">
+        <section id="ueber_mich" class="px-4 min-[364px]:px-8 py-16 lg:p-32 bg-stone-100">
           <h2 class="text-center text-3xl lg:text-7xl py-4 pb-16 font-thin text-[#18705c]">
             Über mich
           </h2>
@@ -237,7 +237,7 @@
 
         <div class="bg-gradient-to-b from-[#18705c] to-[#18594a]">
 
-          <section id="kosten" class="grid md:grid-cols-1 lg:grid-cols-[200px_1fr] items-center p-8 lg:p-32 ">
+          <section id="kosten" class="grid md:grid-cols-1 lg:grid-cols-[200px_1fr] items-center p-8 px-4 min-[364px]:px-8 lg:p-32 ">
             <h2 class="text-center lg:text-start text-3xl lg:text-7xl pb-10 font-thin text-stone-100">
               Kosten
             </h2>

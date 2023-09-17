@@ -954,11 +954,6 @@ video {
   padding-right: 1rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -1236,6 +1231,13 @@ video {
   .min-\[340px\]\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 364px) {
+  .min-\[364px\]\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
