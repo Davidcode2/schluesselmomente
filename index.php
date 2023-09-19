@@ -92,15 +92,6 @@
           Entscheidungssituation zu bekommen. So entstehen neue Ideen und
           Sichtweisen, die dir dabei helfen, der Lösung Schritt für Schritt näher
           zu kommen.<br />
-          <br />
-          Die Anzahl der Sitzungen und der zeitliche Abstand werden je nach Bedarf
-          festgelegt.<br />
-          Je nach Thema umfasst ein Beratungsprozess in der Regel 3-10
-          Sitzungen.<br />
-          <br />
-          Eine Sitzung im Einzelsetting dauert 60 Minuten.<br />
-          <br />
-          Eine Sitzung in der Paarberatung dauert 90 Minuten.
         </p>
       </div>
     </section>
@@ -204,6 +195,9 @@
             <div class="row-span-4 bg-[url('./assets/beraterin_full_body_smooth.jpg')] rounded-l-xl bg-cover bg-center">
             </div>
             <div class="text-stone-100 2xl:col-span-2">
+              <div class="p-10 bg-green-400/20">
+                <h3 class="text-3xl">Theresa Kappus</h3>
+              </div>
               <div class="p-10 bg-green-400/10">
                 <h3 class="text-xl pt-10 pb-4">Berufsausbildung / Beratungsausbildung:</h3>
                 <ul class="list-disc pl-8">
