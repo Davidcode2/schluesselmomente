@@ -377,7 +377,6 @@
           <li>Theresa Kappus</li>
           <li>Systemische Beraterin</li>
           <li>79111 Freiburg, Rieselfeld</li>
-          <li>example@muster.com</li>
         </ul>
         <ul class="md:col-start-2 flex flex-col gap-5">
           <li>
