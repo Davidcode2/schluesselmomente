@@ -48,8 +48,7 @@
   <main class="">
 
     <section
-      class="p-8 lg:pl-16 md:pb-32 pt-8 md:pt-16 bg-[url('./assets/beraterin_phone.png')] min-[470px]:bg-[url('./assets/beraterin_small.png')] min-[430px]:bg-left md:bg-left-top lg:bg-[url('./assets/beraterin_very_elongated_fade_white.png')] lg:bg-bottom 2xl:bg-[url('./assets/beraterin_large_elongated.png')] bg-no-repeat">
-      <div class="grid lg:grid-cols-2 gap-4">
+      class="min-[2560px]:px-96 p-8 lg:pl-16 md:pb-32 pt-8 md:pt-16 bg-[url('./assets/beraterin_phone.png')] min-[470px]:bg-[url('./assets/beraterin_small.png')] min-[430px]:bg-left md:bg-left-top lg:bg-[url('./assets/beraterin_very_elongated_fade_white.png')] lg:bg-bottom 2xl:bg-[url('./assets/beraterin_large_elongated.png')] bg-no-repeat"> <div class="grid lg:grid-cols-2 gap-4">
         <div class="col-start-1 flex flex-col rounded-lg">
           <div class="flex items-end gap-4">
             <!--<div class="absolute top-8 left-12 pattern w-60 h-60 rounded-full"></div>-->
@@ -76,7 +75,7 @@
       </div>
     </section>
 
-    <section id="arbeitsweise" class="grid lg:grid-cols-2 gap-10 p-8 lg:p-32 bg-white">
+    <section id="arbeitsweise" class="min-[2560px]:px-96 grid xl:grid-cols-2 gap-10 p-8 lg:p-32 bg-white">
       <h2 class="text-center text-3xl lg:text-7xl font-thin text-[#18705c]/50">
         Arbeitsweise
       </h2>
@@ -106,7 +105,7 @@
 
     <div class="">
       <div class="text-stone-800">
-        <section id="beratungsthemen" class="p-8 pb-16 lg:p-16 lg:pb-32 bg-stone-100">
+        <section id="beratungsthemen" class="min-[2560px]:px-96 p-8 pb-16 lg:p-16 lg:pb-32 bg-stone-100">
           <h2 class="text-center text-3xl lg:text-7xl py-4 font-thin text-[#18705c]/50">
             Beratungsthemen
           </h2>
@@ -160,7 +159,7 @@
 
         </section>
 
-        <section id="ablauf" class="border-t-2 border-b-2 border-stone-400 p-8 lg:p-16 bg-stone-300">
+        <section id="ablauf" class="min-[2560px]:px-96 border-t-2 border-b-2 border-stone-400 p-8 lg:p-16 bg-stone-300">
           <h2 class="text-center text-3xl lg:text-7xl py-4 font-thin text-[#18705c]/50">Ablauf</h2>
           <ul class="grid lg:grid-cols-3 gap-10 text-stone-700">
             <li class="flex flex-col items-center gap-5 py-6"><img src="assets/emoji/icons8-envelope-48.png"
@@ -193,14 +192,14 @@
 
         </section>
 
-        <section id="ueber_mich" class="px-4 min-[364px]:px-8 py-16 lg:p-32 bg-stone-100">
+        <section id="ueber_mich" class="min-[2560px]:px-96 px-4 min-[364px]:px-8 py-16 lg:p-32 bg-stone-100">
           <h2 class="text-center text-3xl lg:text-7xl py-4 pb-16 font-thin text-[#18705c]">
             Über mich
           </h2>
-          <div class="grid lg:grid-cols-2 bg-[#399692] rounded-xl">
+          <div class="grid lg:grid-cols-2 2xl:grid-cols-3 bg-[#399692] rounded-xl">
             <div class="row-span-4 bg-[url('./assets/beraterin_full_body_smooth.jpg')] rounded-l-xl bg-cover bg-center">
             </div>
-            <div class="text-stone-100">
+            <div class="text-stone-100 2xl:col-span-2">
               <div class="p-10 bg-green-400/10">
                 <h3 class="text-xl pt-10 pb-4">Berufsausbildung / Beratungsausbildung:</h3>
                 <ul class="list-disc pl-8">
@@ -237,8 +236,8 @@
 
         <div class="bg-gradient-to-b from-[#18705c] to-[#18594a]">
 
-          <section id="kosten" class="grid md:grid-cols-1 lg:grid-cols-[200px_1fr] items-center p-8 px-4 min-[364px]:px-8 lg:p-32 ">
-            <h2 class="text-center lg:text-start text-3xl lg:text-7xl pb-10 font-thin text-stone-100">
+          <section id="kosten" class="min-[2560px]:px-96 grid md:grid-cols-1 xl:grid-cols-[200px_1fr] items-center p-8 px-4 min-[364px]:px-8 lg:p-32 ">
+            <h2 class="text-center xl:text-start text-3xl lg:text-7xl pb-10 font-thin text-stone-100">
               Kosten
             </h2>
             <div class="pt-10 text-stone-100">
@@ -281,7 +280,7 @@
             </div>
           </section>
 
-          <section id="referenzen" class="p-8 lg:px-32 lg:p-24">
+          <section id="referenzen" class="min-[2560px]:px-96 p-8 lg:px-32 lg:p-24">
             <div class="bg-stone-200 lg:p-10 p-2 lg:pt-16 pt-8 rounded-xl">
               <h2 class="text-center text-3xl lg:text-7xl font-thin text-[#18705c]/50">
                 Referenzen
@@ -331,7 +330,7 @@
             </div>
           </section>
 
-          <section id="kontakt" class="p-8 lg:px-32 lg:pb-32">
+          <section id="kontakt" class="min-[2560px]:px-96 p-8 lg:px-32 lg:pb-32">
             <h2 class="text-center text-3xl lg:text-7xl pb-10 font-thin text-stone-100">
               Kontakt</h2>
             <form id="kontakt-form" class="grid gap-2">
@@ -355,7 +354,7 @@
             </form>
           </section>
 
-          <section id="karte" class="p-8 lg:px-32 lg:pb-32">
+          <section id="karte" class="min-[2560px]:px-96 p-8 lg:px-32 lg:pb-32">
             <iframe class="w-full h-96 rounded-lg" frameborder="0" style="border:0"
               referrerpolicy="no-referrer-when-downgrade"
               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD_cnEu-Knja07b0Q8ON6h8bRt2I36oHZU&q=Rieselfeld,Freiburg+Deutschland" allowfullscreen>
@@ -372,7 +371,7 @@
   </main>
 
   <footer>
-    <div class="text-emerald-800 bg-white w-full">
+    <div class="min-[2560px]:px-96 text-emerald-800 bg-white w-full">
       <div class="grid md:grid-cols-3 text-xs pt-10 px-20 pb-16 gap-10">
         <ul class="flex flex-col gap-5 md:col-start-1">
           <li>Theresa Kappus</li>
