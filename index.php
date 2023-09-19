@@ -296,14 +296,12 @@
                   <img src="assets/icons8-arrow-50.png" class="rotate-180" alt="Pfeil nach links">
                 </div>
                 <div id="reference1" class="flex flex-col gap-6 px-4 p-8 lg:pt-16 pb-8 items-center">
-                  <img src="assets/emoji/icons8-deciduous-tree-48.png" class="sepia max-h-16 w-16" alt="Baum">
                   <p class="">Ich empfehle Theresa in jedem Fall weiter. Sie ist offen, zugewandt und gut strukturiert.
                   </p>
                   <span class="text-xs italic">Thorsten M.*</span>
                   <span class="text-xs italic">* Name wurde geändert</span>
                 </div>
                 <div id="reference2" class="hidden px-4 p-8 lg:p-16 flex flex-col gap-6 items-center">
-                  <img src="assets/emoji/icons8-thread-48.png" class="sepia max-h-16 w-16" alt="Faden auf Rolle">
                   <p>Nachdem ich beruflich eine sehr belastende Zeit hatte, bat ich um einen Termin bei Theresa. Die
                     Gesprächsführung war sehr angenehm, während der Gespräche in denen ich konkret klären wollte, ob
                     mein beruflicher Platz tatsächlich noch der passende sei, konnte sie viele Dinge bewusst machen, die
@@ -315,7 +313,6 @@
                   <span class="text-xs italic">Christian S.</span>
                 </div>
                 <div id="reference3" class="hidden px-4 p-8 lg:p-16 flex flex-col gap-6 items-center">
-                  <img src="assets/icons8-flag-in-hole-48.png" class="sepia max-h-16 w-16" alt="Golfloch">
                   <p class="">Lorem ipsum dolor sit amet, officia excepteur ex fugiat.
                     Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
                     commodo
