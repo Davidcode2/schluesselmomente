@@ -619,6 +619,10 @@ video {
   display: none;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .h-20 {
   height: 5rem;
 }
@@ -645,6 +649,10 @@ video {
 
 .max-h-24 {
   max-height: 6rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-60 {
@@ -723,6 +731,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.self-start {
+  align-self: flex-start;
 }
 
 .justify-self-end {
@@ -870,12 +882,24 @@ video {
   background-image: url('./assets/beraterin_phone.png');
 }
 
+.bg-\[url\(\'assets\/beraterin_large_elongated_background\.png\'\)\] {
+  background-image: url('assets/beraterin_large_elongated_background.png');
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\.\/assets\/beraterin_large_elongated_background\.png\'\)\] {
+  background-image: url('./assets/beraterin_large_elongated_background.png');
+}
+
+.bg-\[url\(\'\.\.\/assets\/beraterin_large_elongated_background\.png\'\)\] {
+  background-image: url('../assets/beraterin_large_elongated_background.png');
 }
 
 .from-\[\#18705c\] {
@@ -968,6 +992,21 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pb-10 {
@@ -1230,10 +1269,24 @@ video {
   }
 }
 
+@media (min-width: 360px) {
+  .min-\[360px\]\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
 @media (min-width: 364px) {
   .min-\[364px\]\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+
+@media (min-width: 380px) {
+  .min-\[380px\]\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -1297,6 +1350,10 @@ video {
 
   .md\:bg-left-top {
     background-position: left top;
+  }
+
+  .md\:bg-right {
+    background-position: right;
   }
 
   .md\:pb-32 {
@@ -1376,6 +1433,10 @@ video {
     background-position: bottom;
   }
 
+  .lg\:bg-left {
+    background-position: left;
+  }
+
   .lg\:p-0 {
     padding: 0px;
   }
@@ -1410,6 +1471,11 @@ video {
     padding-right: 10rem;
   }
 
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .lg\:pb-32 {
     padding-bottom: 8rem;
   }
@@ -1425,6 +1491,11 @@ video {
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .lg\:text-7xl {
@@ -1467,6 +1538,10 @@ video {
 
   .\32xl\:bg-\[url\(\'\.\/assets\/beraterin_large_elongated\.png\'\)\] {
     background-image: url('./assets/beraterin_large_elongated.png');
+  }
+
+  .\32xl\:bg-right-top {
+    background-position: right top;
   }
 }
 
