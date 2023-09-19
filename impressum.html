@@ -8,7 +8,7 @@
   <link href="/dist/output.css" rel="stylesheet" />
   <link href="./src/css/style.css" rel="stylesheet" />
   <link rel="icon" href="assets/keyhole_favicon.png" />
-  <script src="./src/index.js" defer></script>
+  <script src="./src/impressum.js" defer></script>
 </head>
 
 <body class="text-stone-300 font-sans font-light">
@@ -50,7 +50,7 @@
 
   <main class="">
     <section
-      class="min-[2560px]:px-96 p-8 lg:pl-16 md:pb-32 pt-8 md:pt-16 bg-center md:bg-right lg:bg-left 2xl:bg-right-top bg-[url('../assets/beraterin_large_elongated_background.png')] bg-no-repeat">
+      class="min-[2560px]:px-96 p-8 lg:pl-16 md:pb-32 pt-8 md:pt-16 bg-center md:bg-right lg:bg-left 2xl:bg-right-top bg-[url('./assets/beraterin_large_elongated_background.png')] bg-no-repeat">
       <div class="grid lg:grid-cols-2 gap-4">
         <div class="col-start-1 flex flex-col rounded-lg">
           <div class="flex items-end gap-4">
@@ -69,7 +69,7 @@
       </div>
     </section>
 
-    <section id="impressum" class="min-[2560px]:px-96 grid xl:grid-cols-2 gap-10 p-8 lg:p-32 bg-white">
+    <section id="impressum" class="min-[2560px]:px-96 grid xl:grid-cols-2 gap-10 p-8 lg:p-32">
       <h2 class="text-3xl lg:text-7xl font-thin text-[#18705c]/50">
         Impressum
       </h2>
@@ -82,11 +82,16 @@
     </section>
 
     <section id="haftungsausschluss" class="min-[2560px]:px-96 grid xl:grid-cols-2 gap-10 p-8 lg:p-32 bg-white">
-      <h2 class="text-3xl lg:text-7xl font-thin text-[#18705c]/50">
-        Haftungsausschluss
-      </h2>
+      <div class="flex items-center justify-between">
+        <h2 class="text-3xl lg:text-7xl font-thin text-[#18705c]/50">
+          Haftungsausschluss
+        </h2>
+        <button type="button" id="haftung-button">
+          <img src="assets/icons8-chevron-50.png" alt="Pfeil nach unten" class="rotate-180 w-10 h-10" />
+        </button>
+      </div>
 
-      <div class="flex flex-col gap-10 text-stone-800">
+      <div id="haftung-content" class="hidden flex flex-col gap-10 text-stone-800">
         <h3>Haftung für Inhalte:</h3>
 
         <p>
@@ -143,10 +148,15 @@
     </section>
 
     <section id="datenschutz" class="min-[2560px]:px-96 grid xl:grid-cols-2 gap-10 p-8 lg:p-32 bg-white">
+      <div class="flex justify-between">
       <h2 class="text-3xl lg:text-7xl font-thin text-[#18705c]/50">
         Datenschutz
       </h2>
-      <div class="flex flex-col gap-10 text-stone-800">
+        <button type="button" id="datenschutz-button">
+          <img src="assets/icons8-chevron-50.png" alt="Pfeil nach unten" class="rotate-180 w-10 h-10" />
+        </button>
+      </div>
+      <div id="datenschutz-content" class="hidden flex flex-col gap-10 text-stone-800">
         <p>
           Ich freue mich sehr über Ihr Interesse an meinem Angebot.
           Datenschutz hat einen besonders hohen Stellenwert für mich. Eine
@@ -350,7 +360,6 @@
         <p>beratung@schluesselmomente-freiburg.de</p>
         <p>Website:</p>
         <p>www.schluesselmomente-freiburg.de</p>
-
       </div>
     </section>
   </main>
