@@ -48,13 +48,15 @@
   <main class="">
 
     <section
-      class="min-[2560px]:px-96 p-8 lg:pl-16 md:pb-32 pt-8 md:pt-16 bg-[url('./assets/beraterin_phone.png')] min-[470px]:bg-[url('./assets/beraterin_small.png')] min-[430px]:bg-left md:bg-left-top lg:bg-[url('./assets/beraterin_very_elongated_fade_white.png')] lg:bg-bottom 2xl:bg-[url('./assets/beraterin_large_elongated.png')] bg-no-repeat"> <div class="grid lg:grid-cols-2 gap-4">
+      class="min-[2560px]:px-96 p-8 lg:pl-16 md:pb-32 pt-8 md:pt-16 bg-[url('./assets/beraterin_phone.png')] min-[470px]:bg-[url('./assets/beraterin_small.png')] min-[430px]:bg-left md:bg-left-top lg:bg-[url('./assets/beraterin_very_elongated_fade_white.png')] lg:bg-bottom 2xl:bg-[url('./assets/beraterin_large_elongated.png')] bg-no-repeat">
+      <div class="grid lg:grid-cols-2 gap-4">
         <div class="col-start-1 flex flex-col rounded-lg">
           <div class="flex items-end gap-4">
             <!--<div class="absolute top-8 left-12 pattern w-60 h-60 rounded-full"></div>-->
             <img src="assets/Logo_transparent.png" alt="Beiges Schlüsselloch" class="max-h-24 lg:max-h-32">
             <div class="flex flex-col">
-              <h1 class="hidden text-stone-800 text-2xl md:text-5xl drop-shadow-lg lg:text-7xl lg:font-thin z-10">Schlüsselmomente</h1>
+              <h1 class="hidden text-stone-800 text-2xl md:text-5xl drop-shadow-lg lg:text-7xl lg:font-thin z-10">
+                Schlüsselmomente</h1>
               <h2 class="hidden text-stone-800 text-lg drop-shadow-lg lg:text-2xl z-10">Systemische Paar- und
                 Einzelberatung Freiburg</h2>
             </div>
@@ -146,14 +148,16 @@
               <h4 class="text-xl">Fokus auf Stärken und Resourcen</h4>
             </li>
             <li class="flex flex-col text-center items-center gap-2 py-6"><img
-                src="assets/emoji/icons8-leaf-fluttering-in-wind-48.png" class="sepia" alt="Zwei Blätter die sich im Wind wiegen">
+                src="assets/emoji/icons8-leaf-fluttering-in-wind-48.png" class="sepia"
+                alt="Zwei Blätter die sich im Wind wiegen">
               <h4 class="text-xl">Stress, Überlastung, Überforderung</h4>
             </li>
           </ul>
           <div class="flex flex-col items-center justify-center pt-32">
             <a href="#ablauf"><button
                 class="flex items-center gap-2 p-3 text-white rounded-full bg-[#18705c]/50 hover:bg-[#18705c]/75 transition-all">
-                <span class="hover:scale-105 rotate-90 "><img src="assets/icons8-arrow-50.png" alt="Pfeil nach unten"></span>
+                <span class="hover:scale-105 rotate-90 "><img src="assets/icons8-arrow-50.png"
+                    alt="Pfeil nach unten"></span>
               </button></a>
           </div>
 
@@ -170,8 +174,8 @@
                 kennenlernen und dein Anliegen klären.
               </p>
             </li>
-            <li class="flex flex-col items-center gap-5 py-6"><img src="assets/emoji/icons8-speech-48.png"
-                class="sepia" alt="Sprechblase">
+            <li class="flex flex-col items-center gap-5 py-6"><img src="assets/emoji/icons8-speech-48.png" class="sepia"
+                alt="Sprechblase">
               <h5 class="text-lg">Erstgespräch</h5>
               <p class="text-center">
                 Das Erstgespräch im Einzelsetting dauert 45 Minuten, im Paarsetting 60 Minuten. Hier haben wir in Ruhe
@@ -236,7 +240,8 @@
 
         <div class="bg-gradient-to-b from-[#18705c] to-[#18594a]">
 
-          <section id="kosten" class="min-[2560px]:px-96 grid md:grid-cols-1 xl:grid-cols-[200px_1fr] items-center p-8 px-4 min-[364px]:px-8 lg:p-32 ">
+          <section id="kosten"
+            class="min-[2560px]:px-96 grid md:grid-cols-1 xl:grid-cols-[200px_1fr] items-center p-8 px-4 min-[364px]:px-8 lg:p-32 ">
             <h2 class="text-center xl:text-start text-3xl lg:text-7xl pb-10 font-thin text-stone-100">
               Kosten
             </h2>
@@ -286,7 +291,7 @@
                 Referenzen
               </h2>
               <div
-                class="grid lg:grid-cols-[100px_1fr_100px] grid-cols-[40px_1fr_40px] text-center items-center lg:h-96 lg:text-xl text-sm">
+                class="grid lg:grid-cols-[100px_1fr_100px] grid-cols-[40px_1fr_40px] text-center items-center lg:h-96 lg:text-base text-sm">
                 <div id="previous-reference-btn" class="h-full flex items-center">
                   <img src="assets/icons8-arrow-50.png" class="rotate-180" alt="Pfeil nach links">
                 </div>
@@ -294,19 +299,20 @@
                   <img src="assets/emoji/icons8-deciduous-tree-48.png" class="sepia max-h-16 w-16" alt="Baum">
                   <p class="">Ich empfehle Theresa in jedem Fall weiter. Sie ist offen, zugewandt und gut strukturiert.
                   </p>
-                  <span class="text-xs italic">Thorsten M.</span>
+                  <span class="text-xs italic">Thorsten M.*</span>
+                  <span class="text-xs italic">* Name wurde geändert</span>
                 </div>
                 <div id="reference2" class="hidden px-4 p-8 lg:p-16 flex flex-col gap-6 items-center">
                   <img src="assets/emoji/icons8-thread-48.png" class="sepia max-h-16 w-16" alt="Faden auf Rolle">
-                  <p>Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
-                    commodo
-                    officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla
-                    nisi
-                    laboris
-                    ex in Lorem sunt duis officia eiusmod.
-                    Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+                  <p>Nachdem ich beruflich eine sehr belastende Zeit hatte, bat ich um einen Termin bei Theresa. Die
+                    Gesprächsführung war sehr angenehm, während der Gespräche in denen ich konkret klären wollte, ob
+                    mein beruflicher Platz tatsächlich noch der passende sei, konnte sie viele Dinge bewusst machen, die
+                    ich so vorher nicht im Blick hatte. Als ich dann dazu neigte, die Entscheidung zu vertagen – auch in
+                    der Hoffnung, dass mir die Entscheidung abgenommen wird – erkannte sie dies auch und sprach es an.
+                    Insgesamt muss ich sagen, dass ich die Entscheidung bei ihr in Beratung gewesen zu sein, nicht
+                    bereue. Ich kann sie wirklich weiter empfehlen.
                   </p>
-                  <span class="text-xs italic">Frauke Musterfrau - Friedrichshafen</span>
+                  <span class="text-xs italic">Christian S.</span>
                 </div>
                 <div id="reference3" class="hidden px-4 p-8 lg:p-16 flex flex-col gap-6 items-center">
                   <img src="assets/icons8-flag-in-hole-48.png" class="sepia max-h-16 w-16" alt="Golfloch">
@@ -341,7 +347,7 @@
               <input id="email" type="email" placeholder="E-Mail" name="email" maxlength="70" required
                 class="w-full p-2  border-2 border-stone-200 text-neutral-600 rounded-lg">
               <label for="phone" class="text-stone-100 uppercase text-sm">Telefon</label>
-              <input id="phone" type="phone" placeholder="Telefon" name="phone" 
+              <input id="phone" type="phone" placeholder="Telefon" name="phone"
                 class="w-full p-2  border-2 border-stone-200 text-neutral-600 rounded-lg">
               <label for="message" class="text-stone-100 uppercase text-sm">Nachricht</label>
               <textarea id="message" placeholder="Nachricht" name="message" required maxlength="1000"
@@ -350,14 +356,16 @@
                 <button
                   class="bg-[#18705c]/75 hover:bg-[#18705c] transition-all duration-200 tracking-widest w-full p-2 text-white rounded-lg">Senden</button>
               </div>
-              <p id="message-success-message" class="hidden text-center text-stone-100">Vielen Dank für Ihre Nachricht.<br>Ich werde mich so schnell wie möglich bei Ihnen melden.</p>
+              <p id="message-success-message" class="hidden text-center text-stone-100">Vielen Dank für Ihre
+                Nachricht.<br>Ich werde mich so schnell wie möglich bei Ihnen melden.</p>
             </form>
           </section>
 
           <section id="karte" class="min-[2560px]:px-96 p-8 lg:px-32 lg:pb-32">
             <iframe class="w-full h-96 rounded-lg" frameborder="0" style="border:0"
               referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD_cnEu-Knja07b0Q8ON6h8bRt2I36oHZU&q=Rieselfeld,Freiburg+Deutschland" allowfullscreen>
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD_cnEu-Knja07b0Q8ON6h8bRt2I36oHZU&q=Rieselfeld,Freiburg+Deutschland"
+              allowfullscreen>
             </iframe>
           </section>
 
