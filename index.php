@@ -28,15 +28,17 @@
       <img src="../assets/Logo_Keyhole_transparent.png" alt="Beiges Schlüsselloch"
         class="hidden min-[720px]:block min-[720px]:left-8 absolute lg:left-16 sm:top-8 max-h-10" />
       <ul id="nav-flex" class="flex justify-between items-center gap-5 lg:gap-16 p-8 lg:px-16  min-[720px]:pl-24">
-        <li class="min-[720px]:ml-auto pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
-            href="#arbeitsweise">Arbeitsweise</a></li>
+        <li
+          class="min-[720px]:ml-auto pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0">
+          <a class="py-4" href="#arbeitsweise">Arbeitsweise</a>
+        </li>
         <li class="pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
-            href="#beratungsthemen">Beratungsthemen</a></li>
+            href="./einzelberatung.html">Einzelberatung</a></li>
+        <li class="pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
+            href="./paarberatung.html">Paarberatung</a></li>
         <li class="pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
             href="#ueber_mich">Über mich</a>
         </li>
-        <li class="pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
-            href="#referenzen">Referenzen</a></li>
         <li class="pb-2"><a class="py-4" href="#kontakt">
             <button
               class="bg-[#18705c]/75 p-2 text-white transition-all hover:bg-[#18705c] rounded-lg tracking-widest">Erstgespräch</button></a>
@@ -99,96 +101,29 @@
 
     <div class="">
       <div class="text-stone-800">
+
         <section id="beratungsthemen" class="min-[2560px]:px-96 p-8 pb-16 lg:p-16 lg:pb-32 bg-stone-100">
-          <h2 class="text-center text-3xl lg:text-7xl py-4 font-thin text-[#18705c]/50">
-            Beratungsthemen
+          <h2 class="text-center text-3xl lg:text-7xl py-4 pb-32 font-thin text-[#18705c]/50">
+            Ich interessiere mich für
           </h2>
-          <p class="py-10 text-center">
-            Typische Beratungsthemen bei denen ich KlientInnen unterstütze:</p>
-          <ul class="grid lg:grid-cols-3 gap-10">
-            <li class="flex flex-col text-center items-center gap-2 py-6"><img
-                src="assets/emoji/icons8-chess-pawn-48.png" alt="Schachfigur Bauer" class="sepia">
-              <h4 class="text-xl">Entscheidungen
-                (beruflich und privat)</h4>
-            </li>
-            <li class="flex flex-col text-center items-center gap-2 py-6"><img
-                src="assets/emoji/icons8-high-voltage-48.png" alt="Blitz" class="sepia">
-              <h4 class="text-xl">Konflikte bewältigen</h4>
-            </li>
-            <li class="flex flex-col text-center items-center gap-2 py-6"><img src="assets/emoji/icons8-kite-48.png"
-                class="sepia" alt="Flugdrachen">
-              <h4 class="text-xl">Persönlichkeitsentwicklung</h4>
-            </li>
-            <li class="flex flex-col text-center items-center gap-2 py-6"><img src="assets/emoji/icons8-abacus-48.png"
-                class="sepia" alt="Rechenmaschine Abakus">
-              <h4 class="text-xl">Berufliche Herausforderungen</h4>
-            </li>
-            <li class="flex flex-col text-center items-center gap-2 py-6"><img
-                src="assets/emoji/icons8-people-hugging-emoji-48.png" class="sepia" alt="zwei sich umarmende Menschen">
-              <h4 class="text-xl">Partnerschaft</h4>
-            </li>
-            <li class="flex flex-col text-center items-center gap-2 py-6"><img src="assets/emoji/icons8-canoe-48.png"
-                class="sepia" alt="Ein Mensch in einem Kanu">
-              <h4 class="text-xl">Meistern von Übergängen</h4>
-            </li>
-            <li class="flex flex-col text-center items-center gap-2 py-6"><img src="assets/emoji/icons8-bullseye-48.png"
-                class="sepia" alt="Eine Dartscheibe mit Pfeil in der Mitte">
-              <h4 class="text-xl">Klarheit über Wünsche und Ziele gewinnen</h4>
-            </li>
-            <li class="flex flex-col text-center items-center gap-2 py-6"><img
-                src="assets/emoji/icons8-artist-palette-48.png" class="sepia" alt="Farbmischplatte">
-              <h4 class="text-xl">Fokus auf Stärken und Resourcen</h4>
-            </li>
-            <li class="flex flex-col text-center items-center gap-2 py-6"><img
-                src="assets/emoji/icons8-leaf-fluttering-in-wind-48.png" class="sepia"
-                alt="Zwei Blätter die sich im Wind wiegen">
-              <h4 class="text-xl">Stress, Überlastung, Überforderung</h4>
-            </li>
-          </ul>
-          <div class="flex flex-col items-center justify-center pt-32">
-            <a href="#ablauf"><button
-                class="flex items-center gap-2 p-3 text-white rounded-full bg-[#18705c]/50 hover:bg-[#18705c]/75 transition-all">
-                <span class="hover:scale-105 rotate-90 "><img src="assets/icons8-arrow-50.png"
-                    alt="Pfeil nach unten"></span>
-              </button></a>
+          <div class="md:mx-48 md:gap-48 gap-32 flex flex-col md:flex-row items-center justify-center text-center">
+            <a href="einzelberatung.html">
+            <div class="md:p-16 p-10 flex flex-col text-center items-center gap-2 bg-[#18705c]/10 rounded-full hover:bg-[#18705c]/20">
+              <img src="assets/emoji/icons8-chess-pawn-48.png" alt="Schachfigur Bauer" class="sepia">
+              Einzelberatung
+            </div>
+            </a>
+            <a href="paarberatung.html">
+            <div class="md:p-16 p-10 flex flex-col text-center items-center gap-2 bg-[#18705c]/10 rounded-full hover:bg-[#18705c]/20">
+              <img src="assets/emoji/icons8-people-hugging-emoji-48.png" class="sepia"
+                alt="zwei sich umarmende Menschen">
+              Paarberatung
+            </div>
+            </a>
           </div>
-
         </section>
 
-        <section id="ablauf" class="min-[2560px]:px-96 border-t-2 border-b-2 border-stone-400 p-8 lg:p-16 bg-stone-300">
-          <h2 class="text-center text-3xl lg:text-7xl py-4 font-thin text-[#18705c]/50">Ablauf</h2>
-          <ul class="grid lg:grid-cols-3 gap-10 text-stone-700">
-            <li class="flex flex-col items-center gap-5 py-6"><img src="assets/emoji/icons8-envelope-48.png"
-                class="sepia" alt="Briefumschlag">
-              <h5 class="text-lg">Nachricht schreiben</h5>
-              <p class="text-center">
-                Vereinbare direkt einen Termin für ein unverbindliches Erstgespräch, bei dem wir uns erst einmal
-                kennenlernen und dein Anliegen klären.
-              </p>
-            </li>
-            <li class="flex flex-col items-center gap-5 py-6"><img src="assets/emoji/icons8-speech-48.png" class="sepia"
-                alt="Sprechblase">
-              <h5 class="text-lg">Erstgespräch</h5>
-              <p class="text-center">
-                Das Erstgespräch im Einzelsetting dauert 45 Minuten, im Paarsetting 60 Minuten. Hier haben wir in Ruhe
-                Zeit über dein Anliegen zu sprechen, uns kennenzulernen und offene Fragen zu klären. Erst nach diesem
-                Termin entscheidest du dich für oder gegen eine weitere Zusammenarbeit.
-              </p>
-            </li>
-            <li class="flex flex-col items-center gap-5 py-6"><img src="assets/emoji/icons8-restaurant-table-48.png"
-                class="sepia" alt="Zwei Menschen an einem Tisch">
-              <h5 class="text-lg">Weitere Gesprächstermine</h5>
-              <p class="text-center">
-                Die Anzahl der Sitzungen und den zeitlichen Abstand legen wir je nach Bedarf fest. Je nach Thema umfasst
-                ein Beratungsprozess in der Regel 3-10 Sitzungen. Eine Sitzung im Einzelsetting dauert 60 Minuten. Eine
-                Sitzung in der Paarberatung dauert 90 Minuten.
-              </p>
-            </li>
-          </ul>
-
-        </section>
-
-        <section id="ueber_mich" class="min-[2560px]:px-96 px-4 min-[364px]:px-8 py-16 lg:p-32 bg-stone-100">
+        <section id="ueber_mich" class="min-[2560px]:px-96 px-4 min-[364px]:px-8 py-16 lg:p-32 bg-white">
           <h2 class="text-center text-3xl lg:text-7xl py-4 pb-16 font-thin text-[#18705c]">
             Über mich
           </h2>
@@ -216,10 +151,10 @@
               <div class="p-10 bg-[#2E7874]">
                 <h3 class="text-xl py-4">Berufstätigkeit</h3>
                 <ul class="list-disc pl-8">
-                  <li>Co-Leitung Freiwilligen Seminare Diakonie Baden</li>
-                  <li>stationäre Kinder- und Jugendhilfe im SOS-Kinderdorf</li>
-                  <li>Co-Leitung Kinderbereich und Fundraising bei Stadtpiraten Freiburg e.V.</li>
                   <li>derzeit in Elternzeit, selbstständige Beraterin seit August 2023</li>
+                  <li>Co-Leitung Kinderbereich und Fundraising bei Stadtpiraten Freiburg e.V.</li>
+                  <li>stationäre Kinder- und Jugendhilfe im SOS-Kinderdorf</li>
+                  <li>Co-Leitung Freiwilligen Seminare Diakonie Baden</li>
                 </ul>
               </div>
               <div class="bg-[#245E5B] p-10 rounded-b-xl lg:rounded-none lg:rounded-br-xl">
@@ -294,7 +229,7 @@
                   <p class="">Ich empfehle Theresa in jedem Fall weiter. Sie ist offen, zugewandt und gut strukturiert.
                   </p>
                   <span class="text-xs italic">Thorsten M.*</span>
-                  <span class="text-xs italic">* Name wurde geändert</span>
+                  <span class="text-xs">* Name geändert</span>
                 </div>
                 <div id="reference2" class="hidden px-4 p-8 lg:p-16 flex flex-col gap-6 items-center">
                   <p>Nachdem ich beruflich eine sehr belastende Zeit hatte, bat ich um einen Termin bei Theresa. Die
@@ -308,15 +243,14 @@
                   <span class="text-xs italic">Christian S.</span>
                 </div>
                 <div id="reference3" class="hidden px-4 p-8 lg:p-16 flex flex-col gap-6 items-center">
-                  <p class="">Lorem ipsum dolor sit amet, officia excepteur ex fugiat.
-                    Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
-                    commodo
-                    officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla
-                    nisi
-                    laboris
-                    enim.
+                  <p class="">Dank der Beratung habe ich nachhaltig einen neuen Blick auf mein Problem bekommen. Die
+                    verschiedenen Methoden haben mir dabei geholfen, neue Ressourcen und Stärken zu entdecken, bzw. dass
+                    ich bereits bekannte jetzt mehr wertschätzen kann.
+                    Durch Theresas authentische und warmherzige Art habe ich mich von Anfang an wohl und verstanden
+                    gefühlt.
                   </p>
-                  <span class="text-xs italic">Peter Fritz - Freiburg</span>
+                  <span class="text-xs italic">Laura B.*</span>
+                  <span class="text-xs">* Name geändert</span>
                 </div>
                 <div id="next-reference-btn" class="h-full flex items-center justify-self-end">
                   <img src="assets/icons8-arrow-50.png" class="" alt="Pfeil nach rechts">
