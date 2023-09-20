@@ -578,6 +578,10 @@ video {
   grid-column-start: 1;
 }
 
+.col-start-2 {
+  grid-column-start: 2;
+}
+
 .col-end-3 {
   grid-column-end: 3;
 }
@@ -601,10 +605,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mr-auto {
-  margin-right: auto;
 }
 
 .inline {
@@ -705,6 +705,10 @@ video {
   align-items: center;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -725,6 +729,10 @@ video {
   gap: 0.5rem;
 }
 
+.gap-32 {
+  gap: 8rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -737,12 +745,12 @@ video {
   gap: 1.5rem;
 }
 
-.gap-16 {
-  gap: 4rem;
-}
-
 .self-start {
   align-self: flex-start;
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .justify-self-end {
@@ -809,6 +817,10 @@ video {
 .bg-\[\#18705c\] {
   --tw-bg-opacity: 1;
   background-color: rgb(24 112 92 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#18705c\]\/10 {
+  background-color: rgb(24 112 92 / 0.1);
 }
 
 .bg-\[\#18705c\]\/50 {
@@ -882,6 +894,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\.\/assets\/beraterin_large_elongated_background\.png\'\)\] {
+  background-image: url('../assets/beraterin_large_elongated_background.png');
+}
+
 .bg-\[url\(\'\.\/assets\/beraterin_full_body_smooth\.jpg\'\)\] {
   background-image: url('./assets/beraterin_full_body_smooth.jpg');
 }
@@ -890,24 +906,12 @@ video {
   background-image: url('./assets/beraterin_phone.png');
 }
 
-.bg-\[url\(\'assets\/beraterin_large_elongated_background\.png\'\)\] {
-  background-image: url('assets/beraterin_large_elongated_background.png');
-}
-
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\.\/assets\/beraterin_large_elongated_background\.png\'\)\] {
-  background-image: url('./assets/beraterin_large_elongated_background.png');
-}
-
-.bg-\[url\(\'\.\.\/assets\/beraterin_large_elongated_background\.png\'\)\] {
-  background-image: url('../assets/beraterin_large_elongated_background.png');
 }
 
 .from-\[\#18705c\] {
@@ -938,6 +942,10 @@ video {
 
 .to-emerald-700 {
   --tw-gradient-to: #047857 var(--tw-gradient-to-position);
+}
+
+.to-stone-200 {
+  --tw-gradient-to: #e7e5e4 var(--tw-gradient-to-position);
 }
 
 .bg-cover {
@@ -972,10 +980,6 @@ video {
   padding: 2rem;
 }
 
-.p-0 {
-  padding: 0px;
-}
-
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
@@ -984,6 +988,11 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-10 {
@@ -1006,21 +1015,6 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1031,6 +1025,10 @@ video {
 
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
 }
 
 .pb-4 {
@@ -1067,10 +1065,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pt-96 {
-  padding-top: 24rem;
 }
 
 .text-center {
@@ -1131,6 +1125,14 @@ video {
 
 .font-thin {
   font-weight: 100;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .uppercase {
@@ -1260,6 +1262,10 @@ video {
     background-color: rgb(24 112 92 / var(--tw-bg-opacity));
   }
 
+  .hover\:bg-\[\#18705c\]\/20:hover {
+    background-color: rgb(24 112 92 / 0.2);
+  }
+
   .hover\:bg-\[\#18705c\]\/75:hover {
     background-color: rgb(24 112 92 / 0.75);
   }
@@ -1274,16 +1280,6 @@ video {
   }
 }
 
-@media (max-width: 2560px) {
-  .max-\[2560px\]\:ml-auto {
-    margin-left: auto;
-  }
-
-  .max-\[2560px\]\:ml-0 {
-    margin-left: 0px;
-  }
-}
-
 @media (min-width: 340px) {
   .min-\[340px\]\:pt-20 {
     padding-top: 5rem;
@@ -1293,12 +1289,15 @@ video {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
-}
 
-@media (min-width: 360px) {
-  .min-\[360px\]\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .min-\[340px\]\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .min-\[340px\]\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
 }
 
@@ -1370,6 +1369,11 @@ video {
     grid-column-start: 3;
   }
 
+  .md\:mx-48 {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+
   .md\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -1378,8 +1382,16 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .md\:gap-16 {
-    gap: 4rem;
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:gap-48 {
+    gap: 12rem;
+  }
+
+  .md\:justify-self-end {
+    justify-self: end;
   }
 
   .md\:bg-left-top {
@@ -1388,6 +1400,10 @@ video {
 
   .md\:bg-right {
     background-position: right;
+  }
+
+  .md\:p-16 {
+    padding: 4rem;
   }
 
   .md\:pb-32 {
@@ -1400,6 +1416,11 @@ video {
 
   .md\:text-5xl {
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 
@@ -1499,19 +1520,14 @@ video {
     padding: 10rem;
   }
 
-  .lg\:px-32 {
-    padding-left: 8rem;
-    padding-right: 8rem;
-  }
-
-  .lg\:px-40 {
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
-
   .lg\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .lg\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 
   .lg\:pb-32 {
@@ -1560,11 +1576,6 @@ video {
     grid-template-columns: 200px 1fr;
   }
 
-  .xl\:px-40 {
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
-
   .xl\:text-start {
     text-align: start;
   }
@@ -1586,29 +1597,11 @@ video {
   .\32xl\:bg-right-top {
     background-position: right top;
   }
-
-  .\32xl\:px-40 {
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
 }
 
 @media (min-width: 2560px) {
-  .min-\[2560px\]\:ml-0 {
-    margin-left: 0px;
-  }
-
-  .min-\[2560px\]\:ml-24 {
-    margin-left: 6rem;
-  }
-
   .min-\[2560px\]\:px-96 {
     padding-left: 24rem;
     padding-right: 24rem;
-  }
-
-  .min-\[2560px\]\:px-40 {
-    padding-left: 10rem;
-    padding-right: 10rem;
   }
 }
