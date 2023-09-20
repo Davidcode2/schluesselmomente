@@ -26,11 +26,11 @@
       </div>
     </div>
 
-    <nav id="nav">
+    <nav id="nav" class="h-0 opacity-0 transition-all duration-200 flex flex-col justify-center">
       <img src="../assets/Logo_Keyhole_transparent.png" alt="Beiges Schlüsselloch"
         class="hidden min-[720px]:block min-[720px]:left-8 absolute lg:left-16 sm:top-8 max-h-10" />
-      <ul id="nav-flex" class="flex justify-between items-center gap-5 lg:gap-16 p-8 lg:px-16  min-[720px]:pl-24">
-        <li
+      <ul id="nav-flex" class="flex justify-between items-center gap-5 lg:gap-16 p-8 lg:px-16 min-[720px]:pl-24">
+        <li onClick="closeMobileMenu()"
           class="min-[720px]:ml-auto pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0">
           <a class="py-4" href="#arbeitsweise">Arbeitsweise</a>
         </li>
@@ -38,10 +38,10 @@
             href="./einzelberatung.html">Einzelberatung</a></li>
         <li class="pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
             href="./paarberatung.html">Paarberatung</a></li>
-        <li class="pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
+        <li onClick="closeMobileMenu()" class="pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
             href="#ueber_mich">Über mich</a>
         </li>
-        <li class="pb-2"><a class="py-4" href="#kontakt">
+        <li onClick="closeMobileMenu" class="pb-2"><a class="py-4" href="#kontakt">
             <button
               class="bg-[#18705c]/75 p-2 text-white transition-all hover:bg-[#18705c] rounded-lg tracking-widest">Erstgespräch</button></a>
         </li>
