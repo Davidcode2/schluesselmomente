@@ -51,7 +51,7 @@
   <main class="">
 
     <section
-      class="min-[2560px]:px-96 p-8 lg:pl-16 md:pb-32 pt-8 md:pt-16 bg-[url('./assets/beraterin_phone.png')] min-[470px]:bg-[url('./assets/beraterin_small.png')] min-[430px]:bg-left md:bg-left-top lg:bg-[url('./assets/beraterin_very_elongated_fade_white.png')] lg:bg-bottom 2xl:bg-[url('./assets/beraterin_large_elongated.png')] bg-no-repeat">
+      class="min-[2560px]:px-96 p-8 lg:pl-16 md:pb-32 pt-8 md:pt-16 bg-[url('./assets/beraterin_phone.webP')] min-[470px]:bg-[url('./assets/beraterin_small.webP')] min-[430px]:bg-left md:bg-left-top lg:bg-[url('./assets/beraterin_very_elongated_fade_white.webP')] lg:bg-bottom 2xl:bg-[url('./assets/beraterin_large_elongated.webP')] bg-no-repeat">
       <div class="grid lg:grid-cols-2 gap-4">
         <div class="col-start-1 flex flex-col rounded-lg">
           <div class="flex items-end gap-4">
@@ -108,13 +108,13 @@
           </h2>
           <div class="md:mx-48 md:gap-48 gap-32 flex flex-col md:flex-row items-center justify-center text-center">
             <a href="einzelberatung.html">
-            <div class="md:p-16 p-10 flex flex-col text-center items-center gap-2 bg-[#18705c]/10 rounded-full hover:bg-[#18705c]/20">
+            <div class="md:p-16 p-10 flex flex-col text-center items-center gap-2 transition-all bg-[#18705c]/10 hover:bg-[#18705c]/20 rounded-full">
               <img src="assets/emoji/icons8-chess-pawn-48.png" alt="Schachfigur Bauer" class="sepia">
               Einzelberatung
             </div>
             </a>
             <a href="paarberatung.html">
-            <div class="md:p-16 p-10 flex flex-col text-center items-center gap-2 bg-[#18705c]/10 rounded-full hover:bg-[#18705c]/20">
+            <div class="md:p-16 p-10 flex flex-col text-center items-center gap-2 transition-all bg-[#18705c]/10 hover:bg-[#18705c]/20 rounded-full ">
               <img src="assets/emoji/icons8-people-hugging-emoji-48.png" class="sepia"
                 alt="zwei sich umarmende Menschen">
               Paarberatung
@@ -128,7 +128,7 @@
             Über mich
           </h2>
           <div class="grid lg:grid-cols-2 2xl:grid-cols-3 bg-[#399692] rounded-xl">
-            <div class="row-span-4 bg-[url('./assets/beraterin_full_body_smooth.jpg')] rounded-l-xl bg-cover bg-center">
+            <div class="row-span-4 bg-[url('./assets/beraterin_full_body_smooth.webP')] rounded-l-xl bg-cover bg-center">
             </div>
             <div class="text-stone-100 2xl:col-span-2">
               <div class="p-10 bg-green-400/20">
