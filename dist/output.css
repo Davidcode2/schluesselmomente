@@ -534,6 +534,14 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -645,6 +653,19 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-0 {
+  height: 0px;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .max-h-10 {
@@ -890,12 +911,12 @@ video {
   background-image: url('../assets/beraterin_large_elongated_background.png');
 }
 
-.bg-\[url\(\'\.\/assets\/beraterin_full_body_smooth\.jpg\'\)\] {
-  background-image: url('./assets/beraterin_full_body_smooth.jpg');
+.bg-\[url\(\'\.\/assets\/beraterin_full_body_smooth\.webP\'\)\] {
+  background-image: url('./assets/beraterin_full_body_smooth.webP');
 }
 
-.bg-\[url\(\'\.\/assets\/beraterin_phone\.png\'\)\] {
-  background-image: url('./assets/beraterin_phone.png');
+.bg-\[url\(\'\.\/assets\/beraterin_phone\.webP\'\)\] {
+  background-image: url('./assets/beraterin_phone.webP');
 }
 
 .bg-gradient-to-b {
@@ -904,14 +925,6 @@ video {
 
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\.\/assets\/beraterin_phone\.webP\'\)\] {
-  background-image: url('./assets/beraterin_phone.webP');
-}
-
-.bg-\[url\(\'\.\/assets\/beraterin_full_body_smooth\.webP\'\)\] {
-  background-image: url('./assets/beraterin_full_body_smooth.webP');
 }
 
 .from-\[\#18705c\] {
@@ -974,6 +987,10 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-32 {
+  padding: 8rem;
 }
 
 .px-20 {
@@ -1194,6 +1211,14 @@ video {
   color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
+.opacity-100 {
+  opacity: 1;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -1219,6 +1244,20 @@ video {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.delay-100 {
+  transition-delay: 100ms;
+}
+
+.delay-1000 {
+  transition-delay: 1000ms;
 }
 
 .duration-200 {
@@ -1300,10 +1339,6 @@ video {
 }
 
 @media (min-width: 470px) {
-  .min-\[470px\]\:bg-\[url\(\'\.\/assets\/beraterin_small\.png\'\)\] {
-    background-image: url('./assets/beraterin_small.png');
-  }
-
   .min-\[470px\]\:bg-\[url\(\'\.\/assets\/beraterin_small\.webP\'\)\] {
     background-image: url('./assets/beraterin_small.webP');
   }
@@ -1466,10 +1501,6 @@ video {
     border-bottom-right-radius: 0.75rem;
   }
 
-  .lg\:bg-\[url\(\'\.\/assets\/beraterin_very_elongated_fade_white\.png\'\)\] {
-    background-image: url('./assets/beraterin_very_elongated_fade_white.png');
-  }
-
   .lg\:bg-\[url\(\'\.\/assets\/beraterin_very_elongated_fade_white\.webP\'\)\] {
     background-image: url('./assets/beraterin_very_elongated_fade_white.webP');
   }
@@ -1574,14 +1605,6 @@ video {
 
   .\32xl\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .\32xl\:bg-\[url\(\'\.\/assets\/beraterin_large_elongated\.png\'\)\] {
-    background-image: url('./assets/beraterin_large_elongated.png');
-  }
-
-  .\32xl\:bg-\[url\(\'\.\/assets\/beraterin_large_elongated\.avif\'\)\] {
-    background-image: url('./assets/beraterin_large_elongated.avif');
   }
 
   .\32xl\:bg-\[url\(\'\.\/assets\/beraterin_large_elongated\.webP\'\)\] {
