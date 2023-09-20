@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth" id="top">
+<html lang="de" class="scroll-smooth" id="top">
 
 <head>
   <title>Schluesselmomente Freiburg</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Systemische Paar- und Einzelberatung in Freiburg. Ich begleite dich in herausfordernden Lebenssituationen und helfe dir, deine eigenen Lösungen zu finden.">
   <link href="./dist/output.css" rel="stylesheet">
   <link href="./src/css/style.css" rel="stylesheet">
   <link rel="icon" href="assets/keyhole_favicon.png">
