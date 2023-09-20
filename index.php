@@ -164,7 +164,6 @@
                 <ul class="list-disc pl-8">
                   <li class="">verheiratet</li>
                   <li class="">eine Tochter</li>
-                  </p>
               </div>
             </div>
           </div>
