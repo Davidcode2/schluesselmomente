@@ -106,24 +106,59 @@
       <div class="text-stone-800">
 
         <section id="beratungsthemen" class="min-[2560px]:px-96 p-8 pb-16 lg:p-16 lg:pb-32 bg-stone-100">
-          <h2 class="text-center text-3xl lg:text-7xl py-4 pb-32 font-thin text-[#18705c]/50">
-            Ich interessiere mich für
+          <h2 class="text-center text-3xl lg:text-7xl py-4 font-thin text-[#18705c]/50">
+            Beratungsthemen
           </h2>
-          <div class="md:mx-48 md:gap-48 gap-32 flex flex-col md:flex-row items-center justify-center text-center">
-            <a href="einzelberatung.html">
-            <div class="md:p-16 p-10 flex flex-col text-center items-center gap-2 transition-all bg-[#18705c]/10 hover:bg-[#18705c]/20 rounded-full">
-              <img src="assets/emoji/icons8-chess-pawn-48.png" alt="Schachfigur Bauer" class="sepia">
-              Einzelberatung
-            </div>
-            </a>
-            <a href="paarberatung.html">
-            <div class="md:p-16 p-10 flex flex-col text-center items-center gap-2 transition-all bg-[#18705c]/10 hover:bg-[#18705c]/20 rounded-full ">
-              <img src="assets/emoji/icons8-people-hugging-emoji-48.png" class="sepia"
-                alt="zwei sich umarmende Menschen">
-              Paarberatung
-            </div>
-            </a>
+          <p class="py-10 text-center">
+            Typische Beratungsthemen bei denen ich KlientInnen unterstütze:</p>
+          <ul class="grid lg:grid-cols-3 gap-10">
+            <li class="flex flex-col text-center items-center gap-2 py-6"><img
+                src="assets/emoji/icons8-chess-pawn-48.png" alt="Schachfigur Bauer" class="sepia">
+              <h4 class="text-xl">Entscheidungen
+                (beruflich und privat)</h4>
+            </li>
+            <li class="flex flex-col text-center items-center gap-2 py-6"><img
+                src="assets/emoji/icons8-high-voltage-48.png" alt="Blitz" class="sepia">
+              <h4 class="text-xl">Konflikte bewältigen</h4>
+            </li>
+            <li class="flex flex-col text-center items-center gap-2 py-6"><img src="assets/emoji/icons8-kite-48.png"
+                class="sepia" alt="Flugdrachen">
+              <h4 class="text-xl">Persönlichkeitsentwicklung</h4>
+            </li>
+            <li class="flex flex-col text-center items-center gap-2 py-6"><img src="assets/emoji/icons8-abacus-48.png"
+                class="sepia" alt="Rechenmaschine Abakus">
+              <h4 class="text-xl">Berufliche Herausforderungen</h4>
+            </li>
+            <li class="flex flex-col text-center items-center gap-2 py-6"><img
+                src="assets/emoji/icons8-people-hugging-emoji-48.png" class="sepia" alt="zwei sich umarmende Menschen">
+              <h4 class="text-xl">Partnerschaft</h4>
+            </li>
+            <li class="flex flex-col text-center items-center gap-2 py-6"><img src="assets/emoji/icons8-canoe-48.png"
+                class="sepia" alt="Ein Mensch in einem Kanu">
+              <h4 class="text-xl">Meistern von Übergängen</h4>
+            </li>
+            <li class="flex flex-col text-center items-center gap-2 py-6"><img src="assets/emoji/icons8-bullseye-48.png"
+                class="sepia" alt="Eine Dartscheibe mit Pfeil in der Mitte">
+              <h4 class="text-xl">Klarheit über Wünsche und Ziele gewinnen</h4>
+            </li>
+            <li class="flex flex-col text-center items-center gap-2 py-6"><img
+                src="assets/emoji/icons8-artist-palette-48.png" class="sepia" alt="Farbmischplatte">
+              <h4 class="text-xl">Fokus auf Stärken und Resourcen</h4>
+            </li>
+            <li class="flex flex-col text-center items-center gap-2 py-6"><img
+                src="assets/emoji/icons8-leaf-fluttering-in-wind-48.png" class="sepia"
+                alt="Zwei Blätter die sich im Wind wiegen">
+              <h4 class="text-xl">Stress, Überlastung, Überforderung</h4>
+            </li>
+          </ul>
+          <div class="flex flex-col items-center justify-center pt-32">
+            <a href="#ablauf"><button
+                class="flex items-center gap-2 p-3 text-white rounded-full bg-[#18705c]/50 hover:bg-[#18705c]/75 transition-all">
+                <span class="hover:scale-105 rotate-90 "><img src="assets/icons8-arrow-50.png"
+                    alt="Pfeil nach unten"></span>
+              </button></a>
           </div>
+
         </section>
 
         <section id="ablauf" class="min-[2560px]:px-96 border-t-2 border-b-2 border-stone-400 p-8 lg:p-16 bg-stone-300">
