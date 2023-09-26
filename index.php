@@ -29,19 +29,18 @@
     <nav id="nav" class="h-0 opacity-0 transition-all duration-200 flex flex-col justify-center">
       <img src="../assets/Logo_Keyhole_transparent.png" alt="Beiges Schlüsselloch"
         class="hidden min-[720px]:block min-[720px]:left-8 absolute lg:left-16 sm:top-8 max-h-10" />
-      <ul id="nav-flex" class="flex justify-between items-center gap-5 lg:gap-16 p-8 lg:px-16 min-[720px]:pl-24">
-        <li onClick="closeMobileMenu()"
+      <ul id="nav-flex" class="flex justify-between items-center gap-5 lg:gap-16 p-8 lg:px-16  min-[720px]:pl-24">
+        <li
           class="min-[720px]:ml-auto pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0">
           <a class="py-4" href="#arbeitsweise">Arbeitsweise</a>
         </li>
         <li class="pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
-            href="./einzelberatung.html">Einzelberatung</a></li>
+            href="#ueber_mich">Über mich</a> </li>
         <li class="pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
-            href="./paarberatung.html">Paarberatung</a></li>
-        <li onClick="closeMobileMenu()" class="pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
-            href="#ueber_mich">Über mich</a>
-        </li>
-        <li onClick="closeMobileMenu" class="pb-2"><a class="py-4" href="#kontakt">
+            href="#kosten">Kosten</a></li>
+        <li class="pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
+            href="#referenzen">Referenzen</a></li>
+        <li class="pb-2"><a class="py-4" href="#kontakt">
             <button
               class="bg-[#18705c]/75 p-2 text-white transition-all hover:bg-[#18705c] rounded-lg tracking-widest">Erstgespräch</button></a>
         </li>
@@ -97,6 +96,8 @@
           Entscheidungssituation zu bekommen. So entstehen neue Ideen und
           Sichtweisen, die dir dabei helfen, der Lösung Schritt für Schritt näher
           zu kommen.<br />
+          <br />
+          Gerne lasse ich auf Wunsch auch meine christliche Grundhaltung in die Beratung einfließen.
         </p>
       </div>
     </section>
@@ -125,7 +126,93 @@
           </div>
         </section>
 
-        <section id="ueber_mich" class="min-[2560px]:px-96 px-4 min-[364px]:px-8 py-16 lg:p-32 bg-white">
+        <section id="ablauf" class="min-[2560px]:px-96 border-t-2 border-b-2 border-stone-400 p-8 lg:p-16 bg-stone-300">
+          <h2 class="text-center text-3xl lg:text-7xl py-4 font-thin text-[#18705c]/50">Ablauf</h2>
+          <ul class="grid lg:grid-cols-3 gap-10 text-stone-700">
+            <li class="flex flex-col items-center gap-5 py-6"><img src="assets/emoji/icons8-envelope-48.png"
+                class="sepia" alt="Briefumschlag">
+              <h5 class="text-lg">Nachricht schreiben</h5>
+              <p class="text-center">
+                Vereinbare direkt einen Termin für ein unverbindliches Erstgespräch, bei dem wir uns erst einmal
+                kennenlernen und dein Anliegen klären.
+              </p>
+            </li>
+            <li class="flex flex-col items-center gap-5 py-6"><img src="assets/emoji/icons8-speech-48.png" class="sepia"
+                alt="Sprechblase">
+              <h5 class="text-lg">Erstgespräch</h5>
+              <p class="text-center">
+                Das Erstgespräch im Einzelsetting dauert 45 Minuten, im Paarsetting 60 Minuten. Hier haben wir in Ruhe
+                Zeit über dein Anliegen zu sprechen, uns kennenzulernen und offene Fragen zu klären. Erst nach diesem
+                Termin entscheidest du dich für oder gegen eine weitere Zusammenarbeit.
+              </p>
+            </li>
+            <li class="flex flex-col items-center gap-5 py-6"><img src="assets/emoji/icons8-restaurant-table-48.png"
+                class="sepia" alt="Zwei Menschen an einem Tisch">
+              <h5 class="text-lg">Weitere Gesprächstermine</h5>
+              <p class="text-center">
+                Die Anzahl der Sitzungen und den zeitlichen Abstand legen wir je nach Bedarf fest. Je nach Thema umfasst
+                ein Beratungsprozess in der Regel 3-10 Sitzungen. Eine Sitzung im Einzelsetting dauert 60 Minuten. Eine
+                Sitzung in der Paarberatung dauert 90 Minuten.
+              </p>
+            </li>
+          </ul>
+
+        </section>
+
+        <section id="kosten"
+          class="min-[2560px]:px-96 grid md:grid-cols-1 xl:grid-cols-[200px_1fr] items-center p-8 px-4 min-[364px]:px-8 lg:p-32 ">
+          <h2 class="text-center xl:text-start text-3xl lg:text-7xl pb-10 font-thin text-[#18705c]/50">
+            Kosten
+          </h2>
+          <div class="pt-10 text-stone-800">
+            <div class="grid lg:grid-cols-2 gap-10 justify-items-center items-center">
+              <div class="text-center justify-center">
+                <p class="pb-6">Einzelperson</p>
+                <div class="border-2 border-emerald-100 rounded-full p-4 text-center">
+                  <div
+                    class="bg-gradient-to-br from-white to-emerald-600/50 bg-emerald-300 rounded-full p-8 lg:p-16 text-5xl text-emerald-800 font-thin">
+                    45 €
+                  </div>
+                </div>
+                <p class="pt-6">für 60 Minuten</p>
+                <div class="grid grid-rows-2 py-4">
+                  <p class="text-sm">Erstgespräch:</p>
+                  <p class="text-sm">45 Minuten, 30 Euro</p>
+                </div>
+              </div>
+              <div>
+                <div class="text-center pb-4">
+                  <p class="pb-6">Paare</p>
+                  <div class="flex">
+                    <div class="relative left-8 border-2 border-emerald-100 rounded-full p-10 text-center">
+                      <div
+                        class="bg-gradient-to-br from-stone-100 to-emerald-700 rounded-full p-8 lg:p-16 text-5xl text-neutral-800">
+                      </div>
+                    </div>
+                    <div class="relative right-8 border-2 border-emerald-100 rounded-full p-10 text-center">
+                      <div
+                        class="bg-gradient-to-br from-stone-100 to-emerald-700 rounded-full p-8 lg:p-16 text-5xl text-neutral-800">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex relative bottom-32 lg:bottom-48 lg:-mb-48 -mb-28 justify-center">
+                    <div
+                      class="bg-gradient-to-br from-white to-emerald-600/25 rounded-full p-8 lg:p-16 text-5xl bg-emerald-300 text-emerald-800 font-thin">
+                      65 €
+                    </div>
+                  </div>
+                </div>
+                <p class="text-center pt-6">für 90 Minuten</p>
+                <div class="grid grid-rows-2 py-4">
+                  <p class="text-center text-sm">Erstgespräch:</p>
+                  <p class="text-center text-sm">60 Minuten, 45 Euro</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="ueber_mich" class="min-[2560px]:px-96 px-4 min-[364px]:px-8 py-16 lg:p-32 bg-stone-100">
           <h2 class="text-center text-3xl lg:text-7xl py-4 pb-16 font-thin text-[#18705c]">
             Über mich
           </h2>
@@ -135,6 +222,7 @@
             <div class="text-stone-100 2xl:col-span-2">
               <div class="p-10 bg-green-400/20">
                 <h3 class="text-3xl">Theresa Kappus</h3>
+                <p class="py-2">Systemische Beraterin</p>
               </div>
               <div class="p-10 bg-green-400/10">
                 <h3 class="text-xl pt-10 pb-4">Berufsausbildung / Beratungsausbildung:</h3>
@@ -171,50 +259,6 @@
 
         <div class="bg-gradient-to-b from-[#18705c] to-[#18594a]">
 
-          <section id="kosten"
-            class="min-[2560px]:px-96 grid md:grid-cols-1 xl:grid-cols-[200px_1fr] items-center p-8 px-4 min-[364px]:px-8 lg:p-32 ">
-            <h2 class="text-center xl:text-start text-3xl lg:text-7xl pb-10 font-thin text-stone-100">
-              Kosten
-            </h2>
-            <div class="pt-10 text-stone-100">
-              <div class="grid lg:grid-cols-2 gap-10 justify-items-center items-center">
-                <div class="text-center justify-center">
-                  <p class="pb-6">Einzelperson</p>
-                  <div class="sepia border-2 border-emerald-100 rounded-full p-4 text-center">
-                    <div
-                      class="bg-gradient-to-br from-white to-emerald-600/25 bg-emerald-300 rounded-full p-8 lg:p-16 text-5xl text-emerald-800 font-thin">
-                      45 €
-                    </div>
-                  </div>
-                  <p class="pt-6">für 60 Minuten</p>
-                </div>
-                <div>
-                  <div class="text-center pb-4 sepia">
-                    <p class="pb-6">Paare</p>
-                    <div class="flex">
-                      <div class="relative left-8 border-2 border-emerald-100 rounded-full p-10 text-center">
-                        <div
-                          class="bg-gradient-to-br from-stone-100 to-emerald-700 rounded-full p-8 lg:p-16 text-5xl text-neutral-800">
-                        </div>
-                      </div>
-                      <div class="relative right-8 border-2 border-emerald-100 rounded-full p-10 text-center">
-                        <div
-                          class="bg-gradient-to-br from-stone-100 to-emerald-700 rounded-full p-8 lg:p-16 text-5xl text-neutral-800">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex relative bottom-32 lg:bottom-48 lg:-mb-48 -mb-28 justify-center">
-                      <div
-                        class="bg-gradient-to-br from-white to-emerald-600/25 rounded-full p-8 lg:p-16 text-5xl bg-emerald-300 text-emerald-800 font-thin">
-                        65 €
-                      </div>
-                    </div>
-                  </div>
-                  <p class="text-center pt-6">für 90 Minuten</p>
-                </div>
-              </div>
-            </div>
-          </section>
 
           <section id="referenzen" class="min-[2560px]:px-96 p-8 lg:px-32 lg:p-24">
             <div class="bg-stone-200 lg:p-10 p-2 lg:pt-16 pt-8 rounded-xl">
@@ -295,6 +339,8 @@
               allowfullscreen>
             </iframe>
           </section>
+
+          <img src="assets/raum.webP" alt="Raum" class="w-full">
 
         </div>
         <div id="back-to-top-btn" class="hidden sticky bottom-0">
