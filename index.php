@@ -191,6 +191,53 @@
 
         </section>
 
+          <section id="kosten"
+            class="min-[2560px]:px-96 grid md:grid-cols-1 xl:grid-cols-[200px_1fr] items-center p-8 px-4 min-[364px]:px-8 lg:p-32 ">
+            <h2 class="text-center xl:text-start text-3xl lg:text-7xl pb-10 font-thin text-[#18705c]/50">
+              Kosten
+            </h2>
+            <div class="pt-10 text-stone-800">
+              <div class="grid lg:grid-cols-2 gap-10 justify-items-center items-center">
+                <div class="text-center justify-center">
+                  <p class="pb-6">Einzelperson</p>
+                  <div class="border-2 border-emerald-100 rounded-full p-4 text-center">
+                    <div
+                      class="bg-gradient-to-br from-white to-emerald-600/50 bg-emerald-300 rounded-full p-8 lg:p-16 text-5xl text-emerald-800 font-thin">
+                      45 €
+                    </div>
+                  </div>
+                  <p class="pt-6">für 60 Minuten</p>
+                  <p class="p-2 text-sm">Erstgespräch: 45 Minuten, 30 Euro</p>
+                </div>
+                <div>
+                  <div class="text-center pb-4">
+                    <p class="pb-6">Paare</p>
+                    <div class="flex">
+                      <div class="relative left-8 border-2 border-emerald-100 rounded-full p-10 text-center">
+                        <div
+                          class="bg-gradient-to-br from-stone-100 to-emerald-700 rounded-full p-8 lg:p-16 text-5xl text-neutral-800">
+                        </div>
+                      </div>
+                      <div class="relative right-8 border-2 border-emerald-100 rounded-full p-10 text-center">
+                        <div
+                          class="bg-gradient-to-br from-stone-100 to-emerald-700 rounded-full p-8 lg:p-16 text-5xl text-neutral-800">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex relative bottom-32 lg:bottom-48 lg:-mb-48 -mb-28 justify-center">
+                      <div
+                        class="bg-gradient-to-br from-white to-emerald-600/25 rounded-full p-8 lg:p-16 text-5xl bg-emerald-300 text-emerald-800 font-thin">
+                        65 €
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-center pt-6">für 90 Minuten</p>
+                  <p class="text-center p-2 text-sm">Erstgespräch: 60 Minuten, 45 Euro</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
         <section id="ueber_mich" class="min-[2560px]:px-96 px-4 min-[364px]:px-8 py-16 lg:p-32 bg-stone-100">
           <h2 class="text-center text-3xl lg:text-7xl py-4 pb-16 font-thin text-[#18705c]">
             Über mich
@@ -201,6 +248,7 @@
             <div class="text-stone-100 2xl:col-span-2">
               <div class="p-10 bg-green-400/20">
                 <h3 class="text-3xl">Theresa Kappus</h3>
+                <p class="py-2">Systemische Beraterin</p>
               </div>
               <div class="p-10 bg-green-400/10">
                 <h3 class="text-xl pt-10 pb-4">Berufsausbildung / Beratungsausbildung:</h3>
@@ -238,50 +286,6 @@
 
         <div class="bg-gradient-to-b from-[#18705c] to-[#18594a]">
 
-          <section id="kosten"
-            class="min-[2560px]:px-96 grid md:grid-cols-1 xl:grid-cols-[200px_1fr] items-center p-8 px-4 min-[364px]:px-8 lg:p-32 ">
-            <h2 class="text-center xl:text-start text-3xl lg:text-7xl pb-10 font-thin text-stone-100">
-              Kosten
-            </h2>
-            <div class="pt-10 text-stone-100">
-              <div class="grid lg:grid-cols-2 gap-10 justify-items-center items-center">
-                <div class="text-center justify-center">
-                  <p class="pb-6">Einzelperson</p>
-                  <div class="sepia border-2 border-emerald-100 rounded-full p-4 text-center">
-                    <div
-                      class="bg-gradient-to-br from-white to-emerald-600/25 bg-emerald-300 rounded-full p-8 lg:p-16 text-5xl text-emerald-800 font-thin">
-                      45 €
-                    </div>
-                  </div>
-                  <p class="pt-6">für 60 Minuten</p>
-                </div>
-                <div>
-                  <div class="text-center pb-4 sepia">
-                    <p class="pb-6">Paare</p>
-                    <div class="flex">
-                      <div class="relative left-8 border-2 border-emerald-100 rounded-full p-10 text-center">
-                        <div
-                          class="bg-gradient-to-br from-stone-100 to-emerald-700 rounded-full p-8 lg:p-16 text-5xl text-neutral-800">
-                        </div>
-                      </div>
-                      <div class="relative right-8 border-2 border-emerald-100 rounded-full p-10 text-center">
-                        <div
-                          class="bg-gradient-to-br from-stone-100 to-emerald-700 rounded-full p-8 lg:p-16 text-5xl text-neutral-800">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex relative bottom-32 lg:bottom-48 lg:-mb-48 -mb-28 justify-center">
-                      <div
-                        class="bg-gradient-to-br from-white to-emerald-600/25 rounded-full p-8 lg:p-16 text-5xl bg-emerald-300 text-emerald-800 font-thin">
-                        65 €
-                      </div>
-                    </div>
-                  </div>
-                  <p class="text-center pt-6">für 90 Minuten</p>
-                </div>
-              </div>
-            </div>
-          </section>
 
           <section id="referenzen" class="min-[2560px]:px-96 p-8 lg:px-32 lg:p-24">
             <div class="bg-stone-200 lg:p-10 p-2 lg:pt-16 pt-8 rounded-xl">
