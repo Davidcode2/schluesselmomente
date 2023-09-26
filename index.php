@@ -33,10 +33,9 @@
         <li class="min-[720px]:ml-auto pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
             href="#arbeitsweise">Arbeitsweise</a></li>
         <li class="pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
-            href="#beratungsthemen">Beratungsthemen</a></li>
+            href="#ueber_mich">Über mich</a> </li>
         <li class="pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
-            href="#ueber_mich">Über mich</a>
-        </li>
+            href="#kosten">Kosten</a></li>
         <li class="pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
             href="#referenzen">Referenzen</a></li>
         <li class="pb-2"><a class="py-4" href="#kontakt">
@@ -95,6 +94,8 @@
           Entscheidungssituation zu bekommen. So entstehen neue Ideen und
           Sichtweisen, die dir dabei helfen, der Lösung Schritt für Schritt näher
           zu kommen.<br />
+          <br/>
+          Gerne lasse ich auf Wunsch auch meine christliche Grundhaltung in die Beratung einfließen.
         </p>
       </div>
     </section>
