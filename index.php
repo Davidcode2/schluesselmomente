@@ -251,7 +251,8 @@
           <h2 class="text-center text-3xl lg:text-7xl py-4 pb-16 font-thin text-[#18705c]">
             Über mich
           </h2>
-          <div class="grid lg:grid-cols-2 2xl:grid-cols-3 bg-[#399692] rounded-xl">
+          <img src="assets/beraterin_full_body_smooth.webP" alt="Bild der Beraterin" class="sm:hidden rounded-t-lg mx-auto">
+          <div class="grid lg:grid-cols-2 2xl:grid-cols-3 bg-[#399692] rounded-b-xl sm:rounded-xl">
             <div class="row-span-4 bg-[url('./assets/beraterin_full_body_smooth.webP')] rounded-l-xl bg-cover bg-center">
             </div>
             <div class="text-stone-100 2xl:col-span-2">
@@ -367,15 +368,16 @@
             </form>
           </section>
 
-          <section id="karte" class="min-[2560px]:px-96 p-8 pb-24 lg:px-32 lg:pb-32">
+          <section id="karte" class="flex gap-6 min-[2560px]:px-96 p-8 pb-24 lg:px-32 lg:pb-32">
             <iframe class="w-full h-96 rounded-lg" frameborder="0" style="border:0"
               referrerpolicy="no-referrer-when-downgrade"
               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD_cnEu-Knja07b0Q8ON6h8bRt2I36oHZU&q=Rieselfeld,Freiburg+Deutschland"
               allowfullscreen>
             </iframe>
+          <img src="assets/raum.webP" alt="Raum" class="hidden sm:block w-full rounded-lg">
           </section>
 
-          <img src="assets/raum.webP" alt="Raum" class="w-full">
+          <img src="assets/raum.webP" alt="Raum" class="sm:hidden h-fit">
 
         </div>
         <div id="back-to-top-btn" class="hidden sticky bottom-0">
