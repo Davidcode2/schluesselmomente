@@ -343,7 +343,7 @@
             </div>
           </section>
 
-          <section id="kontakt" class="min-[2560px]:px-96 p-8 lg:px-32 lg:pb-32">
+          <section id="kontakt" class="min-[2560px]:px-96 p-8 lg:px-32 lg:pb-16">
             <h2 class="text-center text-3xl lg:text-7xl pb-10 font-thin text-stone-100">
               Kontakt</h2>
             <form id="kontakt-form" class="grid gap-2">
@@ -364,7 +364,7 @@
                   class="bg-[#18705c]/75 hover:bg-[#18705c] transition-all duration-200 tracking-widest w-full p-2 text-white rounded-lg">Senden</button>
               </div>
               <p id="message-success-message" class="hidden text-center text-stone-100">Vielen Dank für Ihre
-                Nachricht.<br>Ich werde mich so schnell wie möglich bei Ihnen melden.</p>
+                Nachricht.<br>Sie erhalten in Kürze eine Eingangsbestätigung an Ihre angegebene E-Mailadresse.</p>
             </form>
           </section>
 
@@ -374,7 +374,7 @@
               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD_cnEu-Knja07b0Q8ON6h8bRt2I36oHZU&q=Rieselfeld,Freiburg+Deutschland"
               allowfullscreen>
             </iframe>
-          <img src="assets/raum.webP" alt="Raum" width="4032" height="3024" class="hidden sm:block max-h-96 w-fit rounded-lg">
+          <img src="assets/raum.webP" alt="Raum" width="4032" height="3024" class="hidden xl:block max-h-96 w-fit rounded-lg">
           </section>
 
           <img src="assets/raum.webP" alt="Raum" width="4032" height="3024" class="sm:hidden w-fit">
