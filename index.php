@@ -27,7 +27,7 @@
     </div>
 
     <nav id="nav" class="h-0 opacity-0 transition-all duration-200 flex flex-col justify-center">
-      <img src="../assets/Logo_Keyhole_transparent.png" alt="Beiges Schlüsselloch"
+      <img src="../assets/Logo_Keyhole_transparent.png" width="116" height="174" alt="Beiges Schlüsselloch"
         class="hidden min-[720px]:block min-[720px]:left-8 absolute lg:left-16 sm:top-8 max-h-10" />
       <ul id="nav-flex" class="flex justify-between items-center gap-5 lg:gap-16 p-8 lg:px-16  min-[720px]:pl-24">
         <li
@@ -57,7 +57,7 @@
         <div class="col-start-1 flex flex-col rounded-lg">
           <div class="flex items-end gap-4">
             <!--<div class="absolute top-8 left-12 pattern w-60 h-60 rounded-full"></div>-->
-            <img src="assets/Logo_transparent.png" alt="Beiges Schlüsselloch" class="max-h-24 lg:max-h-32">
+            <img src="assets/Logo_transparent.png" width="1168" height="263" alt="Beiges Schlüsselloch" class="max-h-24 lg:max-h-32">
             <div class="flex flex-col">
               <h1 class="hidden text-stone-800 text-2xl md:text-5xl drop-shadow-lg lg:text-7xl lg:font-thin z-10">
                 Schlüsselmomente</h1>
@@ -113,41 +113,41 @@
             Typische Beratungsthemen bei denen ich KlientInnen unterstütze:</p>
           <ul class="grid lg:grid-cols-3 gap-10">
             <li class="flex flex-col text-center items-center gap-2 py-6"><img
-                src="assets/emoji/icons8-chess-pawn-48.png" alt="Schachfigur Bauer" class="sepia">
+                src="assets/emoji/icons8-chess-pawn-48.png" width="48" height="48" alt="Schachfigur Bauer" class="sepia">
               <h4 class="text-xl">Entscheidungen
                 (beruflich und privat)</h4>
             </li>
             <li class="flex flex-col text-center items-center gap-2 py-6"><img
-                src="assets/emoji/icons8-high-voltage-48.png" alt="Blitz" class="sepia">
+                src="assets/emoji/icons8-high-voltage-48.png" width="48" height="48" alt="Blitz" class="sepia">
               <h4 class="text-xl">Konflikte bewältigen</h4>
             </li>
             <li class="flex flex-col text-center items-center gap-2 py-6"><img src="assets/emoji/icons8-kite-48.png"
-                class="sepia" alt="Flugdrachen">
+                class="sepia" width="48" height="48" alt="Flugdrachen">
               <h4 class="text-xl">Persönlichkeitsentwicklung</h4>
             </li>
             <li class="flex flex-col text-center items-center gap-2 py-6"><img src="assets/emoji/icons8-abacus-48.png"
-                class="sepia" alt="Rechenmaschine Abakus">
+                class="sepia" width="48" height="48" alt="Rechenmaschine Abakus">
               <h4 class="text-xl">Berufliche Herausforderungen</h4>
             </li>
             <li class="flex flex-col text-center items-center gap-2 py-6"><img
-                src="assets/emoji/icons8-people-hugging-emoji-48.png" class="sepia" alt="zwei sich umarmende Menschen">
+                src="assets/emoji/icons8-people-hugging-emoji-48.png" class="sepia" width="48" height="48" alt="zwei sich umarmende Menschen">
               <h4 class="text-xl">Partnerschaft</h4>
             </li>
             <li class="flex flex-col text-center items-center gap-2 py-6"><img src="assets/emoji/icons8-canoe-48.png"
-                class="sepia" alt="Ein Mensch in einem Kanu">
+                class="sepia" width="48" height="48" alt="Ein Mensch in einem Kanu">
               <h4 class="text-xl">Meistern von Übergängen</h4>
             </li>
             <li class="flex flex-col text-center items-center gap-2 py-6"><img src="assets/emoji/icons8-bullseye-48.png"
-                class="sepia" alt="Eine Dartscheibe mit Pfeil in der Mitte">
+                class="sepia" width="48" height="48" alt="Eine Dartscheibe mit Pfeil in der Mitte">
               <h4 class="text-xl">Klarheit über Wünsche und Ziele gewinnen</h4>
             </li>
             <li class="flex flex-col text-center items-center gap-2 py-6"><img
-                src="assets/emoji/icons8-artist-palette-48.png" class="sepia" alt="Farbmischplatte">
+                src="assets/emoji/icons8-artist-palette-48.png" class="sepia" width="48" height="48" alt="Farbmischplatte">
               <h4 class="text-xl">Fokus auf Stärken und Resourcen</h4>
             </li>
             <li class="flex flex-col text-center items-center gap-2 py-6"><img
                 src="assets/emoji/icons8-leaf-fluttering-in-wind-48.png" class="sepia"
-                alt="Zwei Blätter die sich im Wind wiegen">
+                width="48" height="48" alt="Zwei Blätter die sich im Wind wiegen">
               <h4 class="text-xl">Stress, Überlastung, Überforderung</h4>
             </li>
           </ul>
@@ -155,7 +155,7 @@
             <a href="#ablauf"><button
                 class="flex items-center gap-2 p-3 text-white rounded-full bg-[#18705c]/50 hover:bg-[#18705c]/75 transition-all">
                 <span class="hover:scale-105 rotate-90 "><img src="assets/icons8-arrow-50.png"
-                    alt="Pfeil nach unten"></span>
+                    width="50" height="50" alt="Pfeil nach unten"></span>
               </button></a>
           </div>
 
@@ -164,7 +164,7 @@
         <section id="ablauf" class="min-[2560px]:px-96 border-t-2 border-b-2 border-stone-400 p-8 lg:p-16 bg-stone-300">
           <h2 class="text-center text-3xl lg:text-7xl py-4 font-thin text-[#18705c]/50">Ablauf</h2>
           <ul class="grid lg:grid-cols-3 gap-10 text-stone-700">
-            <li class="flex flex-col items-center gap-5 py-6"><img src="assets/emoji/icons8-envelope-48.png"
+            <li class="flex flex-col items-center gap-5 py-6"><img src="assets/emoji/icons8-envelope-48.png" width="48" height="48" 
                 class="sepia" alt="Briefumschlag">
               <h5 class="text-lg">Nachricht schreiben</h5>
               <p class="text-center">
@@ -173,7 +173,7 @@
               </p>
             </li>
             <li class="flex flex-col items-center gap-5 py-6"><img src="assets/emoji/icons8-speech-48.png" class="sepia"
-                alt="Sprechblase">
+                width="48" height="48" alt="Sprechblase">
               <h5 class="text-lg">Erstgespräch</h5>
               <p class="text-center">
                 Das Erstgespräch im Einzelsetting dauert 45 Minuten, im Paarsetting 60 Minuten. Hier haben wir in Ruhe
@@ -181,7 +181,7 @@
                 Termin entscheidest du dich für oder gegen eine weitere Zusammenarbeit.
               </p>
             </li>
-            <li class="flex flex-col items-center gap-5 py-6"><img src="assets/emoji/icons8-restaurant-table-48.png"
+            <li class="flex flex-col items-center gap-5 py-6"><img src="assets/emoji/icons8-restaurant-table-48.png" width="48" height="48" 
                 class="sepia" alt="Zwei Menschen an einem Tisch">
               <h5 class="text-lg">Weitere Gesprächstermine</h5>
               <p class="text-center">
@@ -251,7 +251,7 @@
           <h2 class="text-center text-3xl lg:text-7xl py-4 pb-16 font-thin text-[#18705c]">
             Über mich
           </h2>
-          <img src="assets/beraterin_full_body_smooth.webP" alt="Bild der Beraterin" class="sm:hidden rounded-t-lg mx-auto">
+          <img src="assets/beraterin_full_body_smooth.webP" width="1024" height="1536" alt="Bild der Beraterin" class="sm:hidden rounded-t-lg mx-auto">
           <div class="grid lg:grid-cols-2 2xl:grid-cols-3 bg-[#399692] rounded-b-xl sm:rounded-xl">
             <div class="row-span-4 bg-[url('./assets/beraterin_full_body_smooth.webP')] rounded-l-xl bg-cover bg-center">
             </div>
@@ -304,7 +304,7 @@
               <div
                 class="grid lg:grid-cols-[100px_1fr_100px] grid-cols-[40px_1fr_40px] text-center items-center lg:h-96 lg:text-base text-sm">
                 <div id="previous-reference-btn" class="h-full flex items-center cursor-pointer hover:scale-105">
-                  <img src="assets/right-chevron-50.webp" class="rotate-180" alt="Pfeil nach links">
+                  <img src="assets/right-chevron-50.webp" class="rotate-180" width="50" height="50" alt="Pfeil nach links">
                 </div>
                 <div id="reference1" class="px-4 p-8 lg:p-16 flex flex-col gap-6 items-center">
                   <p class="">Dank der Beratung habe ich nachhaltig einen neuen Blick auf mein Problem bekommen. Die
@@ -334,7 +334,7 @@
                   <span class="text-xs italic">Christian S.</span>
                 </div>
                 <div id="next-reference-btn" class="h-full cursor-pointer hover:scale-105 flex items-center justify-self-end">
-                  <img src="assets/right-chevron-50.webp" class="" alt="Pfeil nach rechts">
+                  <img src="assets/right-chevron-50.webp" class="" width="50" height="50" alt="Pfeil nach rechts">
                 </div>
               </div>
               <div class="flex justify-center">
@@ -374,14 +374,14 @@
               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD_cnEu-Knja07b0Q8ON6h8bRt2I36oHZU&q=Rieselfeld,Freiburg+Deutschland"
               allowfullscreen>
             </iframe>
-          <img src="assets/raum.webP" alt="Raum" class="hidden sm:block w-full rounded-lg">
+          <img src="assets/raum.webP" alt="Raum" width="4032" height="3024" class="hidden sm:block max-h-96 w-full rounded-lg">
           </section>
 
-          <img src="assets/raum.webP" alt="Raum" class="sm:hidden h-fit">
+          <img src="assets/raum.webP" alt="Raum" width="4032" height="3024" class="sm:hidden">
 
         </div>
         <div id="back-to-top-btn" class="hidden sticky bottom-0">
-          <a href="#top"><img class="p-2 ml-auto" src="assets/icons8-chevron-50.png" alt="Pfeil nach oben"></a>
+          <a href="#top"><img class="p-2 ml-auto" src="assets/icons8-chevron-50.png" width="50" height="50" alt="Pfeil nach oben"></a>
         </div>
       </div>
     </div>
