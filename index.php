@@ -306,7 +306,7 @@
                 <div id="previous-reference-btn" class="h-full flex items-center cursor-pointer hover:scale-105">
                   <img src="assets/right-chevron-50.webp" class="rotate-180" alt="Pfeil nach links">
                 </div>
-                <div id="reference1" class="hidden px-4 p-8 lg:p-16 flex flex-col gap-6 items-center">
+                <div id="reference1" class="px-4 p-8 lg:p-16 flex flex-col gap-6 items-center">
                   <p class="">Dank der Beratung habe ich nachhaltig einen neuen Blick auf mein Problem bekommen. Die
                     verschiedenen Methoden haben mir dabei geholfen, neue Ressourcen und Stärken zu entdecken, bzw. dass
                     ich bereits bekannte jetzt mehr wertschätzen kann.
@@ -316,7 +316,7 @@
                   <span class="text-xs italic">Laura B.*</span>
                   <span class="text-xs">* Name geändert</span>
                 </div>
-                <div id="reference2" class="flex flex-col gap-6 px-4 p-8 lg:pt-16 pb-8 items-center">
+                <div id="reference2" class="hidden flex flex-col gap-6 px-4 p-8 lg:pt-16 pb-8 items-center">
                   <p class="">Ich empfehle Theresa in jedem Fall weiter. Sie ist offen, zugewandt und gut strukturiert.
                   </p>
                   <span class="text-xs italic">Thorsten M.*</span>
