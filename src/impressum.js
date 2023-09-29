@@ -1,15 +1,17 @@
 let haftungContent = document.getElementById("haftung-content");
+let haftungHeader = document.getElementById("haftung-header");
 let haftungButton = document.getElementById("haftung-button");
 
 let datenschutzContent = document.getElementById("datenschutz-content");
+let datenschutzHeader = document.getElementById("datenschutz-header");
 let datenschutzButton = document.getElementById("datenschutz-button");
 
-haftungButton.addEventListener("click", () => {
+haftungHeader.addEventListener("click", () => {
   haftungContent.classList.toggle("hidden");
   haftungButton.classList.toggle("rotate-180");
 });
 
-datenschutzButton.addEventListener("click", () => {
+datenschutzHeader.addEventListener("click", () => {
   datenschutzContent.classList.toggle("hidden");
   datenschutzButton.classList.toggle("rotate-180");
 });

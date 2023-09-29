@@ -295,23 +295,33 @@
         <div class="bg-gradient-to-b from-[#18705c] to-[#18594a]">
 
 
-          <section id="referenzen" class="min-[2560px]:px-96 p-8 lg:px-32 lg:p-24">
+          <section id="referenzen" class="min-[2560px]:px-96 p-8 pt-24 lg:pt-32 lg:px-32 lg:p-24">
             <div class="bg-stone-200 lg:p-10 p-2 lg:pt-16 pt-8 rounded-xl">
               <h2 class="text-center text-3xl lg:text-7xl font-thin text-[#18705c]/50">
                 Referenzen
               </h2>
               <div
                 class="grid lg:grid-cols-[100px_1fr_100px] grid-cols-[40px_1fr_40px] text-center items-center lg:h-96 lg:text-base text-sm">
-                <div id="previous-reference-btn" class="h-full flex items-center">
-                  <img src="assets/icons8-arrow-50.png" class="rotate-180" alt="Pfeil nach links">
+                <div id="previous-reference-btn" class="h-full flex items-center cursor-pointer hover:scale-105">
+                  <img src="assets/right-chevron-50.webp" class="rotate-180" alt="Pfeil nach links">
                 </div>
-                <div id="reference1" class="flex flex-col gap-6 px-4 p-8 lg:pt-16 pb-8 items-center">
+                <div id="reference1" class="hidden px-4 p-8 lg:p-16 flex flex-col gap-6 items-center">
+                  <p class="">Dank der Beratung habe ich nachhaltig einen neuen Blick auf mein Problem bekommen. Die
+                    verschiedenen Methoden haben mir dabei geholfen, neue Ressourcen und Stärken zu entdecken, bzw. dass
+                    ich bereits bekannte jetzt mehr wertschätzen kann.
+                    Durch Theresas authentische und warmherzige Art habe ich mich von Anfang an wohl und verstanden
+                    gefühlt.
+                  </p>
+                  <span class="text-xs italic">Laura B.*</span>
+                  <span class="text-xs">* Name geändert</span>
+                </div>
+                <div id="reference2" class="flex flex-col gap-6 px-4 p-8 lg:pt-16 pb-8 items-center">
                   <p class="">Ich empfehle Theresa in jedem Fall weiter. Sie ist offen, zugewandt und gut strukturiert.
                   </p>
                   <span class="text-xs italic">Thorsten M.*</span>
                   <span class="text-xs">* Name geändert</span>
                 </div>
-                <div id="reference2" class="hidden px-4 p-8 lg:p-16 flex flex-col gap-6 items-center">
+                <div id="reference3" class="hidden px-4 p-8 lg:p-16 flex flex-col gap-6 items-center">
                   <p>Nachdem ich beruflich eine sehr belastende Zeit hatte, bat ich um einen Termin bei Theresa. Die
                     Gesprächsführung war sehr angenehm, während der Gespräche in denen ich konkret klären wollte, ob
                     mein beruflicher Platz tatsächlich noch der passende sei, konnte sie viele Dinge bewusst machen, die
@@ -322,18 +332,8 @@
                   </p>
                   <span class="text-xs italic">Christian S.</span>
                 </div>
-                <div id="reference3" class="hidden px-4 p-8 lg:p-16 flex flex-col gap-6 items-center">
-                  <p class="">Dank der Beratung habe ich nachhaltig einen neuen Blick auf mein Problem bekommen. Die
-                    verschiedenen Methoden haben mir dabei geholfen, neue Ressourcen und Stärken zu entdecken, bzw. dass
-                    ich bereits bekannte jetzt mehr wertschätzen kann.
-                    Durch Theresas authentische und warmherzige Art habe ich mich von Anfang an wohl und verstanden
-                    gefühlt.
-                  </p>
-                  <span class="text-xs italic">Laura B.*</span>
-                  <span class="text-xs">* Name geändert</span>
-                </div>
-                <div id="next-reference-btn" class="h-full flex items-center justify-self-end">
-                  <img src="assets/icons8-arrow-50.png" class="" alt="Pfeil nach rechts">
+                <div id="next-reference-btn" class="h-full cursor-pointer hover:scale-105 flex items-center justify-self-end">
+                  <img src="assets/right-chevron-50.webp" class="" alt="Pfeil nach rechts">
                 </div>
               </div>
               <div class="flex justify-center">
@@ -367,7 +367,7 @@
             </form>
           </section>
 
-          <section id="karte" class="min-[2560px]:px-96 p-8 lg:px-32 lg:pb-32">
+          <section id="karte" class="min-[2560px]:px-96 p-8 pb-24 lg:px-32 lg:pb-32">
             <iframe class="w-full h-96 rounded-lg" frameborder="0" style="border:0"
               referrerpolicy="no-referrer-when-downgrade"
               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD_cnEu-Knja07b0Q8ON6h8bRt2I36oHZU&q=Rieselfeld,Freiburg+Deutschland"
@@ -398,9 +398,10 @@
           <li>
             Fotos von Miri Nussbächer Fotografie
           </li>
-          <li>
-            Icons von <a target="_blank" href="https://icons8.com">Icons8</a> </li>
-          <li>
+          <li class="flex flex-col gap-2">
+            <p>Icons von <a target="_blank" href="https://icons8.com">Icons8</a></p>
+            <p> und <a href="https://www.flaticon.com" title="flaticon icons">Cursor Creative - Flaticon</a></p>
+          </li>
             Homepage von Jakob Lingel
           </li>
         </ul>
