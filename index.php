@@ -27,7 +27,7 @@
     </div>
 
     <nav id="nav" class="h-0 opacity-0 transition-all duration-200 flex flex-col justify-center">
-      <img src="../assets/Logo_Keyhole_transparent.png" width="116" height="174" alt="Beiges Schlüsselloch"
+      <img src="../assets/Logo_Keyhole_transparent.png" alt="Beiges Schlüsselloch"
         class="hidden min-[720px]:block min-[720px]:left-8 absolute lg:left-16 sm:top-8 max-h-10" />
       <ul id="nav-flex" class="flex justify-between items-center gap-5 lg:gap-16 p-8 lg:px-16  min-[720px]:pl-24">
         <li
@@ -374,10 +374,10 @@
               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD_cnEu-Knja07b0Q8ON6h8bRt2I36oHZU&q=Rieselfeld,Freiburg+Deutschland"
               allowfullscreen>
             </iframe>
-          <img src="assets/raum.webP" alt="Raum" width="4032" height="3024" class="hidden sm:block max-h-96 w-full rounded-lg">
+          <img src="assets/raum.webP" alt="Raum" width="4032" height="3024" class="hidden sm:block max-h-96 w-fit rounded-lg">
           </section>
 
-          <img src="assets/raum.webP" alt="Raum" width="4032" height="3024" class="sm:hidden">
+          <img src="assets/raum.webP" alt="Raum" width="4032" height="3024" class="sm:hidden w-fit">
 
         </div>
         <div id="back-to-top-btn" class="hidden sticky bottom-0">
