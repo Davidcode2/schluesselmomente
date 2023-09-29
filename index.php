@@ -38,8 +38,6 @@
             href="#ueber_mich">Über mich</a> </li>
         <li class="pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
             href="#kosten">Kosten</a></li>
-        <li class="pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
-            href="#referenzen">Referenzen</a></li>
         <li class="pb-2"><a class="py-4" href="#kontakt">
             <button
               class="bg-[#18705c]/75 p-2 text-white transition-all hover:bg-[#18705c] rounded-lg tracking-widest">Erstgespräch</button></a>
