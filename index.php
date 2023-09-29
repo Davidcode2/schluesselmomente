@@ -56,8 +56,7 @@
       <div class="grid lg:grid-cols-2 gap-4">
         <div class="col-start-1 flex flex-col rounded-lg">
           <div class="flex items-end gap-4">
-            <!--<div class="absolute top-8 left-12 pattern w-60 h-60 rounded-full"></div>-->
-            <img src="assets/Logo_transparent.png" width="1168" height="263" alt="Beiges Schlüsselloch" class="max-h-24 lg:max-h-32">
+            <img src="assets/Logo_transparent.png" alt="Beiges Schlüsselloch" class="max-h-24 lg:max-h-32">
             <div class="flex flex-col">
               <h1 class="hidden text-stone-800 text-2xl md:text-5xl drop-shadow-lg lg:text-7xl lg:font-thin z-10">
                 Schlüsselmomente</h1>
