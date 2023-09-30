@@ -21,6 +21,7 @@ function mobileMenu() {
   var icon2 = document.getElementById('b');
   var icon3 = document.getElementById('c');
   var nav = document.getElementById('nav');
+  let hamburger = document.getElementById('hamburger');
 
   let navFlex = document.getElementById('nav-flex');
 
@@ -33,6 +34,7 @@ function mobileMenu() {
     nav.classList.toggle('h-screen');
     nav.classList.toggle('opacity-0');
     nav.classList.toggle('opacity-100');
+    hamburger.classList.toggle('fixed');
   });
 
   const mql = window.matchMedia('(max-width: 720px)');
@@ -72,12 +74,14 @@ function closeMobileMenu() {
       let icon1 = document.getElementById('a');
       let icon2 = document.getElementById('b');
       let icon3 = document.getElementById('c');
+      let hamburger = document.getElementById('hamburger');
 
       nav.classList.add('invisible');
       nav.classList.add('h-0');
       nav.classList.remove('h-screen');
       nav.classList.add('opacity-0');
       nav.classList.remove('opacity-100');
+      hamburger.classList.remove('fixed');
 
       icon1.classList.remove('a');
       icon2.classList.remove('c');
