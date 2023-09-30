@@ -67,7 +67,7 @@ function mobileMenu() {
 function closeMobileMenu() {
   const mql = window.matchMedia('(max-width: 720px)');
   if (mql.matches) {
-    setTimeout(function() {
+    //setTimeout(function() {
       let nav = document.getElementById('nav');
       let icon1 = document.getElementById('a');
       let icon2 = document.getElementById('b');
@@ -82,7 +82,7 @@ function closeMobileMenu() {
       icon1.classList.remove('a');
       icon2.classList.remove('c');
       icon3.classList.remove('b');
-    }, 1000);
+    //}, 1000);
   }
 }
 
