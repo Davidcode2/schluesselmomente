@@ -58,6 +58,7 @@ function mobileMenu() {
       icon1.classList.remove('a');
       icon2.classList.remove('c');
       icon3.classList.remove('b');
+      hamburger.classList.remove('fixed');
     }
   }
 
