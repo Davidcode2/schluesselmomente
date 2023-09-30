@@ -200,9 +200,9 @@
             <div class="grid lg:grid-cols-2 gap-10 justify-items-center items-center">
               <div class="text-center justify-center">
                 <p class="pb-6">Einzelperson</p>
-                <div class="border-2 border-emerald-100 rounded-full p-4 text-center">
+                <div class="border-2 border-emerald-600/25 rounded-full p-4 text-center">
                   <div
-                    class="bg-gradient-to-br from-white to-emerald-600/50 bg-emerald-300 rounded-full p-8 lg:p-16 text-5xl text-emerald-800 font-thin">
+                    class="bg-gradient-to-br from-white to-emerald-700/50 bg-emerald-300 rounded-full p-8 lg:p-16 text-5xl text-emerald-800 font-thin">
                     45 €
                   </div>
                 </div>
@@ -216,20 +216,20 @@
                 <div class="text-center pb-4">
                   <p class="pb-6">Paare</p>
                   <div class="flex">
-                    <div class="relative left-8 border-2 border-emerald-100 rounded-full p-10 text-center">
+                    <div class="relative left-8 border-2 border-emerald-600/25 rounded-full p-10 text-center">
                       <div
-                        class="bg-gradient-to-br from-stone-100 to-emerald-700 rounded-full p-8 lg:p-16 text-5xl text-neutral-800">
+                        class="bg-gradient-to-br from-stone-100 to-emerald-500 rounded-full p-8 lg:p-16 text-5xl text-neutral-800">
                       </div>
                     </div>
-                    <div class="relative right-8 border-2 border-emerald-100 rounded-full p-10 text-center">
+                    <div class="relative right-8 border-2 border-emerald-600/25 rounded-full p-10 text-center">
                       <div
-                        class="bg-gradient-to-br from-stone-100 to-emerald-700 rounded-full p-8 lg:p-16 text-5xl text-neutral-800">
+                        class="bg-gradient-to-br from-stone-100 to-emerald-500 rounded-full p-8 lg:p-16 text-5xl text-neutral-800">
                       </div>
                     </div>
                   </div>
                   <div class="flex relative bottom-32 lg:bottom-48 lg:-mb-48 -mb-28 justify-center">
                     <div
-                      class="bg-gradient-to-br from-white to-emerald-600/25 rounded-full p-8 lg:p-16 text-5xl bg-emerald-300 text-emerald-800 font-thin">
+                      class="bg-gradient-to-br from-white to-emerald-700/50 rounded-full p-8 lg:p-16 text-5xl bg-emerald-300 text-emerald-800 font-thin">
                       65 €
                     </div>
                   </div>
@@ -365,16 +365,16 @@
             </form>
           </section>
 
-          <section id="karte" class="flex gap-6 min-[2560px]:px-96 p-8 pb-24 lg:px-32 lg:pb-32">
+          <section id="karte" class="grid xl:grid-cols-2 gap-6 min-[2560px]:px-96 p-8 pb-24 lg:px-32 lg:pb-32">
             <iframe class="w-full h-96 rounded-lg" frameborder="0" style="border:0"
               referrerpolicy="no-referrer-when-downgrade"
               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD_cnEu-Knja07b0Q8ON6h8bRt2I36oHZU&q=Rieselfeld,Freiburg+Deutschland"
               allowfullscreen>
             </iframe>
-          <img src="assets/raum.webP" alt="Raum" width="4032" height="3024" class="hidden xl:block max-h-96 w-fit rounded-lg">
+          <img src="assets/raum_color.webP" alt="Raum" width="4032" height="3024" class="hidden xl:block max-h-96 h-auto object-cover w-fit rounded-lg">
           </section>
 
-          <img src="assets/raum.webP" alt="Raum" width="4032" height="3024" class="sm:hidden w-fit">
+          <img src="assets/raum_color.webP" alt="Raum" width="4032" height="3024" class="sm:hidden w-fit">
 
         </div>
         <div id="back-to-top-btn" class="hidden sticky bottom-0">
