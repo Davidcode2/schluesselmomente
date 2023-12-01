@@ -349,9 +349,9 @@
                 class="w-full p-2  border-2 border-stone-200 text-neutral-600 rounded-lg">
               <label for="email" class="text-stone-100 uppercase text-sm">E-Mail</label>
               <input id="email" type="email" placeholder="E-Mail" name="email" maxlength="70" required
-                class="w-full p-2  border-2 border-stone-200 text-neutral-600 rounded-lg">
+                class="w-full p-2 border-2 border-stone-200 text-neutral-600 rounded-lg">
               <label for="phone" class="text-stone-100 uppercase text-sm">Telefon</label>
-              <input id="phone" type="phone" placeholder="Telefon" name="phone"
+              <input id="phone" type="tel" placeholder="Telefon" name="phone"
                 class="w-full p-2  border-2 border-stone-200 text-neutral-600 rounded-lg">
               <label for="message" class="text-stone-100 uppercase text-sm">Nachricht</label>
               <textarea id="message" placeholder="Nachricht" name="message" required maxlength="1000"
