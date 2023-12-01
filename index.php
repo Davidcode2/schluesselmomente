@@ -27,7 +27,7 @@
     </div>
 
     <nav id="nav" class="z-50 fixed min-[720px]:static bg-white w-screen h-0 opacity-0 transition-all duration-200 flex flex-col justify-start">
-      <img src="../assets/Logo_Keyhole_transparent.png" alt="Beiges Schlüsselloch"
+      <img src="assets/Logo_Keyhole_transparent.png" alt="Beiges Schlüsselloch"
         class="hidden min-[720px]:block min-[720px]:left-8 absolute lg:left-16 sm:top-8 max-h-10" />
       <ul id="nav-flex" class="flex justify-between items-center gap-5 lg:gap-16 p-8 pt-32 lg:px-16 min-[720px]:pt-8 min-[720px]:pl-24">
         <li onClick="closeMobileMenu()"
@@ -258,21 +258,21 @@
                 <p class="py-2">Systemische Beraterin</p>
               </div>
               <div class="p-10 bg-green-400/10">
-                <h3 class="text-xl pt-10 pb-4">Berufsausbildung / Beratungsausbildung:</h3>
+                <h3 class="text-xl pb-4">Berufsausbildung / Beratungsausbildung:</h3>
                 <ul class="list-disc pl-8">
                   <li class="">Systemische Beraterin (3-Jährige Weiterbildung bei Wispo Tandem)</li>
                   <li>Sozialarbeiterin B.A.</li>
                 </ul>
               </div>
               <div class="p-10 bg-[#328580]">
-                <h3 class="text-xl py-4">Fortbildungen</h3>
+                <h3 class="text-xl pb-4">Fortbildungen</h3>
                 <ul class="list-disc pl-8">
                   <li>Konflikte systemisch verstehen und bearbeiten (Eva Gehring)</li>
                   <li>Verzeihen und Versöhnen in der Paarbeziehung (Friederike von Tiedemann)</li>
                 </ul>
               </div>
               <div class="p-10 bg-[#2E7874]">
-                <h3 class="text-xl py-4">Berufstätigkeit</h3>
+                <h3 class="text-xl pb-4">Berufstätigkeit</h3>
                 <ul class="list-disc pl-8">
                   <li>derzeit in Elternzeit, selbstständige Beraterin seit August 2023</li>
                   <li>Co-Leitung Kinderbereich und Fundraising bei Stadtpiraten Freiburg e.V.</li>
@@ -281,7 +281,7 @@
                 </ul>
               </div>
               <div class="bg-[#245E5B] p-10 rounded-b-xl lg:rounded-none lg:rounded-br-xl">
-                <h3 class="text-xl py-4">Persönliches</h3>
+                <h3 class="text-xl pb-4">Persönliches</h3>
                 <ul class="list-disc pl-8">
                   <li class="">verheiratet</li>
                   <li class="">eine Tochter</li>
