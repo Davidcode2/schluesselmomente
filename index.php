@@ -2,7 +2,7 @@
 <html lang="de" class="scroll-smooth" id="top">
 
 <head>
-  <title>Schluesselmomente Freiburg</title>
+  <title>Schlüsselmomente Freiburg</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
@@ -56,10 +56,8 @@
           <div class="flex items-end gap-4">
             <img src="assets/Logo_transparent.png" alt="Beiges Schlüsselloch" class="max-h-24 lg:max-h-32">
             <div class="flex flex-col">
-              <h1 class="hidden text-stone-800 text-2xl md:text-5xl drop-shadow-lg lg:text-7xl lg:font-thin z-10">
-                Schlüsselmomente</h1>
-              <h2 class="hidden text-stone-800 text-lg drop-shadow-lg lg:text-2xl z-10">Systemische Paar- und
-                Einzelberatung Freiburg</h2>
+              <h1 class="hidden text-stone-800 text-2xl md:text-5xl drop-shadow-lg lg:text-7xl lg:font-thin z-10">Christliche Beratung Freiburg</h1>
+              <h2 class="hidden text-stone-800 text-lg drop-shadow-lg lg:text-2xl z-10">Systemische Beratung Freiburg</h2>
             </div>
           </div>
           <div class="grid grid-cols-2 lg:grid-cols-1 text-stone-900 md:text-stone-800 rounded-lg mt-8">
