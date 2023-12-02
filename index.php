@@ -9,7 +9,7 @@
     content="Systemische Paar- und Einzelberatung in Freiburg. Ich begleite dich in herausfordernden Lebenssituationen und helfe dir, deine eigenen Lösungen zu finden.">
   <link href="./dist/output.css" rel="stylesheet">
   <link href="./src/css/style.css" rel="stylesheet">
-  <link rel="icon" href="assets/keyhole_favicon.png">
+  <link rel="icon" href="favicon48x48.ico">
   <script src="./src/index.js" defer></script>
 </head>
 
