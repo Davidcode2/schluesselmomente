@@ -169,6 +169,7 @@ function contactForm() {
     };
     formData = new FormData(e.target);
     request.send(formData);
+    form.reset();
     e.preventDefault();
   });
 

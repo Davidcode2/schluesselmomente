@@ -60,8 +60,10 @@ try {
   if ($mail->send()) {
     echo 'Confirmation email sent to submitter successfully.';
   } else {
+    error_log($mail->ErrorInfo, 3, "errors.log");
     echo 'Error sending confirmation email: ' . $mail->ErrorInfo;
   }
 } catch (Exception $e) {
   echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+  error_log($mail->ErrorInfo, 3, "errors.log");
 }
