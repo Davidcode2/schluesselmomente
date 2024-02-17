@@ -2,6 +2,7 @@ backToTop();
 mobileMenu();
 referenceView();
 contactForm();
+backToForm();
 
 function backToTop() {
   let backToTopButton = document.querySelector('#back-to-top-btn');
@@ -186,8 +187,6 @@ function backToForm() {
     let message = document.getElementById('message-success-message');
     let form = document.getElementById('kontakt-form');
     message.addEventListener('click', () => {
-    //  message.classList.add("hidden");
-     // form.classList.remove("hidden");
       message.classList.add("hidden");
       form.classList.remove("hidden");
     });

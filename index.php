@@ -358,8 +358,6 @@
                 <button
                   class="bg-[#18705c]/75 hover:bg-[#18705c] transition-all duration-200 tracking-widest w-full p-2 text-white rounded-lg">Senden</button>
               </div>
-              <p id="message-success-message" class="hidden text-center text-stone-100">Vielen Dank für Ihre
-                Nachricht.<br>Sie erhalten in Kürze eine Eingangsbestätigung an Ihre angegebene E-Mailadresse.</p>
             </form>
             <div id="message-success-message" class="hidden flex flex-col justify-center">
               <img class="p-2 sepia mx-auto" src="assets/icons8-mail-50.png" width="50" height="50" alt="Briefumschlag">
