@@ -161,6 +161,7 @@ function contactForm() {
     request.open('POST', url, true);
     request.onload = function() {
       displaySuccessMessage();
+      hideForm();
     };
     request.onerror = function() {
       console.log('request failed ', request, e);
@@ -174,4 +175,18 @@ function contactForm() {
     let message = document.getElementById('message-success-message');
     message.classList.remove('hidden');
   }
+
+  function hideForm() {
+    let form = document.getElementById('kontakt-form');
+    form.classList.add("hidden");
+  }
+}
+
+function backToForm() {
+    let message = document.getElementById('message-success-message');
+    let form = document.getElementById('kontakt-form');
+    message.addEventListener('click' () => {
+      message.classList.add('hidden');
+      form.classList.remove('hidden');
+    });
 }
