@@ -362,7 +362,7 @@
             <div id="message-success-message" class="hidden flex flex-col justify-center">
               <img class="p-2 sepia mx-auto" src="assets/icons8-mail-50.png" width="50" height="50" alt="Briefumschlag">
               <p class="text-center text-stone-100">Vielen Dank für Ihre
-                Nachricht.<br>Sie erhalten in Kürze eine Eingangsbestätigung an Ihre angegebene E-Mailadresse.</p>
+                Nachricht.<br>Ich werde mich so schnell wie möglich bei Ihnen melden.</p>
             </div>
           </section>
 
