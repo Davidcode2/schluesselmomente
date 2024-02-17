@@ -188,5 +188,7 @@ function backToForm() {
     message.addEventListener('click', () => {
     //  message.classList.add("hidden");
      // form.classList.remove("hidden");
+      message.classList.add("hidden");
+      form.classList.remove("hidden");
     });
 }
