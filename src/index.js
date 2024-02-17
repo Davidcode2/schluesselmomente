@@ -186,7 +186,7 @@ function backToForm() {
     let message = document.getElementById('message-success-message');
     let form = document.getElementById('kontakt-form');
     message.addEventListener('click', () => {
-      message.classList.add("hidden");
-      form.classList.remove("hidden");
+    //  message.classList.add("hidden");
+     // form.classList.remove("hidden");
     });
 }
