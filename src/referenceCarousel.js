@@ -15,7 +15,6 @@ export default class ReferenceCarousel {
     let referenceDisplayDiscs = [];
 
     this._references.forEach((el) => {
-      console.log(el);
       let disc = document.createElement('li');
       disc.classList.add('reference-display-disc-inactive');
       referenceDisplayDiscList.appendChild(disc);
@@ -51,8 +50,6 @@ export default class ReferenceCarousel {
   ) {
     button.addEventListener('click', function () {
       this._references[this.indexCurrentReference].classList.add('hidden');
-      console.log(this._references[this.indexCurrentReference].classList);
-      console.log(this.indexCurrentReference);
 
       this.activeReferenceDisplayDisc.classList.remove(
         'reference-display-disc-active',
