@@ -10,7 +10,14 @@
   <link href="./dist/output.css" rel="stylesheet">
   <link href="./src/css/style.css" rel="stylesheet">
   <link rel="icon" href="favicon48x48.ico">
-  <script src="./src/index.js" defer></script>
+  <script type="text/javascript">
+    const module = {};
+  </script>
+  <script type="module" defer>
+    import { closeMobileMenu } from "./src/index.js";
+    module.closeMobileMenu = closeMobileMenu;
+  </script>
+  <script src="./src/index.js" type="module" defer></script>
 </head>
 
 <body class="text-stone-300 font-sans font-light">
@@ -30,15 +37,15 @@
       <img src="assets/Logo_Keyhole_transparent.png" alt="Beiges Schlüsselloch"
         class="hidden min-[720px]:block min-[720px]:left-8 absolute lg:left-16 sm:top-8 max-h-10" />
       <ul id="nav-flex" class="flex justify-between items-center gap-5 lg:gap-16 p-8 pt-32 lg:px-16 min-[720px]:pt-8 min-[720px]:pl-24">
-        <li onClick="closeMobileMenu()"
+        <li onClick="module.closeMobileMenu()"
           class="min-[720px]:ml-auto pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0">
           <a class="py-4" href="#arbeitsweise">Arbeitsweise</a>
         </li>
-        <li onClick="closeMobileMenu()" class="pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
+        <li onClick="module.closeMobileMenu()" class="pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
             href="#ueber_mich">Über mich</a> </li>
-        <li onClick="closeMobileMenu()" class="pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
+        <li onClick="module.closeMobileMenu()" class="pb-2 hover:border-b-2 border-[#18705c]/25 transition-all duration-300 hover:pb-0"><a class="py-4"
             href="#kosten">Kosten</a></li>
-        <li onClick="closeMobileMenu()" class="pb-2"><a class="py-4" href="#kontakt">
+        <li onClick="module.closeMobileMenu()" class="pb-2"><a class="py-4" href="#kontakt">
             <button
               class="bg-[#18705c]/75 p-2 text-white transition-all hover:bg-[#18705c] rounded-lg tracking-widest">Erstgespräch</button></a>
         </li>
@@ -290,7 +297,6 @@
 
         <div class="bg-gradient-to-b from-[#18705c] to-[#18594a]">
 
-
           <section id="referenzen" class="min-[2560px]:px-96 p-8 pt-24 lg:pt-32 lg:px-32 lg:p-24">
             <div class="bg-stone-200 lg:p-10 p-2 lg:pt-16 pt-8 rounded-xl">
               <h2 class="text-center text-3xl lg:text-7xl font-thin text-[#18705c]/50">
@@ -302,6 +308,15 @@
                   <img src="assets/right-chevron-50.webp" class="rotate-180" width="50" height="50" alt="Pfeil nach links">
                 </div>
                 <div id="reference1" class="px-4 p-8 lg:p-16 flex flex-col gap-6 items-center">
+                  <p class="">Theresa hat mich mit ihrer herzlichen, zugewandten Art durch eine schwierige Zeit in meinem Leben begleitet.
+                    Von Stressmanagement über Glaubenssätze, Selbstwert, Grenzen setzen und berufliche Zielsetzungen haben wir in nur wenigen Monaten viele Themen angeschaut und bewegt.
+                    Theresa war dabei stets offen und flexibel, auf das, was mich aktuell beschäftigt hat, einzugehen.
+                    Auf ihre lösungsorientierte, wertschätzende Herangehensweise habe ich mich immer schon
+                    vorher sehr gefreut und ich konnte aus jeder Sitzung mit viel positiver Energie herausgehen...vielen Dank dafür!
+                  </p>
+                  <span class="text-xs italic">Britta</span>
+                </div>
+                <div id="reference2" class="hidden px-4 p-8 lg:p-16 flex flex-col gap-6 items-center">
                   <p class="">Dank der Beratung habe ich nachhaltig einen neuen Blick auf mein Problem bekommen. Die
                     verschiedenen Methoden haben mir dabei geholfen, neue Ressourcen und Stärken zu entdecken, bzw. dass
                     ich bereits bekannte jetzt mehr wertschätzen kann.
@@ -311,13 +326,13 @@
                   <span class="text-xs italic">Laura B.*</span>
                   <span class="text-xs">* Name geändert</span>
                 </div>
-                <div id="reference2" class="hidden flex flex-col gap-6 px-4 p-8 lg:pt-16 pb-8 items-center">
+                <div id="reference3" class="hidden flex flex-col gap-6 px-4 p-8 lg:pt-16 pb-8 items-center">
                   <p class="">Ich empfehle Theresa in jedem Fall weiter. Sie ist offen, zugewandt und gut strukturiert.
                   </p>
                   <span class="text-xs italic">Thorsten M.*</span>
                   <span class="text-xs">* Name geändert</span>
                 </div>
-                <div id="reference3" class="hidden px-4 p-8 lg:p-16 flex flex-col gap-6 items-center">
+                <div id="reference4" class="hidden px-4 p-8 lg:p-16 flex flex-col gap-6 items-center">
                   <p>Nachdem ich beruflich eine sehr belastende Zeit hatte, bat ich um einen Termin bei Theresa. Die
                     Gesprächsführung war sehr angenehm, während der Gespräche in denen ich konkret klären wollte, ob
                     mein beruflicher Platz tatsächlich noch der passende sei, konnte sie viele Dinge bewusst machen, die
@@ -333,7 +348,7 @@
                 </div>
               </div>
               <div class="flex justify-center">
-                <ul id="reference-display-discs" class="grid grid-cols-3 text-3xl"></ul>
+                <ul id="discs-reference-display" class="grid grid-cols-4 text-3xl"></ul>
               </div>
             </div>
           </section>

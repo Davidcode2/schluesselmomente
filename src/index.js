@@ -1,3 +1,5 @@
+import ReferenceCarousel from './referenceCarousel.js';
+
 backToTop();
 mobileMenu();
 referenceView();
@@ -8,7 +10,7 @@ function backToTop() {
   let backToTopButton = document.querySelector('#back-to-top-btn');
 
   window.addEventListener('scroll', (event) => {
-    if (this.scrollY > 400) {
+    if (scrollY > 400) {
       backToTopButton.classList.remove('hidden');
     } else {
       backToTopButton.classList.add('hidden');
@@ -26,7 +28,7 @@ function mobileMenu() {
 
   let navFlex = document.getElementById('nav-flex');
 
-  icon.addEventListener('click', function() {
+  icon.addEventListener('click', function () {
     icon1.classList.toggle('a');
     icon2.classList.toggle('c');
     icon3.classList.toggle('b');
@@ -68,103 +70,45 @@ function mobileMenu() {
   screenTest(mql);
 }
 
-function closeMobileMenu() {
+export function closeMobileMenu() {
   const mql = window.matchMedia('(max-width: 720px)');
   if (mql.matches) {
-    //setTimeout(function() {
-      let nav = document.getElementById('nav');
-      let icon1 = document.getElementById('a');
-      let icon2 = document.getElementById('b');
-      let icon3 = document.getElementById('c');
-      let hamburger = document.getElementById('hamburger');
+    let nav = document.getElementById('nav');
+    let icon1 = document.getElementById('a');
+    let icon2 = document.getElementById('b');
+    let icon3 = document.getElementById('c');
+    let hamburger = document.getElementById('hamburger');
 
-      nav.classList.add('invisible');
-      nav.classList.add('h-0');
-      nav.classList.remove('h-screen');
-      nav.classList.add('opacity-0');
-      nav.classList.remove('opacity-100');
-      hamburger.classList.remove('fixed');
+    nav.classList.add('invisible');
+    nav.classList.add('h-0');
+    nav.classList.remove('h-screen');
+    nav.classList.add('opacity-0');
+    nav.classList.remove('opacity-100');
+    hamburger.classList.remove('fixed');
 
-      icon1.classList.remove('a');
-      icon2.classList.remove('c');
-      icon3.classList.remove('b');
-    //}, 1000);
+    icon1.classList.remove('a');
+    icon2.classList.remove('c');
+    icon3.classList.remove('b');
   }
 }
 
 function referenceView() {
-  let reference1 = document.getElementById('reference1');
-  let reference2 = document.getElementById('reference2');
-  let reference3 = document.getElementById('reference3');
-
-  let references = [reference1, reference2, reference3];
-  let indexCurrentReference = 0;
-
-  let referenceDisplayDiscList = document.getElementById(
-    'reference-display-discs'
-  );
-  let activeReferenceDisplayDisc = null;
-  let referenceDisplayDiscs = [];
-
-  for (let i = 0; i < references.length; i++) {
-    let disc = document.createElement('li');
-    disc.classList.add('reference-display-disc-inactive');
-    if (i == 0) {
-      disc.classList.add('reference-display-disc-active');
-      activeReferenceDisplayDisc = disc;
-    }
-    referenceDisplayDiscList.appendChild(disc);
-    referenceDisplayDiscs.push(disc);
-  }
-
-  let nextReferenceButton = document.getElementById('next-reference-btn');
-  let previousReferenceButton = document.getElementById(
-    'previous-reference-btn'
-  );
-
-  nextReferenceButton.addEventListener('click', function() {
-    references[indexCurrentReference].classList.add('hidden');
-
-    activeReferenceDisplayDisc.classList.remove(
-      'reference-display-disc-active'
-    );
-    activeReferenceDisplayDisc.classList.add('reference-display-disc-inactive');
-
-    indexCurrentReference = (indexCurrentReference + 1) % references.length;
-    activeReferenceDisplayDisc = referenceDisplayDiscs[indexCurrentReference];
-
-    references[indexCurrentReference].classList.remove('hidden');
-    activeReferenceDisplayDisc.classList.add('reference-display-disc-active');
-  });
-
-  previousReferenceButton.addEventListener('click', function() {
-    references[indexCurrentReference].classList.add('hidden');
-
-    activeReferenceDisplayDisc.classList.remove(
-      'reference-display-disc-active'
-    );
-    activeReferenceDisplayDisc.classList.add('reference-display-disc-inactive');
-
-    indexCurrentReference =
-      (indexCurrentReference - 1 + references.length) % references.length;
-    activeReferenceDisplayDisc = referenceDisplayDiscs[indexCurrentReference];
-
-    references[indexCurrentReference].classList.remove('hidden');
-    activeReferenceDisplayDisc.classList.add('reference-display-disc-active');
-  });
+  let references = document.querySelectorAll("[id^='reference'");
+  let referenceCarousel = new ReferenceCarousel(references);
+  referenceCarousel.referenceView();
 }
 
 function contactForm() {
   let form = document.getElementById('kontakt-form');
-  form.addEventListener('submit', function(e) {
+  form.addEventListener('submit', function (e) {
     let url = 'sendMessage.php';
     let request = new XMLHttpRequest();
     request.open('POST', url, true);
-    request.onload = function() {
+    request.onload = function () {
       displaySuccessMessage();
       hideForm();
     };
-    request.onerror = function() {
+    request.onerror = function () {
       console.log('request failed ', request, e);
     };
     formData = new FormData(e.target);
@@ -175,20 +119,20 @@ function contactForm() {
 
   function displaySuccessMessage() {
     let message = document.getElementById('message-success-message');
-    message.classList.remove("hidden");
+    message.classList.remove('hidden');
   }
 
   function hideForm() {
     let form = document.getElementById('kontakt-form');
-    form.classList.add("hidden");
+    form.classList.add('hidden');
   }
 }
 
 function backToForm() {
-    let message = document.getElementById('message-success-message');
-    let form = document.getElementById('kontakt-form');
-    message.addEventListener('click', () => {
-      message.classList.add("hidden");
-      form.classList.remove("hidden");
-    });
+  let message = document.getElementById('message-success-message');
+  let form = document.getElementById('kontakt-form');
+  message.addEventListener('click', () => {
+    message.classList.add('hidden');
+    form.classList.remove('hidden');
+  });
 }
