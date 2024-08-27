@@ -618,6 +618,10 @@ video {
   grid-row: span 4 / span 4;
 }
 
+.m-20 {
+  margin: 5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -626,6 +630,16 @@ video {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.mx-20 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.mx-60 {
+  margin-left: 15rem;
+  margin-right: 15rem;
 }
 
 .-mb-28 {
@@ -638,6 +652,14 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .inline {
@@ -809,6 +831,10 @@ video {
 
 .self-start {
   align-self: flex-start;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .justify-self-end {
@@ -1139,6 +1165,10 @@ video {
   text-align: center;
 }
 
+.align-middle {
+  vertical-align: middle;
+}
+
 .font-sans {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -1264,6 +1294,11 @@ video {
 .text-yellow-400 {
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity));
+}
+
+.text-orange-200 {
+  --tw-text-opacity: 1;
+  color: rgb(254 215 170 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1453,6 +1488,10 @@ video {
     grid-column-start: 3;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -1502,8 +1541,21 @@ video {
     margin-bottom: 1rem;
   }
 
+  .lg\:mx-60 {
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+
   .lg\:-mb-48 {
     margin-bottom: -12rem;
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .lg\:flex {
+    display: flex;
   }
 
   .lg\:h-96 {
@@ -1532,6 +1584,10 @@ video {
 
   .lg\:gap-16 {
     gap: 4rem;
+  }
+
+  .lg\:gap-10 {
+    gap: 2.5rem;
   }
 
   .lg\:rounded-none {
@@ -1628,14 +1684,28 @@ video {
     line-height: 1.5rem;
   }
 
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .lg\:font-thin {
     font-weight: 100;
   }
 }
 
 @media (min-width: 1280px) {
+  .xl\:mx-60 {
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+
   .xl\:block {
     display: block;
+  }
+
+  .xl\:flex {
+    display: flex;
   }
 
   .xl\:grid-cols-2 {
