@@ -100,7 +100,9 @@ function referenceView() {
 
 function contactForm() {
   let form = document.getElementById('kontakt-form');
+  if (form) {
   form.addEventListener('submit', function (e) {
+    e.preventDefault();
     let url = 'sendMessage.php';
     let request = new XMLHttpRequest();
     request.open('POST', url, true);
@@ -114,7 +116,6 @@ function contactForm() {
     const formData = new FormData(e.target);
     request.send(formData);
     form.reset();
-    e.preventDefault();
   });
 
   function displaySuccessMessage() {
@@ -125,6 +126,9 @@ function contactForm() {
   function hideForm() {
     let form = document.getElementById('kontakt-form');
     form.classList.add('hidden');
+  }
+  } else {
+    console.log('Form not found');
   }
 }
 

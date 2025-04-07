@@ -381,9 +381,10 @@
                 class="w-full p-2  border border-stone-200 text-neutral-200 rounded-lg">
               <label for="message" class="text-stone-100 uppercase text-sm">Nachricht</label>
               <textarea id="message" placeholder="Nachricht" name="message" required maxlength="1000"
-                class="w-full h-64 p-2  border border-stone-200 text-neutral-200 h-20 rounded-lg"></textarea>
+                class="w-full h-64 p-2  border border-stone-200 text-neutral-200 rounded-lg"></textarea>
               <div class="bg-white my-4 flex justify-center rounded-lg">
                 <button
+                    type="submit"
                   class="bg-[#18705c]/75 hover:bg-[#18705c] transition-all duration-200 tracking-widest w-full p-2 text-white rounded-lg">Senden</button>
               </div>
             </form>
