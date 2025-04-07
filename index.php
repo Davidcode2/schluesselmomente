@@ -372,16 +372,16 @@
             <form id="kontakt-form" class="grid gap-2">
               <label for="name" class="text-stone-100 uppercase text-sm">Name</label>
               <input id="name" type="text" placeholder="Name" name="name" maxlength="50"
-                class="w-full p-2  border-2 border-stone-200 text-neutral-600 rounded-lg">
+                class="w-full p-2  border border-stone-200 text-neutral-200 rounded-lg">
               <label for="email" class="text-stone-100 uppercase text-sm">E-Mail</label>
               <input id="email" type="email" placeholder="E-Mail" name="email" maxlength="70" required
-                class="w-full p-2 border-2 border-stone-200 text-neutral-600 rounded-lg">
+                class="w-full p-2 border border-stone-200 text-neutral-200 rounded-lg">
               <label for="phone" class="text-stone-100 uppercase text-sm">Telefon</label>
               <input id="phone" type="tel" placeholder="Telefon" name="phone"
-                class="w-full p-2  border-2 border-stone-200 text-neutral-600 rounded-lg">
+                class="w-full p-2  border border-stone-200 text-neutral-200 rounded-lg">
               <label for="message" class="text-stone-100 uppercase text-sm">Nachricht</label>
               <textarea id="message" placeholder="Nachricht" name="message" required maxlength="1000"
-                class="w-full h-64 p-2  border-2 border-stone-200 text-neutral-600 h-20 rounded-lg"></textarea>
+                class="w-full h-64 p-2  border border-stone-200 text-neutral-200 h-20 rounded-lg"></textarea>
               <div class="bg-white my-4 flex justify-center rounded-lg">
                 <button
                   class="bg-[#18705c]/75 hover:bg-[#18705c] transition-all duration-200 tracking-widest w-full p-2 text-white rounded-lg">Senden</button>
@@ -390,7 +390,14 @@
             <div id="message-success-message" class="hidden flex flex-col justify-center">
               <img class="p-2 sepia mx-auto" src="assets/icons8-mail-50.png" width="50" height="50" alt="Briefumschlag">
               <p class="text-center text-stone-100">Vielen Dank für Ihre
-                Nachricht.<br>Ich werde mich so schnell wie möglich bei Ihnen melden.</p>
+              Nachricht.<br>Ich werde mich so schnell wie möglich bei Ihnen melden.<br>
+              </p>
+              <div class="mx-auto flex justify-center text-stone-100 items-center gap-4 border border-stone-100 rounded-lg p-2 my-4 lg:w-fit">
+                <div class="text-4xl font-bold align-bottom">!</div>
+                <p class="text-center p-2 my-2 rounded-lg">Leider landen meine Antworten häufig im Spam-Ordner.<br> 
+                Prüfen Sie nach Ihrer Anfrage daher bitte nach zwei bis drei Tagen auch Ihren Spam-Ordner.<br>
+                </p>
+              </div>
             </div>
           </section>
 

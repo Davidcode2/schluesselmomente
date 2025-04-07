@@ -111,7 +111,7 @@ function contactForm() {
     request.onerror = function () {
       console.log('request failed ', request, e);
     };
-    formData = new FormData(e.target);
+    const formData = new FormData(e.target);
     request.send(formData);
     form.reset();
     e.preventDefault();
