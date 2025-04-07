@@ -61,7 +61,7 @@
         Hinweis
       </h2>
       <p class="text-stone-800 xl:mx-60 self-center">
-        Vielen Dank für Ihr Interesse an einer Beratung. Derzeit nehme ich aufgrund von Familienzuwachs leider keine neuen Anfragen entgegen. Gesprächstermine sind ab Februar 2025 wieder möglich.
+        Vielen Dank für Ihr Interesse an einer Beratung. Derzeit nehme ich aufgrund von Familienzuwachs leider keine neuen Anfragen entgegen. Gesprächstermine sind ab Juni 2025 wieder möglich.
       </p>
     </div>
     </section>
