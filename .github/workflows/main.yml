@@ -28,8 +28,8 @@ jobs:
           # Script to run on host machine before rsync
           #SCRIPT_BEFORE: # optional, default is 
           SCRIPT_AFTER: |
-            cd /root/teachme
-            docker compose up -d schluesselmomente --build || exit 1
+            cd /root/schluesselmomente
+            docker compose up -d --build || exit 1
           SCRIPT_AFTER_REQUIRED: true
 
         
