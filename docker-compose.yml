@@ -2,7 +2,7 @@ services:
 
   schluesselmomente:
     build:
-      context: ../schluesselmomente
+      context: ./
       dockerfile: dockerfile
     image: schluesselmomente
     container_name: schluesselmomente
@@ -12,40 +12,6 @@ services:
     networks:
       - app-network
 
-  reverse-proxy-schluesselmomente:
-    image: nginx:alpine
-    container_name: reverse_proxy
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
-      - certbot-etc:/etc/letsencrypt
-      - certbot-var:/var/lib/letsencrypt
-      # if the certificate has expired, uncomment the below line and run "docker compose up -d"
-      - web-root:/var/www/html
-    depends_on:
-      - schluesselmomente
-    networks:
-      - app-network
-
-  certbot:
-    image: certbot/certbot
-    container_name: certbot
-    volumes:
-      - certbot-etc:/etc/letsencrypt
-      - certbot-var:/var/lib/letsencrypt
-      - web-root:/var/www/html
-    depends_on:
-      - reverse-proxy-schluesselmomente
-    command: certonly -v --webroot --webroot-path=/var/www/html --email jakob.lingel@hotmail.de --agree-tos --no-eff-email --force-renewal -d schluesselmomente-freiburg.de -d www.schluesselmomente-freiburg.de
-
-volumes:
-  certbot-etc:
-  certbot-var:
-  web-root:
-    driver: local
-
 networks:
   app-network:
-    driver: bridge
+    external: true
