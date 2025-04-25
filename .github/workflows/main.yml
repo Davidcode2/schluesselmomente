@@ -27,8 +27,11 @@ jobs:
           EXCLUDE: /.git/, .gitignore, .github
           # Script to run on host machine before rsync
           #SCRIPT_BEFORE: # optional, default is 
-          # Script to run on host machine after rsync
-          #SCRIPT_AFTER: # optional, default is 
+          SCRIPT_AFTER: |
+            cd /root/teachme
+            docker compose up -d schluesselmomente --build || exit 1
+          SCRIPT_AFTER_REQUIRED: true
+
         
     
       
