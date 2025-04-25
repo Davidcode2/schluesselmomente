@@ -9,7 +9,7 @@
     content="Systemische Paar- und Einzelberatung in Freiburg. Ich begleite dich in herausfordernden Lebenssituationen und helfe dir, deine eigenen Lösungen zu finden.">
   <link href="./dist/output.css" rel="stylesheet">
   <link href="./src/css/style.css" rel="stylesheet">
-  <link rel="icon" href="favicon48x48.ico">
+  <link rel="icon" href="assets/favicons/favicon48x48.ico">
   <script type="text/javascript">
     const module = {};
   </script>
@@ -34,7 +34,7 @@
     </div>
 
     <nav id="nav" class="z-50 fixed min-[720px]:static bg-white w-screen h-0 opacity-0 transition-all duration-200 flex flex-col justify-start">
-      <img src="assets/Logo_Keyhole_transparent.png" alt="Beiges Schlüsselloch"
+      <img src="assets/logo/Logo_Keyhole_transparent.png" alt="Beiges Schlüsselloch"
         class="hidden min-[720px]:block min-[720px]:left-8 absolute lg:left-16 sm:top-8 max-h-10" />
       <ul id="nav-flex" class="flex justify-between items-center gap-5 lg:gap-16 p-8 pt-32 lg:px-16 min-[720px]:pt-8 min-[720px]:pl-24">
         <li onClick="module.closeMobileMenu()"
@@ -74,7 +74,7 @@
       <div class="grid lg:grid-cols-2 gap-4">
         <div class="col-start-1 flex flex-col rounded-lg">
           <div class="flex items-end gap-4">
-            <img src="assets/Logo_transparent.png" alt="Beiges Schlüsselloch" class="max-h-24 lg:max-h-32">
+            <img src="assets/logo/Logo_transparent.png" alt="Beiges Schlüsselloch" class="max-h-24 lg:max-h-32">
             <div class="flex flex-col">
               <h1 class="hidden text-stone-800 text-2xl md:text-5xl drop-shadow-lg lg:text-7xl lg:font-thin z-10">Christliche Beratung Freiburg</h1>
               <h2 class="hidden text-stone-800 text-lg drop-shadow-lg lg:text-2xl z-10">Systemische Beratung Freiburg</h2>
@@ -169,7 +169,7 @@
           <div class="flex flex-col items-center justify-center pt-32">
             <a href="#ablauf"><button
                 class="flex items-center gap-2 p-3 text-white rounded-full bg-[#18705c]/50 hover:bg-[#18705c]/75 transition-all">
-                <span class="hover:scale-105 rotate-90 "><img src="assets/icons8-arrow-50.png"
+                <span class="hover:scale-105 rotate-90 "><img src="assets/icons/icons8-arrow-50.png"
                     width="50" height="50" alt="Pfeil nach unten"></span>
               </button></a>
           </div>
@@ -318,7 +318,7 @@
               <div
                 class="grid lg:grid-cols-[100px_1fr_100px] grid-cols-[40px_1fr_40px] text-center items-center lg:h-96 lg:text-base text-sm">
                 <div id="previous-reference-btn" class="h-full flex items-center cursor-pointer hover:scale-105">
-                  <img src="assets/right-chevron-50.webp" class="rotate-180" width="50" height="50" alt="Pfeil nach links">
+                  <img src="assets/icons/right-chevron-50.webp" class="rotate-180" width="50" height="50" alt="Pfeil nach links">
                 </div>
                 <div id="reference1" class="px-4 p-8 lg:p-16 flex flex-col gap-6 items-center">
                   <p class="">Theresa hat mich mit ihrer herzlichen, zugewandten Art durch eine schwierige Zeit in meinem Leben begleitet.
@@ -357,7 +357,7 @@
                   <span class="text-xs italic">Christian S.</span>
                 </div>
                 <div id="next-reference-btn" class="h-full cursor-pointer hover:scale-105 flex items-center justify-self-end">
-                  <img src="assets/right-chevron-50.webp" class="" width="50" height="50" alt="Pfeil nach rechts">
+                  <img src="assets/icons/right-chevron-50.webp" class="" width="50" height="50" alt="Pfeil nach rechts">
                 </div>
               </div>
               <div class="flex justify-center">
@@ -389,7 +389,8 @@
               </div>
             </form>
             <div id="message-success-message" class="hidden flex flex-col justify-center">
-              <img class="p-2 sepia mx-auto" src="assets/icons8-mail-50.png" width="50" height="50" alt="Briefumschlag">
+
+              <img src="assets/emoji/icons8-envelope-48.png" width="48" height="48" class="sepia mx-auto" alt="Briefumschlag">
               <p class="text-center text-stone-100">Vielen Dank für Ihre
               Nachricht.<br>Ich werde mich so schnell wie möglich bei Ihnen melden.<br>
               </p>
@@ -415,7 +416,7 @@
 
         </div>
         <div id="back-to-top-btn" class="hidden sticky bottom-0">
-          <a href="#top"><img class="p-2 ml-auto" src="assets/icons8-chevron-50.png" width="50" height="50" alt="Pfeil nach oben"></a>
+          <a href="#top"><img class="p-2 ml-auto" src="assets/icons/icons8-chevron-50.png" width="50" height="50" alt="Pfeil nach oben"></a>
         </div>
       </div>
     </div>
@@ -442,8 +443,8 @@
           </li>
         </ul>
         <ul class="flex flex-col gap-5 md:col-start-3">
-          <li><a href="./impressum.html">Impressum</a></li>
-          <li><a href="./impressum.html#datenschutz">Datenschutz</a></li>
+          <li><a href="./public/impressum.html">Impressum</a></li>
+          <li><a href="./public/impressum.html#datenschutz">Datenschutz</a></li>
           <li>est. 2023</li>
         </ul>
       </div>
