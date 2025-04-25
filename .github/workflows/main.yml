@@ -10,27 +10,16 @@ jobs:
         uses: actions/checkout@v3
         
       - name: ssh deploy
-      # You may pin to the exact commit or the version.
-      # uses: easingthemes/ssh-deploy@3884c8554ff45c0fd37d3f12a76288d06ce7a2ff
         uses: easingthemes/ssh-deploy@v4.1.8
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_PRIVATE_SSH_KEY }}
           REMOTE_HOST: ${{ secrets.SERVER_ADDRESS }}
           REMOTE_USER: ${{ secrets.USER_NAME }}
-          # Target directory
           TARGET: /root/schluesselmomente
-          # Arguments to pass to rsync
-          #ARGS: # optional, default is -rlgoDzvc -i
-          # An array of ssh arguments, they must be prefixed with -o and separated by a comma, for example: -o SomeArgument=no, -o SomeOtherArgument=5 
-          #SSH_CMD_ARGS: # optional, default is -o StrictHostKeyChecking=no
-          # paths to exclude separated by `,`, ie: `/dist/, /node_modules/`
           EXCLUDE: /.git/, .gitignore, .github
-          # Script to run on host machine before rsync
-          #SCRIPT_BEFORE: # optional, default is 
           SCRIPT_AFTER: |
             cd /root/schluesselmomente
             docker compose up -d --build || exit 1
-          SCRIPT_AFTER_REQUIRED: true
 
         
     
