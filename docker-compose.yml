@@ -12,7 +12,7 @@ services:
     networks:
       - app-network
 
-  reverse-proxy:
+  reverse-proxy-schluesselmomente:
     image: nginx:alpine
     container_name: reverse_proxy
     ports:
@@ -37,7 +37,7 @@ services:
       - certbot-var:/var/lib/letsencrypt
       - web-root:/var/www/html
     depends_on:
-      - reverse-proxy
+      - reverse-proxy-schluesselmomente
     command: certonly -v --webroot --webroot-path=/var/www/html --email jakob.lingel@hotmail.de --agree-tos --no-eff-email --force-renewal -d schluesselmomente-freiburg.de -d www.schluesselmomente-freiburg.de
 
 volumes:
