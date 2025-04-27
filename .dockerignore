@@ -1,13 +1,56 @@
-# The .dockerignore file excludes files from the container build process.
-#
-# https://docs.docker.com/engine/reference/builder/#dockerignore-file
-
-# Exclude locally vendored dependencies.
-vendor/
-
 # Exclude "build-time" ignore files.
 .dockerignore
 .gcloudignore
 
 # Exclude git history and configuration.
 .gitignore
+.git
+
+/node_modules
+.github/**/node_modules
+/coverage
+/cli
+/lib
+/peers
+/example
+.vscode
+.DS_Store
+.parcel-cache
+# index.html
+yarn.lock
+yarn-error.log
+types/generated/*.d.ts
+
+.turbo
+
+# Perf related files
+isolate*.log
+
+# Generated files
+/src/corePluginList.js
+
+# Generated files during tests
+/tests/evaluate-tailwind-functions.test.html
+
+text.md
+*.docx
+*.xcf
+ignored_assets
+
+# Created by https://www.toptal.com/developers/gitignore/api/composer
+# Edit at https://www.toptal.com/developers/gitignore?templates=composer
+
+### Composer ###
+composer.phar
+/vendor/
+vendor/
+
+# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
+# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+# composer.lock
+
+# End of https://www.toptal.com/developers/gitignore/api/composer
+
+
+# Local Netlify folder
+.netlify
