@@ -31,7 +31,7 @@ try {
   $messagePlainText = $_POST['message'];
 
   // Read the HTML template
-  $htmlTemplate = file_get_contents('message.html');
+  $htmlTemplate = file_get_contents('public/message.html');
 
   // Replace the placeholder with the plain text message
   $htmlTemplate = str_replace('{MESSAGE}', $messagePlainText, $htmlTemplate);
@@ -51,7 +51,7 @@ try {
   $mail->clearAddresses();
   $mail->addAddress($senderEmail); // Sender's email
   $mail->Subject = 'Anfrage Schluesselmomente';
-  $htmlTemplateConfirmation = file_get_contents('confirmation.html');
+  $htmlTemplateConfirmation = file_get_contents('public/confirmation.html');
   $htmlTemplateConfirmation = str_replace('{MESSAGE}', htmlspecialchars($_POST['message']), $htmlTemplateConfirmation);
   $htmlTemplateConfirmation = str_replace('{NAME}', htmlspecialchars($_POST['name']), $htmlTemplateConfirmation);
   $mail->Body = $htmlTemplateConfirmation;
