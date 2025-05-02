@@ -10,7 +10,10 @@ $dotenv->load();
 
 // Initialize Mailgun with your API key and domain
 $mailgunApiKey = $_ENV['MAILGUN_API_KEY']; // Store your API key in an environment variable
-$mg = Mailgun::create($mailgunApiKey);
+$schluessel_mailgunApiKey = $_ENV['SCHLUESSELMOMENTE_SENDKEY']; // Store your API key in an environment variable
+//$mg = Mailgun::create($mailgunApiKey);
+$mg = Mailgun::create($schluessel_mailgunApiKey ?: 'API_KEY', 'https://api.eu.mailgun.net');
+
 
 function sendMainMailgunMessage(Mailgun $mg, array $postData, string $recipientEmail, string $recipientName): object
 {
@@ -27,9 +30,9 @@ function sendMainMailgunMessage(Mailgun $mg, array $postData, string $recipientE
     $htmlTemplate = str_replace('{ABSENDER_TELEFON}', htmlspecialchars($postData['phone']), $htmlTemplate);
 
     $result = $mg->messages()->send(
-      'sandboxf643be1c46e140a9aee98e3851a91637.mailgun.org',
+      'schluesselmomente-freiburg.de',
       [
-        'from' => 'Mailgun Sandbox <postmaster@sandboxf643be1c46e140a9aee98e3851a91637.mailgun.org>',
+        'from' => 'Beratung Schluesselmomente <postmaster@schluesselmomente-freiburg.de>',
         'to' => "{$recipientName} <{$recipientEmail}>",
         'subject' => $subject,
         'text' => $messagePlainText,
@@ -47,9 +50,9 @@ function sendMailgunConfirmationEmail(Mailgun $mg, string $recipientEmail, strin
     $htmlTemplateConfirmation = str_replace('{NAME}', $recipientName, $htmlTemplateConfirmation);
 
     $result = $mg->messages()->send(
-      'sandboxf643be1c46e140a9aee98e3851a91637.mailgun.org',
+      'schluesselmomente-freiburg.de',
       [
-        'from' => 'Mailgun Sandbox <postmaster@sandboxf643be1c46e140a9aee98e3851a91637.mailgun.org>',
+        'from' => 'Beratung Schluesselmomente <postmaster@schluesselmomente-freiburg.de>',
         'to' => "{$recipientName} <{$recipientEmail}>",
         'subject' => 'Anfrage Schluesselmomente',
         'html' => $htmlTemplateConfirmation,
