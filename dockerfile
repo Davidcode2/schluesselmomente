@@ -12,4 +12,8 @@ COPY composer.json composer.lock* .
 RUN composer install --no-interaction --optimize-autoloader
 
 COPY . .
+
+RUN chown -R www-data:www-data /var/www/html/
+RUN chmod -R g+w /var/www/html/
+
 EXPOSE 80
