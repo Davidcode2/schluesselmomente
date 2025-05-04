@@ -64,7 +64,7 @@ function sendMailgunConfirmationEmail(Mailgun $mg, string $recipientEmail, strin
 
 // Main execution block
 try {
-    $recipientEmailMain = $_ENV['ALT_MAIL'];
+    $recipientEmailMain = $_ENV['MAIL'];
     $recipientNameMain = 'Theresa Kappus';
 
     $resultMain = sendMainMailgunMessage($mg, $_POST, $recipientEmailMain, $recipientNameMain);
