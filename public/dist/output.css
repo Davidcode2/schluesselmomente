@@ -18,10 +18,7 @@
     --color-emerald-800: oklch(43.2% 0.095 166.913);
     --color-sky-200: oklch(90.1% 0.058 230.902);
     --color-sky-300: oklch(82.8% 0.111 230.318);
-    --color-slate-100: oklch(96.8% 0.007 247.896);
-    --color-slate-200: oklch(92.9% 0.013 255.508);
     --color-neutral-200: oklch(92.2% 0 0);
-    --color-neutral-600: oklch(43.9% 0 0);
     --color-neutral-800: oklch(26.9% 0 0);
     --color-stone-100: oklch(97% 0.001 106.424);
     --color-stone-200: oklch(92.3% 0.003 48.717);
@@ -546,11 +543,11 @@
   .bg-\[url\(\'\.\/assets\/beraterin_full_body_smooth\.webP\'\)\] {
     background-image: url('./assets/beraterin_full_body_smooth.webP');
   }
-  .bg-\[url\(\'\.\/assets\/beraterin_large_elongated_background\.png\'\)\] {
-    background-image: url('./assets/beraterin_large_elongated_background.png');
-  }
   .bg-\[url\(\'\.\/assets\/beraterin_phone\.webP\'\)\] {
     background-image: url('./assets/beraterin_phone.webP');
+  }
+  .bg-\[url\(\'assets\/beraterin_large_elongated_background\.png\'\)\] {
+    background-image: url('assets/beraterin_large_elongated_background.png');
   }
   .from-\[\#18705c\] {
     --tw-gradient-from: #18705c;
