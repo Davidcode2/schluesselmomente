@@ -443,8 +443,8 @@
           </li>
         </ul>
         <ul class="flex flex-col gap-5 md:col-start-3">
-          <li><a href="./public/impressum.html">Impressum</a></li>
-          <li><a href="./public/impressum.html#datenschutz">Datenschutz</a></li>
+          <li><a href="./impressum.html">Impressum</a></li>
+          <li><a href="./impressum.html#datenschutz">Datenschutz</a></li>
           <li>est. 2023</li>
         </ul>
       </div>

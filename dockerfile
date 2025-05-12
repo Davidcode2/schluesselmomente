@@ -11,7 +11,9 @@ WORKDIR /var/www/html
 COPY composer.json composer.lock* .
 RUN composer install --no-interaction --optimize-autoloader
 
-COPY . .
+COPY . /var/www/app
+
+COPY public .
 
 RUN chown -R www-data:www-data /var/www/html/
 RUN chmod -R g+w /var/www/html/
