@@ -103,7 +103,7 @@ function contactForm() {
   if (form) {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    let url = '../../sendMailGun.php';
+    let url = '/api/contact';
     let request = new XMLHttpRequest();
     request.open('POST', url, true);
     request.onload = function () {
