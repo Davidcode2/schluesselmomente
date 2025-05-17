@@ -12,6 +12,18 @@ services:
     networks:
       - app-network
 
+  schluesselmomente-backend:
+    build:
+      context: ./be
+      dockerfile: dockerfile
+    image: schluesselmomente-be
+    container_name: schluesselmomente-be
+    restart: unless-stopped
+    ports:
+      - '8182:80'
+    networks:
+      - app-network
+
 networks:
   app-network:
     external: true

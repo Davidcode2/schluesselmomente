@@ -1,0 +1,46 @@
+# Dockerfile.backend
+FROM php:8.2-fpm
+
+# Install system dependencies: nginx, supervisor, git (often needed by composer), curl, zip, unzip
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    nginx \
+    supervisor \
+    curl \
+    zip \
+    unzip \
+    git \
+    && rm -rf /var/lib/apt/lists/* # Clean up apt cache
+
+# Install Composer globally
+COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
+
+# Set application working directory - OUTSIDE the Nginx webroot for security
+WORKDIR /var/www/app
+
+# Copy composer files and install PHP dependencies
+# Assumes composer.json and composer.lock are in your local 'app' directory
+COPY composer.json composer.lock* ./
+RUN composer install --no-interaction --optimize-autoloader --no-dev
+
+# Copy your application source code (e.g., process_contact_form.php and .env)
+# Assumes process_contact_form.php and .env are in your local 'app' directory
+COPY . /var/www/app/
+
+# Copy custom nginx config for the backend API
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# --- Configure Supervisor ---
+# Create supervisor log directory
+RUN mkdir -p /var/log/supervisor
+# Copy supervisor config
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+
+# Set permissions: Ensure www-data user (php-fpm user) has read access to /var/www/app
+RUN chown -R www-data:www-data /var/www/app
+RUN chmod -R g+w /var/www/app # Allow group write if needed, adjust as required
+
+# Expose the port Nginx is listening on inside this container
+EXPOSE 80
+
+# Command to run Supervisor, which will start Nginx and php-fpm
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]

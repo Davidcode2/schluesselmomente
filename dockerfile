@@ -5,11 +5,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     zip \
     unzip
 
-COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
-# Install PHP dependencies
 WORKDIR /var/www/html
-COPY composer.json composer.lock* .
-RUN composer install --no-interaction --optimize-autoloader
 
 COPY . /var/www/app
 
