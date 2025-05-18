@@ -30,8 +30,13 @@ COPY . /var/www/app/
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # --- Configure Supervisor ---
-# Create supervisor log directory
-RUN mkdir -p /var/log/supervisor
+# Create supervisor log directory and set permissions (you likely have this)
+RUN mkdir -p /var/log/supervisor && chown www-data:www-data /var/log/supervisor
+
+RUN mkdir -p /var/run/supervisor
+# Set ownership of this directory to www-data
+RUN chown www-data:www-data /var/run/supervisor
+
 # Copy supervisor config
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
