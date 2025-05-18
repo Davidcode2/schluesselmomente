@@ -24,7 +24,7 @@ function sendMainMailgunMessage(Mailgun $mg, array $postData, string $recipientE
     $messagePlainText = $postData['message'];
 
     // Read the HTML template
-    $htmlTemplate = file_get_contents('public/message.html');
+    $htmlTemplate = file_get_contents('message.html');
     $htmlTemplate = str_replace('{MESSAGE}', $messagePlainText, $htmlTemplate);
     $htmlTemplate = str_replace('{NAME}', $senderName, $htmlTemplate);
     $htmlTemplate = str_replace('{ABSENDER_EMAIL}', $senderEmail, $htmlTemplate);
@@ -46,7 +46,7 @@ function sendMainMailgunMessage(Mailgun $mg, array $postData, string $recipientE
 
 function sendMailgunConfirmationEmail(Mailgun $mg, string $recipientEmail, string $recipientName, array $postData): object
 {
-    $htmlTemplateConfirmation = file_get_contents('public/confirmation.html');
+    $htmlTemplateConfirmation = file_get_contents('confirmation.html');
     $htmlTemplateConfirmation = str_replace('{MESSAGE}', htmlspecialchars($postData['message']), $htmlTemplateConfirmation);
     $htmlTemplateConfirmation = str_replace('{NAME}', $recipientName, $htmlTemplateConfirmation);
 
