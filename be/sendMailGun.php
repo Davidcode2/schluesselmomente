@@ -10,7 +10,8 @@ $dotenv->load();
 
 // Initialize Mailgun with your API key and domain
 $mailgunApiKey = $_ENV['MAILGUN_API_KEY']; // Store your API key in an environment variable
-$schluessel_mailgunApiKey = $_ENV['SCHLUESSELMOMENTE_SENDKEY']; // Store your API key in an environment variable
+#$schluessel_mailgunApiKey = $_ENV['SCHLUESSELMOMENTE_SENDKEY']; // Store your API key in an environment variable
+$schluessel_mailgunApiKey = $_ENV['MAILGUN_API_KEY']; // Store your API key in an environment variable
 //$mg = Mailgun::create($mailgunApiKey);
 $mg = Mailgun::create($schluessel_mailgunApiKey ?: 'API_KEY', 'https://api.eu.mailgun.net');
 
