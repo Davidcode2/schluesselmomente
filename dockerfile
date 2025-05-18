@@ -1,17 +1,13 @@
-FROM php:8.2-apache
+# Dockerfile.nginx-proxy
+FROM nginx:stable
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl \
-    zip \
-    unzip
+# Copy your custom Nginx configuration file into the container
+# Assumes your nginx.conf file is in the same directory as this Dockerfile
+COPY nginx.conf /etc/nginx/nginx.conf
 
-WORKDIR /var/www/html
-
-COPY . /var/www/app
-
-COPY public .
-
-RUN chown -R www-data:www-data /var/www/html/
-RUN chmod -R g+w /var/www/html/
-
+# Expose ports 80 and 443, which Nginx will listen on
 EXPOSE 80
+EXPOSE 443
+
+# Command to run Nginx in the foreground
+CMD ["nginx", "-g", "daemon off;"]

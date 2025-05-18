@@ -1,8 +1,24 @@
 services:
 
+  # Nginx Reverse Proxy Service
+  # This service listens on host ports 80/443 and routes traffic
+  schluesselmomente-nginx-proxy:
+    build:
+      context: ./ 
+      dockerfile: dockerfile
+    image: schluesselmomente-nginx-proxy # Name for the built image
+    container_name: schluesselmomente_nginx_proxy # Specific container name
+    restart: unless-stopped # Restart policy
+    ports:
+      - '8183:80' # Map host port 80 to container port 80
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    networks:
+      - app-network # Connect to the application network
+
   schluesselmomente:
     build:
-      context: ./
+      context: ./fe
       dockerfile: dockerfile
     image: schluesselmomente
     container_name: schluesselmomente
