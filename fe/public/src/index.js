@@ -18,6 +18,21 @@ function backToTop() {
   });
 }
 
+async function loadHinweisBox() {
+  const hinweisBoxEl = document.getElementById('hinweis-box-id');
+  const baseUrl = "http://localhost:1337/api";
+  const res = await fetch(`${baseUrl}/hinweis-box`);
+  const json = await res.json();
+  if (hinweisBoxEl && json) {
+    console.log(json);
+    hinweisBoxEl.innerHTML = json.data.title;
+  } else {
+    console.error('Hinweis Box Element not found or data is undefined');
+  }
+}
+
+loadHinweisBox();
+
 function mobileMenu() {
   var icon = document.getElementById('icon');
   var icon1 = document.getElementById('a');
