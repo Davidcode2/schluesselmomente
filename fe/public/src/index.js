@@ -43,16 +43,18 @@ function mobileMenu() {
 
   let navFlex = document.getElementById('nav-flex');
 
-  icon.addEventListener('click', function () {
+  icon.addEventListener('click', function() {
     icon1.classList.toggle('a');
     icon2.classList.toggle('c');
     icon3.classList.toggle('b');
     nav.classList.toggle('invisible');
     nav.classList.toggle('h-0');
     nav.classList.toggle('h-screen');
+    nav.classList.add('w-screen');
     nav.classList.toggle('opacity-0');
     nav.classList.toggle('opacity-100');
     hamburger.classList.toggle('fixed');
+    stylesAfterTimeout(nav);
   });
 
   const mql = window.matchMedia('(max-width: 720px)');
@@ -83,6 +85,14 @@ function mobileMenu() {
   mql.addEventListener('change', screenTest);
 
   screenTest(mql);
+}
+
+const stylesAfterTimeout = (nav) => {
+  if (nav.classList.contains("invisible")) {
+    setTimeout(() => {
+      nav.classList.remove('w-screen');
+    }, 500);
+  }
 }
 
 export function closeMobileMenu() {
@@ -116,32 +126,32 @@ function referenceView() {
 function contactForm() {
   let form = document.getElementById('kontakt-form');
   if (form) {
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    let url = '/api/contact';
-    let request = new XMLHttpRequest();
-    request.open('POST', url, true);
-    request.onload = function () {
-      displaySuccessMessage();
-      hideForm();
-    };
-    request.onerror = function () {
-      console.log('request failed ', request, e);
-    };
-    const formData = new FormData(e.target);
-    request.send(formData);
-    form.reset();
-  });
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      let url = '/api/contact';
+      let request = new XMLHttpRequest();
+      request.open('POST', url, true);
+      request.onload = function() {
+        displaySuccessMessage();
+        hideForm();
+      };
+      request.onerror = function() {
+        console.log('request failed ', request, e);
+      };
+      const formData = new FormData(e.target);
+      request.send(formData);
+      form.reset();
+    });
 
-  function displaySuccessMessage() {
-    let message = document.getElementById('message-success-message');
-    message.classList.remove('hidden');
-  }
+    function displaySuccessMessage() {
+      let message = document.getElementById('message-success-message');
+      message.classList.remove('hidden');
+    }
 
-  function hideForm() {
-    let form = document.getElementById('kontakt-form');
-    form.classList.add('hidden');
-  }
+    function hideForm() {
+      let form = document.getElementById('kontakt-form');
+      form.classList.add('hidden');
+    }
   } else {
     console.log('Form not found');
   }
