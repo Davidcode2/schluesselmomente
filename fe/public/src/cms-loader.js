@@ -1,5 +1,5 @@
 export default class CmsLoader {
-  baseUrl = 'http://localhost:1337/api';
+  baseUrl = 'https://admin.schluesselmomente-freiburg.de/api';
 
   renderTitle(title, targetElement) {
     const h3Element = document.createElement('h3');
