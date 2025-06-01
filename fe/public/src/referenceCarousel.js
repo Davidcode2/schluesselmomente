@@ -12,9 +12,9 @@ export default class ReferenceCarousel {
                     verschiedenen Methoden haben mir dabei geholfen, neue Ressourcen und Stärken zu entdecken, bzw.dass
                     ich bereits bekannte jetzt mehr wertschätzen kann.
                     Durch Theresas authentische und warmherzige Art habe ich mich von Anfang an wohl und verstanden
-gefühlt.`, author: 'Laura B.*', changed: true
+gefühlt.`, author: 'Laura B.', changed: true
     },
-    { content: `Ich empfehle Theresa in jedem Fall weiter. Sie ist offen, zugewandt und gut strukturiert.`, author: 'Thorsten M.*', changed: true},
+    { content: `Ich empfehle Theresa in jedem Fall weiter. Sie ist offen, zugewandt und gut strukturiert.`, author: 'Thorsten M.', changed: true},
     {
       content: `Nachdem ich beruflich eine sehr belastende Zeit hatte, bat ich um einen Termin bei Theresa. Die
                     Gesprächsführung war sehr angenehm, während der Gespräche in denen ich konkret klären wollte, ob
@@ -113,20 +113,27 @@ bereue.Ich kann sie wirklich weiter empfehlen.
     const referenceEl = this.renderReference(
       this._references[this.indexCurrentReference].content,
       this._references[this.indexCurrentReference].author,
+      this._references[this.indexCurrentReference].changed,
     );
     this._referencesContainer.innerHTML = referenceEl.outerHTML;
   }
 
-  renderReference(reference, author) {
+  renderReference(reference, author, changed = false) {
     const divEl = document.createElement('div');
     divEl.classList.add("flex", "flex-col", "gap-6");
     const paragraphEl = document.createElement('p');
     paragraphEl.innerHTML = reference;
     const spanEl = document.createElement('span');
     spanEl.classList.add('text-xs', 'italic');
-    spanEl.innerHTML = author;
+    spanEl.innerHTML = author + (changed ? '*' : '');
     divEl.appendChild(paragraphEl);
     divEl.appendChild(spanEl);
+    if (changed) {
+      const changedEl = document.createElement('span');
+      changedEl.classList.add('text-xs');
+      changedEl.innerHTML = '* Name geändert';
+      divEl.appendChild(changedEl);
+    }
     return divEl;
   }
 }
