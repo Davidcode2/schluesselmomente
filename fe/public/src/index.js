@@ -106,8 +106,10 @@ export function closeMobileMenu() {
   }
 }
 
-function referenceView() {
-  let references = document.querySelectorAll("[id^='reference'");
+async function referenceView() {
+  //let references = document.querySelectorAll("[id^='reference'");
+  let references = await cmsLoader.fetchData("references?populate=*")
+  console.log(references);
   let referenceCarousel = new ReferenceCarousel(references);
   referenceCarousel.referenceView();
 }

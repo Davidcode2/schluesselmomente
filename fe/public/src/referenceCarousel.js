@@ -1,22 +1,22 @@
 export default class ReferenceCarousel {
   _references = [
     {
-      content: `Theresa hat mich mit ihrer herzlichen, zugewandten Art durch eine schwierige Zeit in meinem Leben begleitet.
+      reference: `Theresa hat mich mit ihrer herzlichen, zugewandten Art durch eine schwierige Zeit in meinem Leben begleitet.
                     Von Stressmanagement über Glaubenssätze, Selbstwert, Grenzen setzen und berufliche Zielsetzungen haben wir in nur wenigen Monaten viele Themen angeschaut und bewegt.
                     Theresa war dabei stets offen und flexibel, auf das, was mich aktuell beschäftigt hat, einzugehen.
                     Auf ihre lösungsorientierte, wertschätzende Herangehensweise habe ich mich immer schon
                     vorher sehr gefreut und ich konnte aus jeder Sitzung mit viel positiver Energie herausgehen...vielen Dank dafür!`, author: 'Britta'
     },
     {
-      content: `Dank der Beratung habe ich nachhaltig einen neuen Blick auf mein Problem bekommen. Die
+      reference: `Dank der Beratung habe ich nachhaltig einen neuen Blick auf mein Problem bekommen. Die
                     verschiedenen Methoden haben mir dabei geholfen, neue Ressourcen und Stärken zu entdecken, bzw.dass
                     ich bereits bekannte jetzt mehr wertschätzen kann.
                     Durch Theresas authentische und warmherzige Art habe ich mich von Anfang an wohl und verstanden
-gefühlt.`, author: 'Laura B.', changed: true
+gefühlt.`, author: 'Laura B.', nameChanged: true
     },
-    { content: `Ich empfehle Theresa in jedem Fall weiter. Sie ist offen, zugewandt und gut strukturiert.`, author: 'Thorsten M.', changed: true},
+    { reference: `Ich empfehle Theresa in jedem Fall weiter. Sie ist offen, zugewandt und gut strukturiert.`, author: 'Thorsten M.', nameChanged: true},
     {
-      content: `Nachdem ich beruflich eine sehr belastende Zeit hatte, bat ich um einen Termin bei Theresa. Die
+      reference: `Nachdem ich beruflich eine sehr belastende Zeit hatte, bat ich um einen Termin bei Theresa. Die
                     Gesprächsführung war sehr angenehm, während der Gespräche in denen ich konkret klären wollte, ob
                     mein beruflicher Platz tatsächlich noch der passende sei, konnte sie viele Dinge bewusst machen, die
                     ich so vorher nicht im Blick hatte.Als ich dann dazu neigte, die Entscheidung zu vertagen – auch in
@@ -27,11 +27,12 @@ bereue.Ich kann sie wirklich weiter empfehlen.
     },
   ];
 
-  _blub = null;
   _referencesContainer = document.getElementById('references-container');
 
   constructor(references) {
-    this._blub = references;
+    if (references && Array.isArray(references)) {
+      this._references = references;
+    }
     this.setReference();
   }
 
@@ -108,9 +109,9 @@ bereue.Ich kann sie wirklich weiter empfehlen.
 
   setReference() {
     const referenceEl = this.renderReference(
-      this._references[this.indexCurrentReference].content,
+      this._references[this.indexCurrentReference].reference,
       this._references[this.indexCurrentReference].author,
-      this._references[this.indexCurrentReference].changed,
+      this._references[this.indexCurrentReference].nameChanged,
     );
     this._referencesContainer.innerHTML = referenceEl.outerHTML;
   }
