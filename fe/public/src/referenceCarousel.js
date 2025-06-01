@@ -77,8 +77,6 @@ bereue.Ich kann sie wirklich weiter empfehlen.
     button.addEventListener(
       'click',
       function() {
-        //this._references[this.indexCurrentReference].classList.add('hidden');
-
         this.activeReferenceDisplayDisc.classList.remove(
           'reference-display-disc-active',
         );
@@ -101,7 +99,6 @@ bereue.Ich kann sie wirklich weiter empfehlen.
 
         this.setReference();
 
-        //this._references[this.indexCurrentReference].classList.remove('hidden');
         this.activeReferenceDisplayDisc.classList.add(
           'reference-display-disc-active',
         );
