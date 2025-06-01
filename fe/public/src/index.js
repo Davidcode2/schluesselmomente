@@ -10,8 +10,6 @@ referenceView();
 contactForm();
 backToForm();
 
-const baseUrl = "http://localhost:1337/api";
-
 function backToTop() {
   let backToTopButton = document.querySelector('#back-to-top-btn');
 

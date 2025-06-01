@@ -1,5 +1,5 @@
 export default class CmsLoader {
-  baseUrl = "http://localhost:1337/api";
+  baseUrl = 'http://localhost:1337/api';
 
   renderTitle(title, targetElement) {
     const h3Element = document.createElement('h3');
@@ -19,30 +19,7 @@ export default class CmsLoader {
     targetElement.appendChild(ul);
   }
 
-  async loadItem(api, targetElementId) {
-    const targetElement = document.getElementById(targetElementId);
-    const res = await fetch(`${this.baseUrl}/${api}`);
-    const json = await res.json();
-    if (targetElement && json) {
-      console.log(json);
-      targetElement.innerHTML = json.data.content;
-    } else {
-      console.error('Target not found or data is undefined');
-    }
-  }
-
-  async loadListItem(api) {
-    const res = await fetch(`${this.baseUrl}/${api}`);
-    const json = await res.json();
-    if (json) {
-      console.log(json);
-      return json.data;
-    } else {
-      console.error('Target not found or data is undefined');
-    }
-  }
-
-  async loadList(api) {
+  async fetchData(api) {
     const res = await fetch(`${this.baseUrl}/${api}`);
     const json = await res.json();
     if (json) {
@@ -76,53 +53,105 @@ export default class CmsLoader {
     }
   }
 
-  async getData() {
-    const list = await this.loadList("simple-lists?sort=rank");
-    if (!list || list.length === 0) {
-      list = this.defaultData;
+  async loadUeberMichItems() {
+    try {
+      const list = await this.fetchData('simple-lists?sort=rank');
+      if (!list || list.length === 0) {
+        console.warn('No data found, using default data.');
+        throw new Error('No data found');
+      }
+      let count = 1;
+      list.map(async (item) => {
+        const listItem = await this.fetchData(
+          `simple-lists/${item.documentId}?populate=*`,
+        );
+        const targetElement = document.getElementById(
+          `about-card-section-${count}`,
+        );
+        this.renderTitle(listItem.title, targetElement);
+        this.renderListItems(listItem.Items, targetElement);
+        count++;
+      });
+    } catch (error) {
+      console.error('Error loading data:', error);
+      let count = 1;
+      Object.keys(this.defaultData).forEach((key) => {
+        const item = this.defaultData[key];
+        const targetElement = document.getElementById(
+          `about-card-section-${count}`,
+        );
+        this.renderTitle(item.title, targetElement);
+        this.renderListItems(item.Items, targetElement);
+        count++;
+      });
     }
-    console.log(list);
-    let count = 1;
-    list.map(async item => {
-      const listItem = await this.loadListItem(`simple-lists/${item.documentId}?populate=*`)
-      const targetElement = document.getElementById(`about-card-section-${count}`);
-      this.renderTitle(listItem.title, targetElement);
-      this.renderListItems(listItem.Items, targetElement)
-      count++;
-    });
-    this.loadItem("arbeitsweise", "arbeitsweise-id");
+  }
+
+  async getData() {
+    await this.loadUeberMichItems();
+    await this.populateItem('arbeitsweise', 'arbeitsweise-id');
+    await this.populateCost('cost');
+  }
+
+  async populateCost(api) {
+    const res = await this.fetchData(api);
+
+    const einzelBeratungDauerEl = document.getElementById("einzelberatung-dauer-id");
+    einzelBeratungDauerEl.innerHTML = "für " + res.DauerEinzel;
+    const einzelBeratungEl = document.getElementById("einzelberatung-cost-id");
+    einzelBeratungEl.innerHTML = res.PreisEinzel + " €";
+    const einzelBeratungErstgespraechEl = document.getElementById("einzelberatung-erst-cost-id");
+    einzelBeratungErstgespraechEl.innerHTML = res.DauerEinzelErst + ", " + res.PreisEinzelErst + " Euro";
+
+    const paarBeratungEl = document.getElementById("paarberatung-cost-id");
+    paarBeratungEl.innerHTML = res.PreisPaar + " €";
+    const paarBeratungDauerEl = document.getElementById("paarberatung-dauer-id");
+    paarBeratungDauerEl.innerHTML = "für " + res.DauerPaar; 
+    const paarBeratungErstgespraechEl = document.getElementById("paarberatung-erst-cost-id");
+    paarBeratungErstgespraechEl.innerHTML = res.DauerPaarErst + ", " + res.PreisPaarErst + " Euro";
+  }
+
+  async populateItem(api, targetElementId) {
+    const res = await this.fetchData(api);
+    const targetElement = document.getElementById(targetElementId);
+    targetElement.innerHTML = res.content;
   }
 
   defaultData = {
-    "about-card-section-1": {
-      title: "Berufsausbildung / Beratungsausbildung:",
+    'about-card-section-1': {
+      title: 'Berufsausbildung / Beratungsausbildung:',
       Items: [
-        { Item: "Systemische Beraterin (3-Jährige Weiterbildung bei Wispo Tandem)" },
-        { Item: "Sozialarbeiterin B.A." },
+        {
+          Item: 'Systemische Beraterin (3-Jährige Weiterbildung bei Wispo Tandem)',
+        },
+        { Item: 'Sozialarbeiterin B.A.' },
       ],
     },
-    "about-card-section-2": {
-      title: "Fortbildungen",
+    'about-card-section-2': {
+      title: 'Fortbildungen',
       Items: [
-        { Item: "Konflikte systemisch verstehen und bearbeiten (Eva Gehring)" },
-        { Item: "Verzeihen und Versöhnen in der Paarbeziehung (Friederike von Tiedemann)" },
+        { Item: 'Konflikte systemisch verstehen und bearbeiten (Eva Gehring)' },
+        {
+          Item: 'Verzeihen und Versöhnen in der Paarbeziehung (Friederike von Tiedemann)',
+        },
       ],
     },
-    "about-card-section-3": {
-      title: "Berufstätigkeit",
+    'about-card-section-3': {
+      title: 'Berufstätigkeit',
       Items: [
-        { Item: "derzeit in Elternzeit, selbstständige Beraterin seit August 2023" },
-        { Item: "Co-Leitung Kinderbereich und Fundraising bei Stadtpiraten Freiburg e.V." },
-        { Item: "stationäre Kinder- und Jugendhilfe im SOS-Kinderdorf" },
-        { Item: "Co-Leitung Freiwilligen Seminare Diakonie Baden" },
+        {
+          Item: 'derzeit in Elternzeit, selbstständige Beraterin seit August 2023',
+        },
+        {
+          Item: 'Co-Leitung Kinderbereich und Fundraising bei Stadtpiraten Freiburg e.V.',
+        },
+        { Item: 'stationäre Kinder- und Jugendhilfe im SOS-Kinderdorf' },
+        { Item: 'Co-Leitung Freiwilligen Seminare Diakonie Baden' },
       ],
     },
-    "about-card-section-4": {
-      title: "Persönliches",
-      Items: [
-        { Item: "verheiratet" },
-        { Item: "zwei Kinder" },
-      ],
+    'about-card-section-4': {
+      title: 'Persönliches',
+      Items: [{ Item: 'verheiratet' }, { Item: 'zwei Kinder' }],
     },
   };
 }
