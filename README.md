@@ -10,9 +10,9 @@ Welcome to the **Schlüsselmomente** website repository — a clean, modern, and
 |------------|-------------|
 | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5" width="24" height="24"/> **HTML5** | The structural backbone of the site — clean and semantic markup. |
 | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="24" height="24"/> **JavaScript** | Brings interactivity and dynamic behavior to the frontend. |
-| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" width="24" height="24" /> **Tailwindcss** | Utility-first styling for a modern, responsive UI — no custom CSS required! |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/strapi/strapi-plain.svg" alt="Strapi" width="24" height="24"/> **Strapi** | Headless CMS for content management — easily update text, images, and more without touching code. |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/hetzner/hetzner-original.svg" alt="Hetzner Cloud" width="24" height="24"/> **Hetzner Cloud** | The Strapi instance is self-hosted on Hetzner Cloud for full control and cost efficiency. |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" width="24" height="24" /> **Tailwind CSS** | Utility-first styling for a modern, responsive UI — no custom CSS required! |
+| 📦 **Strapi** | Headless CMS for content management — easily update text, images, and more without touching code. |
+| ☁️ **Hetzner Cloud** | The Strapi instance is self-hosted on Hetzner Cloud for full control and cost efficiency. |
 
 ---
 
