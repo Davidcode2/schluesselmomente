@@ -9,12 +9,11 @@ services:
     image: schluesselmomente-nginx-proxy # Name for the built image
     container_name: schluesselmomente_nginx_proxy 
     restart: unless-stopped # Restart policy
-    ports:
-      - '8183:80'
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
     networks:
       - app-network
+      - schluesselmomente-network
 
   schluesselmomente:
     build:
@@ -23,10 +22,8 @@ services:
     image: schluesselmomente
     container_name: schluesselmomente
     restart: unless-stopped
-    ports:
-      - '8181:80'
     networks:
-      - app-network
+      - schluesselmomente-network
 
   schluesselmomente-backend:
     build:
@@ -35,11 +32,10 @@ services:
     image: schluesselmomente-be
     container_name: schluesselmomente-be
     restart: unless-stopped
-    ports:
-      - '8182:99'
     networks:
-      - app-network
+      - schluesselmomente-network
 
 networks:
+  schluesselmomente-network:
   app-network:
     external: true
