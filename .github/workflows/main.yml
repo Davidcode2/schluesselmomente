@@ -6,6 +6,9 @@ on:
       - main
       - master
 
+env:
+  DEPLOYMENT_DIR: /opt/deployments/schluesselmomente
+
 jobs:
   build:
     name: Deploy
@@ -20,10 +23,10 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_PRIVATE_SSH_KEY }}
           REMOTE_HOST: ${{ secrets.SERVER_ADDRESS }}
           REMOTE_USER: ${{ secrets.USER_NAME }}
-          TARGET: /root/schluesselmomente
+          TARGET: ${{ env.DEPLOYMENT_DIR }}
           EXCLUDE: /.git/, .gitignore, .github
           SCRIPT_AFTER: |
-            cd /root/schluesselmomente
+            cd ${{ env.DEPLOYMENT_DIR }}
             docker compose up -d --build || exit 1
 
         
