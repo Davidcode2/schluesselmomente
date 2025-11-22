@@ -1,34 +1,35 @@
-name: deploy_on_push
+name: Build and Deploy
 
-on: 
+on:
+  workflow_dispatch:
   push:
     branches:
       - main
-      - master
 
 env:
-  DEPLOYMENT_DIR: /opt/deployments/schluesselmomente
+  IMAGE_NAME: ${{ github.repository }}
+  REGISTRY: ghcr.io
 
 jobs:
-  build:
-    name: Deploy
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out repository code
-        uses: actions/checkout@v3
-        
-      - name: ssh deploy
-        uses: easingthemes/ssh-deploy@v4.1.8
-        with:
-          SSH_PRIVATE_KEY: ${{ secrets.SERVER_PRIVATE_SSH_KEY }}
-          REMOTE_HOST: ${{ secrets.SERVER_ADDRESS }}
-          REMOTE_USER: ${{ secrets.USER_NAME }}
-          TARGET: ${{ env.DEPLOYMENT_DIR }}
-          EXCLUDE: /.git/, .gitignore, .github
-          SCRIPT_AFTER: |
-            cd ${{ env.DEPLOYMENT_DIR }}
-            docker compose up -d --build || exit 1
 
-        
-    
-      
+  build-and-push-fe:
+    permissions:
+      contents: read
+      packages: write
+    uses: ./.github/workflows/build-and-push.yml
+    with:
+      image_name: ghcr.io/${{ github.repository }}
+      dockerfile: fe/dockerfile
+      build_args: |
+        SKIP_BUILD_STATIC_GENERATION=true
+
+  build-and-push-be:
+    permissions:
+      contents: read
+      packages: write
+    uses: ./.github/workflows/build-and-push.yml
+    with:
+      image_name: ghcr.io/${{ github.repository }}-be
+      dockerfile: be/dockerfile
+      build_args: |
+        SKIP_BUILD_STATIC_GENERATION=true
