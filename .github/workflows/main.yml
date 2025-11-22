@@ -19,7 +19,8 @@ jobs:
     uses: ./.github/workflows/build-and-push.yml
     with:
       image_name: ghcr.io/${{ github.repository }}
-      dockerfile: fe/dockerfile
+      context: fe
+      dockerfile: dockerfile
       build_args: |
         SKIP_BUILD_STATIC_GENERATION=true
 
@@ -30,6 +31,7 @@ jobs:
     uses: ./.github/workflows/build-and-push.yml
     with:
       image_name: ghcr.io/${{ github.repository }}-be
-      dockerfile: be/dockerfile
+      context: be
+      dockerfile: dockerfile
       build_args: |
         SKIP_BUILD_STATIC_GENERATION=true
