@@ -77,10 +77,10 @@ jobs:
       - name: Bump patch version in package.json
         id: bump
         run: |
-          CURRENT=$(jq -r .version package.json)
+          CURRENT=$(jq -r .version fe/package.json)
           IFS='.' read -r MAJOR MINOR PATCH <<< "$CURRENT"
           NEW_VERSION="${MAJOR}.${MINOR}.$((PATCH + 1))"
-          jq --arg v "$NEW_VERSION" '.version = $v' package.json > tmp.json && mv tmp.json package.json
+          jq --arg v "$NEW_VERSION" '.version = $v' fe/package.json > tmp.json && mv tmp.json fe/package.json
           echo "version=$NEW_VERSION" >> "$GITHUB_OUTPUT"
           echo "Bumped version: $CURRENT → $NEW_VERSION"
 
@@ -89,7 +89,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add package.json
+          git add fe/package.json
           git commit -m "chore: bump version to ${{ steps.bump.outputs.version }} [skip ci]"
           git push
           echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
