@@ -6,7 +6,7 @@ use Mailgun\Mailgun;
 require 'vendor/autoload.php';
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
+$dotenv->safeLoad();
 
 // Initialize Mailgun with your API key and domain
 $mailgunApiKey = $_ENV['MAILGUN_API_KEY']; // Store your API key in an environment variable

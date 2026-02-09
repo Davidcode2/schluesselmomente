@@ -1,0 +1,2 @@
+.env
+push-secrets-to-ssm.sh
