@@ -119,7 +119,7 @@ jobs:
         SKIP_BUILD_STATIC_GENERATION=true
   deploy-app:
     runs-on: ubuntu-latest
-    needs: [bump-version, build-and-push]
+    needs: [bump-version, build-and-push-fe]
     permissions:
       contents: read
     env:
