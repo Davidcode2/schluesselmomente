@@ -1,5 +1,5 @@
 # Dockerfile.backend
-FROM php:8.2-fpm
+FROM php:8.2.35-fpm
 
 # Install system dependencies: nginx, supervisor, git (often needed by composer), curl, zip, unzip
 RUN apt-get update && apt-get install -y --no-install-recommends \
